@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route, IndexRoute, Switch, browserHistory } from "react-router-dom";
+import { HashRouter as Router, Route, IndexRoute, Switch, browserHistory } from "react-router-dom";
 
 // Common Modules
 import { Root } from "./components/Root";
@@ -18,7 +18,7 @@ import { ContactUs } from "./components/ContactUs";
 class App extends React.Component {
   render() {
     return (
-      <Router>
+      <Router history={browserHistory}>
         <Root>
           <Switch>
             <Route exact path={"/"} component={Home} />

@@ -36,8 +36,8 @@ export class Root extends React.Component {
     ];
     var address = {
       title: "ADDRESS",
-      addressLine_1: "E 561a, Ramphal Chow,",
-      addressLine_2: "Sector-7, Dwarka, New Delhi. 110059"
+      addressLine_1: "E-457A, Ramphal Chowk,",
+      addressLine_2: "Sector-7, Dwarka, ND. 110059"
     };
     var contacts = {
       title: "Contact Us",
