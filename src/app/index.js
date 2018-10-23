@@ -1,12 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {
-  BrowserRouter as Router,
-  Route,
-  IndexRoute,
-  Switch,
-  browserHistory
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, IndexRoute, Switch, browserHistory } from "react-router-dom";
 
 // Common Modules
 import { Root } from "./components/Root";

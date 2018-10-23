@@ -12,64 +12,27 @@ import "./../styles/style.css";
 export class Root extends React.Component {
   render() {
     var navigations = [
-      {
-        name: "My Home",
-        items: []
-      },
-      {
-        name: "About Us",
-        items: []
-      },
-      {
-        name: "Warrenty",
-        items: []
-      },
-      {
-        name: "Gallery",
-        items: [
-          {
-            name: "g01",
-            items: []
-          },
-          {
-            name: "g02",
-            items: [
-              {
-                name: "go2_1",
-                items: []
+      { name: "My Home", items: [] },
+      { name: "About Us", items: [] },
+      { name: "Gallery", items: [] },
+      { name: "Pages", items: [
+          { name: "Drop List Level 1", items: [] },
+          { name: "Drop List Level 1", items: [
+              { name: "Drop List Level 2", items: [] },
+              { name: "Drop List Level 2", items: [
+                  { name: "Drop List Level 3", items: [] },
+                  { name: "Drop List Level 3", items: [] },
+                  { name: "Drop List Level 3", items: [] }]
               },
-              {
-                name: "go2_2",
-                items: []
-              },
-              {
-                name: "go2_3",
-                items: []
-              }
+              { name: "Drop List Level 2", items: [] }
             ]
           },
-          {
-            name: "g03",
-            items: []
-          }
-        ]
-      },
-      {
-        name: "Testimonial",
-        items: []
-      },
-      {
-        name: "Our Remodel Process",
-        items: []
-      },
-      {
-        name: "Small General Repairs",
-        items: []
-      },
-      {
-        name: "Contact Us",
-        items: []
-      }
+          { name: "Drop List Level 1", items: [] }
+        ]},
+      { name: "Testimonial", items: [] },
+      { name: "Our Remodel Process", items: [] },
+      { name: "Small General Repairs", items: [] },
+      { name: "Contact Us", items: [] }
     ];
     var address = {
       title: "ADDRESS",
@@ -92,9 +55,9 @@ export class Root extends React.Component {
     };
     return (
       <React.Fragment>
-        <Header 
-          contacts={contacts} 
-          navigations={navigations} 
+        <Header
+          contacts={contacts}
+          navigations={navigations}
         />
 
         {this.props.children}

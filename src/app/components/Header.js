@@ -18,14 +18,14 @@ export class Header extends React.Component {
           <div className="content_row layout">
             <div className="one_half-md">
               <div className="head-logo">
-                <a href="#">
+                <Link to={"/"} >
                   <img
                     src={Logo}
                     alt="Construction"
                     title="Construction"
                     className="img-responsive"
                   />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="one_half-md">
@@ -64,19 +64,16 @@ export class Header extends React.Component {
                 <nav className="site-nav" id="site-nav">
                   <ul>
                     <li>
-                      <Link to={"/"}>Home</Link>
+                      <Link to={"/"}> Home </Link>
                     </li>
                     <li>
-                      <Link to={"/about"}>About Us</Link>
+                      <Link to={"/about"}> About Us </Link>
                     </li>
                     <li>
-                      <Link to={"/warrenty"}>Warrenty</Link>
+                      <Link to={"/warrenty"}> Warrenty </Link>
                     </li>
                     <li className="expanded">
-                      <Link to={"/gallery"} className="parent_list">
-                        {" "}
-                        Gallery{" "}
-                      </Link>
+                      <Link to={"/gallery"} className="parent_list"> Gallery </Link>
                       <ul>
                         <li>
                           <a href="#">Gallery Test 001</a>
@@ -116,17 +113,13 @@ export class Header extends React.Component {
                       </ul>
                     </li>
                     <li>
-                      <Link to={"/testinomials"}>Testimonials</Link>
+                      <Link to={"/testinomials"}> Testimonials </Link>
                     </li>
                     <li>
-                      <Link to={"/our-remodeling-process"}>
-                        Our Remodel Process
-                      </Link>
+                      <Link to={"/our-remodeling-process"}> Our Remodel Process </Link>
                     </li>
                     <li>
-                      <Link to={"/small-general-repairs"}>
-                        Small General Repairs
-                      </Link>
+                      <Link to={"/small-general-repairs"}> Small General Repairs </Link>
                     </li>
                     <li>
                       <Link to={"/contact"}>Contact</Link>
@@ -137,6 +130,7 @@ export class Header extends React.Component {
                         <a href="#">{nav.name}</a>
                       </li>
                     ))} */}
+
                   </ul>
                 </nav>
               </div>
