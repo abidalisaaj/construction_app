@@ -1,0 +1,1263 @@
+/*Container Starts here...*/
+.content_column {
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:20px;
+	padding-right:20px
+}
+.content_column:before, .content_column:after {
+	content:"";
+	display:table
+}
+.content_column:after {
+	clear:both
+}
+@media (min-width:768px) {
+.content_column {
+	width:768px
+}
+}
+ @media (min-width:960px) {
+.content_column {
+	width:960px;
+}
+}
+.content_row {
+	margin-left:-20px;
+	margin-right:-20px
+}
+.content_row:before, .content_row:after {
+	content:"";
+	display:table
+}
+.content_row:after {
+	clear:both
+}
+.content_row:before, .content_row:after {
+	content:"";
+	display:table
+}
+.content_row:after {
+	clear:both
+}
+.whole, .whole-md, .whole-lg, .one_half, .one_half-md, .one_half-lg, .one_third, .one_third-md, .one_third-lg, .two_thirds, .two_thirds-md, .two_thirds-lg, .one_fourth, .one_fourth-md, .one_fourth-lg, .three_fourths, .three_fourths-md, .three_fourths-lg, .one_fifth, .one_fifth-md, .one_fifth-lg, .two_fifths, .two_fifths-md, .two_fifths-lg, .three_fifths, .three_fifths-md, .three_fifths-lg, .four_fifths, .four_fifths-md, .four_fifths-lg, .one_sixth, .one_sixth-md, .one_sixth-lg, .two_sixths, .two_sixths-md, .two_sixths-lg, .three_sixths, .three_sixths-md, .three_sixths-lg, .four_sixths, .four_sixths-md, .four_sixths-lg, .five_sixths, .five_sixths-md, .five_sixths-lg, .one_eighth, .one_eighth-md, .one_eighth-lg, .two_eighths, .two_eighths-md, .two_eighths-lg, .three_eighths, .three_eighths-md, .three_eighths-lg, .four_eighths, .four_eighths-md, .four_eighths-lg, .five_eighths, .five_eighths-md, .five_eighths-lg, .six_eighths, .six_eighths-md, .six_eighths-lg, .seven_eighths, .seven_eighths-md, .seven_eighths-lg, .one_twelfth, .one_twelfth-md, .one_twelfth-lg, .two_twelfths, .two_twelfths-md, .two_twelfths-lg, .three_twelfths, .three_twelfths-md, .three_twelfths-lg, .four_twelfths, .four_twelfths-md, .four_twelfths-lg, .five_twelfths, .five_twelfths-md, .five_twelfths-lg, .six_twelfths, .six_twelfths-md, .six_twelfths-lg, .seven_twelfths, .seven_twelfths-md, .seven_twelfths-lg, .eight_twelfths, .eight_twelfths-md, .eight_twelfths-lg, .nine_twelfths, .nine_twelfths-md, .nine_twelfths-lg, .ten_twelfths, .ten_twelfths-md, .ten_twelfths-lg, .eleven_twelfths, .eleven_twelfths-md, .eleven_twelfths-lg {
+	min-height:1px;
+	padding-left:20px;
+	padding-right:20px;
+	position:relative
+}
+/*Responsiveness Starts here...*/
+.whole, .one_half, .one_third, .two_thirds, .one_fourth, .three_fourths, .one_fifth, .two_fifths, .three_fifths, .four_fifths, .one_sixth, .two_sixths, .three_sixths, .four_sixths, .five_sixths, .one_eighth, .two_eighths, .three_eighths, .four_eighths, .five_eighths, .six_eighths, .seven_eighths, .one_twelfth, .two_twelfths, .three_twelfths, .four_twelfths, .five_twelfths, .six_twelfths, .seven_twelfths, .eight_twelfths, .nine_twelfths, .ten_twelfths, .eleven_twelfths {
+	float:left
+}
+.whole {
+	width:100%
+}
+.one_half {
+	width:50%
+}
+.one_third {
+	width:33.3333%
+}
+.two_thirds {
+	width:66.6667%
+}
+.one_fourth {
+	width:25%
+}
+.three_fourths {
+	width:75%
+}
+.one_fifth {
+	width:20%
+}
+.two_fifths {
+	width:40%
+}
+.three_fifths {
+	width:60%
+}
+.four_fifths {
+	width:80%
+}
+.one_sixth {
+	width:16.6667%
+}
+.two_sixths {
+	width:33.3333%
+}
+.three_sixths {
+	width:50%
+}
+.four_sixths {
+	width:66.6667%
+}
+.five_sixths {
+	width:83.3333%
+}
+.one_eighth {
+	width:12.5%
+}
+.two_eighths {
+	width:25%
+}
+.three_eighths {
+	width:37.5%
+}
+.four_eighths {
+	width:50%
+}
+.five_eighths {
+	width:62.5%
+}
+.six_eighths {
+	width:75%
+}
+.seven_eighths {
+	width:87.5%
+}
+.one_twelfth {
+	width:8.333%
+}
+.two_twelfths {
+	width:16.666%
+}
+.three_twelfths {
+	width:25%
+}
+.four_twelfths {
+	width:33.333%
+}
+.five_twelfths {
+	width:41.6667%
+}
+.six_twelfths {
+	width:50%
+}
+.seven_twelfths {
+	width:58.3334%
+}
+.eight_twelfths {
+	width:66.666%
+}
+.nine_twelfths {
+	width:75%
+}
+.ten_twelfths {
+	width:83.3334%
+}
+.eleven_twelfths {
+	width:91.666%
+}
+/*Pull Starts here...*/
+.whole_pull {
+	right:100%
+}
+.one_half_pull {
+	right:50%
+}
+.one_third_pull {
+	right:33.3333%
+}
+.two_thirds_pull {
+	right:66.6667%
+}
+.one_fourth_pull {
+	right:25%
+}
+.three_fourths_pull {
+	right:75%
+}
+.one_fifth_pull {
+	right:20%
+}
+.two_fifths_pull {
+	right:40%
+}
+.three_fifths_pull {
+	right:60%
+}
+.four_fifths_pull {
+	right:80%
+}
+.one_sixth_pull {
+	right:16.6667%
+}
+.two_sixths_pull {
+	right:33.3333%
+}
+.three_sixths_pull {
+	right:50%
+}
+.four_sixths_pull {
+	right:66.6667%
+}
+.five_sixths_pull {
+	right:83.3333%
+}
+.one_eighth_pull {
+	right:12.5%
+}
+.two_eighths_pull {
+	right:25%
+}
+.three_eighths_pull {
+	right:37.5%
+}
+.four_eighths_pull {
+	right:50%
+}
+.five_eighths_pull {
+	right:62.5%
+}
+.six_eighths_pull {
+	right:75%
+}
+.seven_eighths_pull {
+	right:87.5%
+}
+.one_twelfth_pull {
+	right:8.333%
+}
+.two_twelfths_pull {
+	right:16.666%
+}
+.three_twelfths_pull {
+	right:25%
+}
+.four_twelfths_pull {
+	right:33.333%
+}
+.five_twelfths_pull {
+	right:41.6667%
+}
+.six_twelfths_pull {
+	right:50%
+}
+.seven_twelfths_pull {
+	right:58.3334%
+}
+.eight_twelfths_pull {
+	right:66.666%
+}
+.nine_twelfths_pull {
+	right:75%
+}
+.ten_twelfths_pull {
+	right:83.3334%
+}
+.eleven_twelfths_pull {
+	right:91.666%
+}
+/*Push Starts here...*/
+.whole_push {
+	left:100%
+}
+.one_half_push {
+	left:50%
+}
+.one_third_push {
+	left:33.3333%
+}
+.two_thirds_push {
+	left:66.6667%
+}
+.one_fourth_push {
+	left:25%
+}
+.three_fourths_push {
+	left:75%
+}
+.one_fifth_push {
+	left:20%
+}
+.two_fifths_push {
+	left:40%
+}
+.three_fifths_push {
+	left:60%
+}
+.four_fifths_push {
+	left:80%
+}
+.one_sixth_push {
+	left:16.6667%
+}
+.two_sixths_push {
+	left:33.3333%
+}
+.three_sixths_push {
+	left:50%
+}
+.four_sixths_push {
+	left:66.6667%
+}
+.five_sixths_push {
+	left:83.3333%
+}
+.one_eighth_push {
+	left:12.5%
+}
+.two_eighths_push {
+	left:25%
+}
+.three_eighths_push {
+	left:37.5%
+}
+.four_eighths_push {
+	left:50%
+}
+.five_eighths_push {
+	left:62.5%
+}
+.six_eighths_push {
+	left:75%
+}
+.seven_eighths_push {
+	left:87.5%
+}
+.one_twelfth_push {
+	left:8.333%
+}
+.two_twelfths_push {
+	left:16.666%
+}
+.three_twelfths_push {
+	left:25%
+}
+.four_twelfths_push {
+	left:33.333%
+}
+.five_twelfths_push {
+	left:41.6667%
+}
+.six_twelfths_push {
+	left:50%
+}
+.seven_twelfths_push {
+	left:58.3334%
+}
+.eight_twelfths_push {
+	left:66.666%
+}
+.nine_twelfths_push {
+	left:75%
+}
+.ten_twelfths_push {
+	left:83.3334%
+}
+.eleven_twelfths_push {
+	left:91.666%
+}
+/*Offset Starts here...*/
+.whole_offset {
+	margin-left:100%
+}
+.one_half_offset {
+	margin-left:50%
+}
+.one_third_offset {
+	margin-left:33.3333%
+}
+.two_thirds_offset {
+	margin-left:66.6667%
+}
+.one_fourth_offset {
+	margin-left:25%
+}
+.three_fourths_offset {
+	margin-left:75%
+}
+.one_fifth_offset {
+	margin-left:20%
+}
+.two_fifths_offset {
+	margin-left:40%
+}
+.three_fifths_offset {
+	margin-left:60%
+}
+.four_fifths_offset {
+	margin-left:80%
+}
+.one_sixth_offset {
+	margin-left:16.6667%
+}
+.two_sixths_offset {
+	margin-left:33.3333%
+}
+.three_sixths_offset {
+	margin-left:50%
+}
+.four_sixths_offset {
+	margin-left:66.6667%
+}
+.five_sixths_offset {
+	margin-left:83.3333%
+}
+.one_eighth_offset {
+	margin-left:12.5%
+}
+.two_eighths_offset {
+	margin-left:25%
+}
+.three_eighths_offset {
+	margin-left:37.5%
+}
+.four_eighths_offset {
+	margin-left:50%
+}
+.five_eighths_offset {
+	margin-left:62.5%
+}
+.six_eighths_offset {
+	margin-left:75%
+}
+.seven_eighths_offset {
+	margin-left:87.5%
+}
+.one_twelfth_offset {
+	margin-left:8.333%
+}
+.two_twelfths_offset {
+	margin-left:16.666%
+}
+.three_twelfths_offset {
+	margin-left:25%
+}
+.four_twelfths_offset {
+	margin-left:33.333%
+}
+.five_twelfths_offset {
+	margin-left:41.6667%
+}
+.six_twelfths_offset {
+	margin-left:50%
+}
+.seven_twelfths_offset {
+	margin-left:58.3334%
+}
+.eight_twelfths_offset {
+	margin-left:66.666%
+}
+.nine_twelfths_offset {
+	margin-left:75%
+}
+.ten_twelfths_offset {
+	margin-left:83.3334%
+}
+.eleven_twelfths_offset {
+	margin-left:91.666%
+}
+/*Responsiveness small screen starts here...*/
+@media (min-width: 768px) {
+/*Columns Starts here...*/
+.whole-md, .one_half-md, .one_third-md, .two_thirds-md, .one_fourth-md, .three_fourths-md, .one_fifth-md, .two_fifths-md, .three_fifths-md, .four_fifths-md, .one_sixth-md, .two_sixths-md, .three_sixths-md, .four_sixths-md, .five_sixths-md, .one_eighth-md, .two_eighths-md, .three_eighths-md, .four_eighths-md, .five_eighths-md, .six_eighths-md, .seven_eighths-md, .one_twelfth-md, .two_twelfths-md, .three_twelfths-md, .four_twelfths-md, .five_twelfths-md, .six_twelfths-md, .seven_twelfths-md, .eight_twelfths-md, .nine_twelfths-md, .ten_twelfths-md, .eleven_twelfths-md {
+	float:left
+}
+.whole-md {
+	width:100%
+}
+.one_half-md {
+	width:50%
+}
+.one_third-md {
+	width:33.3333%
+}
+.two_thirds-md {
+	width:66.6667%
+}
+.one_fourth-md {
+	width:25%
+}
+.three_fourths-md {
+	width:75%
+}
+.one_fifth-md {
+	width:20%
+}
+.two_fifths-md {
+	width:40%
+}
+.three_fifths-md {
+	width:60%
+}
+.four_fifths-md {
+	width:80%
+}
+.one_sixth-md {
+	width:16.6667%
+}
+.two_sixths-md {
+	width:33.3333%
+}
+.three_sixths-md {
+	width:50%
+}
+.four_sixths-md {
+	width:66.6667%
+}
+.five_sixths-md {
+	width:83.3333%
+}
+.one_eighth-md {
+	width:12.5%
+}
+.two_eighths-md {
+	width:25%
+}
+.three_eighths-md {
+	width:37.5%
+}
+.four_eighths-md {
+	width:50%
+}
+.five_eighths-md {
+	width:62.5%
+}
+.six_eighths-md {
+	width:75%
+}
+.seven_eighths-md {
+	width:87.5%
+}
+.one_twelfth-md {
+	width:8.333%
+}
+.two_twelfths-md {
+	width:16.666%
+}
+.three_twelfths-md {
+	width:25%
+}
+.four_twelfths-md {
+	width:33.333%
+}
+.five_twelfths-md {
+	width:41.6667%
+}
+.six_twelfths-md {
+	width:50%
+}
+.seven_twelfths-md {
+	width:58.3334%
+}
+.eight_twelfths-md {
+	width:66.666%
+}
+.nine_twelfths-md {
+	width:75%
+}
+.ten_twelfths-md {
+	width:83.3334%
+}
+.eleven_twelfths-md {
+	width:91.666%
+}
+/*Pull Starts here...*/
+.whole_pull-md {
+	right:100%
+}
+.one_half_pull-md {
+	right:50%
+}
+.one_third_pull-md {
+	right:33.3333%
+}
+.two_thirds_pull-md {
+	right:66.6667%
+}
+.one_fourth_pull-md {
+	right:25%
+}
+.three_fourths_pull-md {
+	right:75%
+}
+.one_fifth_pull-md {
+	right:20%
+}
+.two_fifths_pull-md {
+	right:40%
+}
+.three_fifths_pull-md {
+	right:60%
+}
+.four_fifths_pull-md {
+	right:80%
+}
+.one_sixth_pull-md {
+	right:16.6667%
+}
+.two_sixths_pull-md {
+	right:33.3333%
+}
+.three_sixths_pull-md {
+	right:50%
+}
+.four_sixths_pull-md {
+	right:66.6667%
+}
+.five_sixths_pull-md {
+	right:83.3333%
+}
+.one_eighth_pull-md {
+	right:12.5%
+}
+.two_eighths_pull-md {
+	right:25%
+}
+.three_eighths_pull-md {
+	right:37.5%
+}
+.four_eighths_pull-md {
+	right:50%
+}
+.five_eighths_pull-md {
+	right:62.5%
+}
+.six_eighths_pull-md {
+	right:75%
+}
+.seven_eighths_pull-md {
+	right:87.5%
+}
+.one_twelfth_pull-md {
+	right:8.333%
+}
+.two_twelfths_pull-md {
+	right:16.666%
+}
+.three_twelfths_pull-md {
+	right:25%
+}
+.four_twelftsh_pull-md {
+	right:33.333%
+}
+.five_twelfths_pull-md {
+	right:41.6667%
+}
+.six_twelfths_pull-md {
+	right:50%
+}
+.seven_twelfths_pull-md {
+	right:58.3334%
+}
+.eight_twelfths_pull-md {
+	right:66.666%
+}
+.nine_twelfths_pull-md {
+	right:75%
+}
+.ten_twelfths_pull-md {
+	right:83.3334%
+}
+.eleven_twelfths_pull-md {
+	right:91.666%
+}
+/*Push Starts here...*/
+.whole_push-md {
+	left:100%
+}
+.one_half_push-md {
+	left:50%
+}
+.one_third_push-md {
+	left:33.3333%
+}
+.two_thirds_push-md {
+	left:66.6667%
+}
+.one_fourth_push-md {
+	left:25%
+}
+.three_fourths_push-md {
+	left:75%
+}
+.one_fifth_push-md {
+	left:20%
+}
+.two_fifths_push-md {
+	left:40%
+}
+.three_fifths_push-md {
+	left:60%
+}
+.four_fifths_push-md {
+	left:80%
+}
+.one_sixth_push-md {
+	left:16.6667%
+}
+.two_sixths_push-md {
+	left:33.3333%
+}
+.three_sixths_push-md {
+	left:50%
+}
+.four_sixths_push-md {
+	left:66.6667%
+}
+.five_sixths_push-md {
+	left:83.3333%
+}
+.one_eighth_push-md {
+	left:12.5%
+}
+.two_eighths_push-md {
+	left:25%
+}
+.three_eighths_push-md {
+	left:37.5%
+}
+.four_eighths_push-md {
+	left:50%
+}
+.five_eighths_push-md {
+	left:62.5%
+}
+.six_eighths_push-md {
+	left:75%
+}
+.seven_eighths_push-md {
+	left:87.5%
+}
+.one_twelfth_push-md {
+	left:8.333%
+}
+.two_twelfths_push-md {
+	left:16.666%
+}
+.three_twelfths_push-md {
+	left:25%
+}
+.four_twelfths_push-md {
+	left:33.333%
+}
+.five_twelfths_push-md {
+	left:41.6667%
+}
+.six_twelfths_push-md {
+	left:50%
+}
+.seven_twelfths_push-md {
+	left:58.3334%
+}
+.eight_twelfths_push-md {
+	left:66.666%
+}
+.nine_twelfths_push-md {
+	left:75%
+}
+.ten_twelfths_push-md {
+	left:83.3334%
+}
+.eleven_twelfths_push-md {
+	left:91.666%
+}
+/*Offset Starts here...*/
+.whole_offset-md {
+	margin-left:100%
+}
+.one_half_offset-md {
+	margin-left:50%
+}
+.one_third_offset-md {
+	margin-left:33.3333%
+}
+.two_thirds_offset-md {
+	margin-left:66.6667%
+}
+.one_fourth_offset-md {
+	margin-left:25%
+}
+.three_fourths_offset-md {
+	margin-left:75%
+}
+.one_fifth_offset-md {
+	margin-left:20%
+}
+.two_fifths_offset-md {
+	margin-left:40%
+}
+.three_fifths_offset-md {
+	margin-left:60%
+}
+.four_fifths_offset-md {
+	margin-left:80%
+}
+.one_sixth_offset-md {
+	margin-left:16.6667%
+}
+.two_sixths_offset-md {
+	margin-left:33.3333%
+}
+.three_sixths_offset-md {
+	margin-left:50%
+}
+.four_sixths_offset-md {
+	margin-left:66.6667%
+}
+.five_sixths_offset-md {
+	margin-left:83.3333%
+}
+.one_eighth_offset-md {
+	margin-left:12.5%
+}
+.two_eighths_offset-md {
+	margin-left:25%
+}
+.three_eighths_offset-md {
+	margin-left:37.5%
+}
+.four_eighths_offset-md {
+	margin-left:50%
+}
+.five_eighths_offset-md {
+	margin-left:62.5%
+}
+.six_eighths_offset-md {
+	margin-left:75%
+}
+.seven_eighths_offset-md {
+	margin-left:87.5%
+}
+.one_twelfth_offset-md {
+	margin-left:8.333%
+}
+.two_twelfths_offset-md {
+	margin-left:16.666%
+}
+.three_twelfths_offset-md {
+	margin-left:25%
+}
+.four_twelfths_offset-md {
+	margin-left:33.333%
+}
+.five_twelfths_offset-md {
+	margin-left:41.6667%
+}
+.six_twelfths_offset-md {
+	margin-left:50%
+}
+.seven_twelfths_offset-md {
+	margin-left:58.3334%
+}
+.eight_twelfths_offset-md {
+	margin-left:66.666%
+}
+.nine_twelfths_offset-md {
+	margin-left:75%
+}
+.ten_twelftsh_offset-md {
+	margin-left:83.3334%
+}
+.eleven_twelfths_offset-md {
+	margin-left:91.666%
+}
+}
+/*Responsiveness large screen starts here...*/
+@media (min-width: 960px) {
+/*Columns Starts here...*/
+.whole-lg, .one_half-lg, .one_third-lg, .two_thirds-lg, .one_fourth-lg, .three_fourths-lg, .one_fifth-lg, .two_fifths-lg, .three_fifths-lg, .four_fifths-lg, .one_sixth-lg, .two_sixths-lg, .three_sixths-lg, .four_sixths-lg, .five_sixths-lg, .one_eighth-lg, .two_eighths-lg, .three_eighths-lg, .four_eighths-lg, .five_eighths-lg, .six_eighths-lg, .seven_eighths-lg, .one_twelfth-lg, .two_twelfths-lg, .three_twelfths-lg, .four_twelfths-lg, .five_twelfths-lg, .six_twelfths-lg, .seven_twelfths-lg, .eight_twelfths-lg, .nine_twelfths-lg, .ten_twelfths-lg, .eleven_twelfths-lg {
+	float:left
+}
+.whole-lg {
+	width:100%
+}
+.one_half-lg {
+	width:50%
+}
+.one_third-lg {
+	width:33.3333%
+}
+.two_thirds-lg {
+	width:66.6667%
+}
+.one_fourth-lg {
+	width:25%
+}
+.three_fourths-lg {
+	width:75%
+}
+.one_fifth-lg {
+	width:20%
+}
+.two_fifths-lg {
+	width:40%
+}
+.three_fifths-lg {
+	width:60%
+}
+.four_fifths-lg {
+	width:80%
+}
+.one_sixth-lg {
+	width:16.6667%
+}
+.two_sixths-lg {
+	width:33.3333%
+}
+.three_sixths-lg {
+	width:50%
+}
+.four_sixths-lg {
+	width:66.6667%
+}
+.five_sixths-lg {
+	width:83.3333%
+}
+.one_eighth-lg {
+	width:12.5%
+}
+.two_eighths-lg {
+	width:25%
+}
+.three_eighths-lg {
+	width:37.5%
+}
+.four_eighths-lg {
+	width:50%
+}
+.five_eighths-lg {
+	width:62.5%
+}
+.six_eighths-lg {
+	width:75%
+}
+.seven_eighths-lg {
+	width:87.5%
+}
+.one_twelfth-lg {
+	width:8.333%
+}
+.two_twelfths-lg {
+	width:16.666%
+}
+.three_twelfths-lg {
+	width:25%
+}
+.four_twelfths-lg {
+	width:33.333%
+}
+.five_twelfths-lg {
+	width:41.6667%
+}
+.six_twelfths-lg {
+	width:50%
+}
+.seven_twelfths-lg {
+	width:58.3334%
+}
+.eight_twelfths-lg {
+	width:66.666%
+}
+.nine_twelfths-lg {
+	width:75%
+}
+.ten_twelfths-lg {
+	width:83.3334%
+}
+.eleven_twelfths-lg {
+	width:91.666%
+}
+/*Pull Starts here...*/
+.whole_pull-lg {
+	right:100%
+}
+.one_half_pull-lg {
+	right:50%
+}
+.one_third_pull-lg {
+	right:33.3333%
+}
+.two_thirds_pull-lg {
+	right:66.6667%
+}
+.one_fourth_pull-lg {
+	right:25%
+}
+.three_fourths_pull-lg {
+	right:75%
+}
+.one_fifth_pull-lg {
+	right:20%
+}
+.two_fifths_pull-lg {
+	right:40%
+}
+.three_fifths_pull-lg {
+	right:60%
+}
+.four_fifths_pull-lg {
+	right:80%
+}
+.one_sixth_pull-lg {
+	right:16.6667%
+}
+.two_sixths_pull-lg {
+	right:33.3333%
+}
+.three_sixths_pull-lg {
+	right:50%
+}
+.four_sixths_pull-lg {
+	right:66.6667%
+}
+.five_sixths_pull-lg {
+	right:83.3333%
+}
+.one_eighth-lg {
+	width:12.5%
+}
+.two_eighths-lg {
+	width:25%
+}
+.three_eighths-lg {
+	width:37.5%
+}
+.four_eighths-lg {
+	width:50%
+}
+.five_eighths-lg {
+	width:62.5%
+}
+.six_eighths-lg {
+	width:75%
+}
+.seven_eighths-lg {
+	width:87.5%
+}
+.one_twelfth-lg {
+	width:8.333%
+}
+.two_twelfths-lg {
+	width:16.666%
+}
+.three_twelfths-lg {
+	width:25%
+}
+.four_twelfths-lg {
+	width:33.333%
+}
+.five_twelfths-lg {
+	width:41.6667%
+}
+.six_twelfths-lg {
+	width:50%
+}
+.seven_twelfths-lg {
+	width:58.3334%
+}
+.eight_twelfths-lg {
+	width:66.666%
+}
+.nine_twelfths-lg {
+	width:75%
+}
+.ten_twelfths-lg {
+	width:83.3334%
+}
+.eleven_twelfths-lg {
+	width:91.666%
+}
+/*Push Starts here...*/
+.whole_push-lg {
+	left:100%
+}
+.one_half_push-lg {
+	left:50%
+}
+.one_third_push-lg {
+	left:33.3333%
+}
+.two_thirds_push-lg {
+	left:66.6667%
+}
+.one_fourth_push-lg {
+	left:25%
+}
+.three_fourths_push-lg {
+	left:75%
+}
+.one_fifth_push-lg {
+	left:20%
+}
+.two_fifths_push-lg {
+	left:40%
+}
+.three_fifths_push-lg {
+	left:60%
+}
+.four_fifths_push-lg {
+	left:80%
+}
+.one_sixth_push-lg {
+	left:16.6667%
+}
+.two_sixths_push-lg {
+	left:33.3333%
+}
+.three_sixths_push-lg {
+	left:50%
+}
+.four_sixths_push-lg {
+	left:66.6667%
+}
+.five_sixths_push-lg {
+	left:83.3333%
+}
+.one_eighth-lg {
+	left:12.5%
+}
+.two_eighths-lg {
+	left:25%
+}
+.three_eighths-lg {
+	left:37.5%
+}
+.four_eighths-lg {
+	left:50%
+}
+.five_eighths-lg {
+	left:62.5%
+}
+.six_eighths-lg {
+	left:75%
+}
+.seven_eighths-lg {
+	left:87.5%
+}
+.one_twelfth-lg {
+	left:8.333%
+}
+.two_twelfths-lg {
+	left:16.666%
+}
+.three_twelfths-lg {
+	left:25%
+}
+.four_twelfths-lg {
+	left:33.333%
+}
+.five_twelfths-lg {
+	left:41.6667%
+}
+.six_twelfths-lg {
+	left:50%
+}
+.seven_twelfths-lg {
+	left:58.3334%
+}
+.eight_twelfths-lg {
+	left:66.666%
+}
+.nine_twelfths-lg {
+	left:75%
+}
+.ten_twelfths-lg {
+	left:83.3334%
+}
+.eleven_twelfths-lg {
+	left:91.666%
+}
+/*Offset Starts here...*/
+.whole_offset-lg {
+	margin-left:100%
+}
+.one_half_offset-lg {
+	margin-left:50%
+}
+.one_third_offset-lg {
+	margin-left:33.3333%
+}
+.two_thirds_offset-lg {
+	margin-left:66.6667%
+}
+.one_fourth_offset-lg {
+	margin-left:25%
+}
+.three_fourths_offset-lg {
+	margin-left:75%
+}
+.one_fifth_offset-lg {
+	margin-left:20%
+}
+.two_fifths_offset-lg {
+	margin-left:40%
+}
+.three_fifths_offset-lg {
+	margin-left:60%
+}
+.four_fifths_offset-lg {
+	margin-left:80%
+}
+.one_sixth_offset-lg {
+	margin-left:16.6667%
+}
+.two_sixths_offset-lg {
+	margin-left:33.3333%
+}
+.three_sixths_offset-lg {
+	margin-left:50%
+}
+.four_sixths_offset-lg {
+	margin-left:66.6667%
+}
+.five_sixths_offset-lg {
+	margin-left:83.3333%
+}
+.one_eighth_offset-lg {
+	margin-left:12.5%
+}
+.two_eighths_offset-lg {
+	margin-left:25%
+}
+.three_eighths_offset-lg {
+	margin-left:37.5%
+}
+.four_eighths_offset-lg {
+	margin-left:50%
+}
+.five_eighths_offset-lg {
+	margin-left:62.5%
+}
+.six_eighths_offset-lg {
+	margin-left:75%
+}
+.seven_eighths_offset-lg {
+	margin-left:87.5%
+}
+.one_twelfth_offset-lg {
+	margin-left:8.333%
+}
+.two_twelfths_offset-lg {
+	margin-left:16.666%
+}
+.three_twelfths_offset-lg {
+	margin-left:25%
+}
+.four_twelfths_offset-lg {
+	margin-left:33.333%
+}
+.five_twelfths_offset-lg {
+	margin-left:41.6667%
+}
+.six_twelfths_offset-lg {
+	margin-left:50%
+}
+.seven_twelfths_offset-lg {
+	margin-left:58.3334%
+}
+.eight_twelfths_offset-lg {
+	margin-left:66.666%
+}
+.nine_twelfths_offset-lg {
+	margin-left:75%
+}
+.ten_twelfths_offset-lg {
+	margin-left:83.3334%
+}
+.eleven_twelfths_offset-lg {
+	margin-left:91.666%
+}
+}
