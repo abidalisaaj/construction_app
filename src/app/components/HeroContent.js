@@ -5,8 +5,8 @@ export class HeroContent extends React.Component {
   render() {
     return (
       <section className="hero-cont">
-        <div className="content_column">
-          <div className="content_row">
+        <div className="container">
+          <div className="row">
             <div className="whole">
               <div className="hero-title">
                 <h1 className="hero-title__text">

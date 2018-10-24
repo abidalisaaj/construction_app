@@ -14,8 +14,8 @@ export class Header extends React.Component {
   render() {
     return (
       <header className="page-head">
-        <div className="content_column">
-          <div className="content_row layout">
+        <div className="container">
+          <div className="row layout">
             <div className="one_half-md">
               <div className="head-logo">
                 <Link to={"/"} >
@@ -45,8 +45,8 @@ export class Header extends React.Component {
           </div>
         </div>
         <section className="page-nav">
-          <div className="content_column">
-            <div className="content_row">
+          <div className="container">
+            <div className="row">
               <div className="whole">
                 <div id="site-nav-toggle" className="site-nav-toggle">
                   <a
@@ -63,24 +63,24 @@ export class Header extends React.Component {
                 </div>
                 <nav className="site-nav" id="site-nav">
                   <ul>
-                    <li>
+                    {/* <li>
                       <Link to={"/"}> Home </Link>
                     </li>
                     <li>
                       <Link to={"/about"}> About Us </Link>
                     </li>
                     <li>
-                      <Link to={"/warrenty"}> Warrenty </Link>
+                      <Link to={"/gallery"}> Gallery </Link>
                     </li>
                     <li className="expanded">
-                      <Link to={"/gallery"} className="parent_list"> Gallery </Link>
+                      <Link to={"/pages"} className="parent_list"> Pages </Link>
                       <ul>
                         <li>
-                          <a href="#">Gallery Test 001</a>
+                          <a href="#">Drop List Level 1</a>
                         </li>
                         <li className="expanded">
                           <a href="#" className="parent_list">
-                            Gallery Test 002
+                          Drop List Level 2
                           </a>
                           <ul>
                             <li>
@@ -88,17 +88,17 @@ export class Header extends React.Component {
                             </li>
                             <li className="expanded">
                               <a href="#" className="parent_list">
-                                Gallery Test 002b
+                              Drop List Level 2a
                               </a>
                               <ul>
                                 <li>
-                                  <a href="#">Gallery Test 002a_1</a>
+                                  <a href="#">Drop List Level 2a1</a>
                                 </li>
                                 <li>
-                                  <a href="#">Gallery Test 002b_2</a>
+                                  <a href="#">Drop List Level 2a2</a>
                                 </li>
                                 <li>
-                                  <a href="#">Gallery Test 002c_3</a>
+                                  <a href="#">Drop List Level 2a3</a>
                                 </li>
                               </ul>
                             </li>
@@ -108,12 +108,12 @@ export class Header extends React.Component {
                           </ul>
                         </li>
                         <li>
-                          <a href="#">Gallery Test 002</a>
+                          <a href="#">Drop List Level 3</a>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <Link to={"/testinomials"}> Testimonials </Link>
+                      <Link to={"/testinomial"}> Testimonial </Link>
                     </li>
                     <li>
                       <Link to={"/our-remodeling-process"}> Our Remodel Process </Link>
@@ -123,13 +123,13 @@ export class Header extends React.Component {
                     </li>
                     <li>
                       <Link to={"/contact"}>Contact</Link>
-                    </li>
+                    </li> */}
 
-                    {/* {this.props.navigations.map((nav, i) => (
+                    {this.props.navigations.map((nav, i) => (
                       <li key={i}>
-                        <a href="#">{nav.name}</a>
+                        <Link to={nav.path}>{nav.name}</Link>
                       </li>
-                    ))} */}
+                    ))}
 
                   </ul>
                 </nav>

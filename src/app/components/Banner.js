@@ -7,8 +7,8 @@ export class Banner extends React.Component {
   render() {
     return (
       <section className="home-banner">
-        <div className="content_column">
-          <div className="content_row layout">
+        <div className="container">
+          <div className="row layout">
             <div className="whole">
               <div className="banner">
                 <ul className="list-unstyled">

@@ -7,8 +7,8 @@ export class ContactUs extends React.Component {
       <React.Fragment>
         <section className="page-body">
           <div className="page-cont">
-            <div className="content_column">
-              <div className="content_row layout">
+            <div className="container">
+              <div className="row layout">
                 <div className="whole">
                   <div className="layout-item">
                     <ContactForm />

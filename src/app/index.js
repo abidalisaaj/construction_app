@@ -8,9 +8,9 @@ import { Root } from "./components/Root";
 // Page Modules
 import { Home } from "./components/Home";
 import { AboutUs } from "./components/AboutUs";
-import { Warrenty } from "./components/Warrenty";
 import { Gallery } from "./components/Gallery";
-import { Testimonials } from "./components/Testimonials";
+import { Pages } from "./components/Pages";
+import { Testimonial } from "./components/Testimonial";
 import { OurRemodelingProcess } from "./components/OurRemodelingProcess";
 import { SmallGeneralRepairs } from "./components/SmallGeneralRepairs";
 import { ContactUs } from "./components/ContactUs";
@@ -23,9 +23,9 @@ class App extends React.Component {
           <Switch>
             <Route exact path={"/"} component={Home} />
             <Route path={"/about"} component={AboutUs} />
-            <Route path={"/warrenty"} component={Warrenty} />
             <Route path={"/gallery"} component={Gallery} />
-            <Route path={"/testinomials"} component={Testimonials} />
+            <Route path={"/pages"} component={Pages} />
+            <Route path={"/testinomial"} component={Testimonial} />
             <Route path={"/our-remodeling-process"} component={OurRemodelingProcess} />
             <Route path={"/small-general-repairs"} component={SmallGeneralRepairs} />
             <Route path={"/contact"} component={ContactUs} />

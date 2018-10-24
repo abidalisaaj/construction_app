@@ -9,9 +9,9 @@ export class SlideShow extends React.Component {
   render() {
     return (
       <section className="slide-show">
-        <div className="content_column">
-          <div className="content_row">
-            <div className="content_row slideshow">
+        <div className="container">
+          <div className="row">
+            <div className="row slideshow">
               <div className="one_third-md">
                 <article className="slideshow__thumb">
                   <a href="#">

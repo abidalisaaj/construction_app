@@ -17,10 +17,10 @@ export class Home extends React.Component {
         <SlideShow />
         <section className="page-body">
           <div className="page-cont">
-            <div className="content_column">
-              <div className="content_row layout">
+            <div className="container">
+              <div className="row layout">
                 <div className="whole">
-                  <div className="content_row">
+                  <div className="row">
                     <div className="two_thirds-md">
                       <div className="layout-item layout-item--left">
                         <article>

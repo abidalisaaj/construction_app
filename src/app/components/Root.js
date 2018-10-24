@@ -12,27 +12,30 @@ import "./../styles/style.css";
 export class Root extends React.Component {
   render() {
     var navigations = [
-      { name: "My Home", items: [] },
-      { name: "About Us", items: [] },
-      { name: "Gallery", items: [] },
-      { name: "Pages", items: [
+      { name: "Home", path: "/", items: [] },
+      { name: "About Us", path: "/about", items: [] },
+      { name: "Gallery", path: "/gallery", items: [] },
+      { name: "Pages", path: "/pages", items: [
           { name: "Drop List Level 1", items: [] },
-          { name: "Drop List Level 1", items: [
-              { name: "Drop List Level 2", items: [] },
-              { name: "Drop List Level 2", items: [
-                  { name: "Drop List Level 3", items: [] },
-                  { name: "Drop List Level 3", items: [] },
-                  { name: "Drop List Level 3", items: [] }]
+          {
+            name: "Drop List Level 2", items: [
+              { name: "Drop List Level 2a", items: [] },
+              {
+                name: "Drop List Level 2b", items: [
+                  { name: "Drop List Level 2b1", items: [] },
+                  { name: "Drop List Level 2b2", items: [] },
+                  { name: "Drop List Level 2b3", items: [] }]
               },
-              { name: "Drop List Level 2", items: [] }
+              { name: "Drop List Level 2c", items: [] }
             ]
           },
-          { name: "Drop List Level 1", items: [] }
-        ]},
-      { name: "Testimonial", items: [] },
-      { name: "Our Remodel Process", items: [] },
-      { name: "Small General Repairs", items: [] },
-      { name: "Contact Us", items: [] }
+          { name: "Drop List Level 3", items: [] }
+        ]
+      },
+      { name: "Testimonial", path: "/testinomial", items: [] },
+      { name: "Our Remodeling Process", path: "/our-remodeling-process", items: [] },
+      { name: "Small General Repairs", path: "/small-general-repairs", items: [] },
+      { name: "Contact Us", path: "/contact", items: [] }
     ];
     var address = {
       title: "ADDRESS",
@@ -50,8 +53,8 @@ export class Root extends React.Component {
       hour: "8:00am to 5:00pm"
     };
     var copyright = {
-      year: "© 2015",
-      link: "Drawing Board Media, Inc"
+      year: "© 2018",
+      link: "Abid Ali"
     };
     return (
       <React.Fragment>

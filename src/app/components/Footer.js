@@ -2,6 +2,7 @@ import React from "react";
 import propTypes from "prop-types";
 import { Link } from "react-router-dom";
 
+
 export class Footer extends React.Component {
   static propTypes = {
     address: propTypes.object,
@@ -14,8 +15,8 @@ export class Footer extends React.Component {
     return (
       <footer className="page-foot">
         <div className="foot-cont">
-          <div className="content_column">
-            <div className="content_row layout">
+          <div className="container">
+            <div className="row layout">
               <div className="one_third-md">
                 <article className="foot-cont__col col_001">
                   <h4>{this.props.address.title}</h4>
@@ -50,14 +51,14 @@ export class Footer extends React.Component {
         </div>
 
         <div className="foot-micro">
-          <div className="content_column">
-            <div className="content_row layout">
+          <div className="container">
+            <div className="row layout">
               <div className="three_fourths-lg">
                 <nav className="foot-nav">
                   <ul className="list-unstyled">
                     {this.props.navigations.map((nav, i) => (
                       <li key={i}>
-                        <a href="#">{nav.name}</a>
+                        <Link to={nav.path}>{nav.name}</Link>
                       </li>
                     ))}
                   </ul>
