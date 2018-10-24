@@ -27,7 +27,7 @@ var config = {
         loader: "style-loader!css-loader"
       },
       {
-        test: /\.(png|jpg)$/,
+        test: /\.(png|jpg|gif|mp4|ogg)$/,
         loader: "url-loader"
       }
     ]

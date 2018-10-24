@@ -7,14 +7,7 @@ export class ContactForm extends React.Component {
         <header>
           <h2>Contact <span>Us</span></h2>
         </header>
-        <form method="post" action="" className="fancyform">
-          <div style={{ display: "none" }}>
-            <input
-              type="hidden"
-              value="bcd6afb3777bb83ffd1121af5d7c27e0"
-              name="csrfmiddlewaretoken"
-            />
-          </div>
+        <form method="post" action="" className="fancyform">         
           <fieldset>
             <div className="emailform">
               <div className="emailform-errors" />
@@ -26,7 +19,7 @@ export class ContactForm extends React.Component {
                   <label htmlFor="id_name">Name</label>
                 </div>
                 <div className="emailform-field-input">
-                  <input type="text" maxLength="50" name="name" id="id_name" />
+                  <input type="text" placeholder="Your Name" maxLength="50" name="name" id="id_name" />
                 </div>
               </div>
               <div
@@ -37,7 +30,7 @@ export class ContactForm extends React.Component {
                   <label htmlFor="id_email">Email</label>
                 </div>
                 <div className="emailform-field-input">
-                  <input type="text" id="id_email" name="email" />
+                  <input type="text" placeholder="Your Email" id="id_email" name="email" />
                 </div>
               </div>
               <div
@@ -50,6 +43,7 @@ export class ContactForm extends React.Component {
                 <div className="emailform-field-input">
                   <input
                     type="text"
+                    placeholder="Your Phone"
                     maxLength="50"
                     name="phone"
                     id="id_phone"
@@ -64,7 +58,7 @@ export class ContactForm extends React.Component {
                   <label htmlFor="id_message">Message</label>
                 </div>
                 <div className="emailform-field-input">
-                  <textarea name="message" cols="20" rows="5" id="id_message" />
+                  <textarea name="message" placeholder="Your Message" cols="20" rows="5" id="id_message" />
                 </div>
               </div>
               <div className="emailform-button">

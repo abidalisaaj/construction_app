@@ -1,7 +1,7 @@
 import React from "react";
 import propTypes from "prop-types";
 import { Link } from "react-router-dom";
-
+import Navs from "./Navs";
 
 export class Footer extends React.Component {
   static propTypes = {
@@ -56,11 +56,7 @@ export class Footer extends React.Component {
               <div className="three_fourths-lg">
                 <nav className="foot-nav">
                   <ul className="list-unstyled">
-                    {this.props.navigations.map((nav, i) => (
-                      <li key={i}>
-                        <Link to={nav.path}>{nav.name}</Link>
-                      </li>
-                    ))}
+                    <Navs navigations={this.props.navigations} />
                   </ul>
                 </nav>
               </div>

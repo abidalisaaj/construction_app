@@ -3,10 +3,11 @@ import React from "react";
 import { Banner } from "./Banner";
 import { HeroContent } from "./HeroContent";
 import { ContactForm } from "./ContactForm";
-
-// Images
-import VideoImage from "../images/video_img.png";
 import { SlideShow } from "./SlideShow";
+
+// Images & Videos
+// import Video from "../images/movie.mp4";
+
 
 export class Home extends React.Component {
   render() {
@@ -42,12 +43,12 @@ export class Home extends React.Component {
                             velit esse cillum dolore.
                           </p>
                           <div className="video">
-                            <img
-                              src={VideoImage}
-                              alt=""
-                              title=""
-                              className="img-responsive"
-                            />
+                            {/* <video width="100%" height="auto" controls>
+                              <source src={Video} type="video/mp4" />
+                              <source src={Video} type="video/ogg" />
+                            </video> */}
+
+                            Video Will be here.....
                           </div>
                         </article>
                       </div>

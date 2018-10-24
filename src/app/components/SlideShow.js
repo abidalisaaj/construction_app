@@ -41,7 +41,7 @@ export class SlideShow extends React.Component {
                       />
                     </span>
                     <strong className="slideshow__thumb--title">
-                      Kitchen Remodeling
+                      Bathroom Remodeling
                     </strong>
                   </a>
                 </article>
@@ -58,7 +58,7 @@ export class SlideShow extends React.Component {
                       />
                     </span>
                     <strong className="slideshow__thumb--title">
-                      Kitchen Remodeling
+                      Interior Remodeling
                     </strong>
                   </a>
                 </article>

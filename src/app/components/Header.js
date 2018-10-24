@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import propTypes from "prop-types";
 
+import Navs from "./Navs";
+
 // Images
 import Logo from "../images/logo.png";
 import CallIcon from "../images/call_icon.png";
@@ -125,11 +127,7 @@ export class Header extends React.Component {
                       <Link to={"/contact"}>Contact</Link>
                     </li> */}
 
-                    {this.props.navigations.map((nav, i) => (
-                      <li key={i}>
-                        <Link to={nav.path}>{nav.name}</Link>
-                      </li>
-                    ))}
+                    <Navs navigations={this.props.navigations} />
 
                   </ul>
                 </nav>
