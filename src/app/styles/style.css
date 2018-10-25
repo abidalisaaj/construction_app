@@ -726,7 +726,7 @@ textarea:focus {
   background: #f6f6f6;
   padding: 30px;
   border-right: 5px solid #999999;
-  margin: -30px -31px;
+  margin: -30px -30px;
 }
 .layout-item--full {
   padding-left: 10px;
@@ -802,6 +802,9 @@ textarea:focus {
   text-decoration: none;
   color: #fff;
   display: block;
+}
+.site-nav ul li a:focus {
+  outline: none;
 }
 .site-nav ul li > ul {
   display: none;
@@ -986,21 +989,33 @@ textarea:focus {
 /*------Banner Starts here...--------*/
 .banner {
   width: 100%;
+  padding: 10px;
+  background: #FFF;
 }
-.banner ul {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+.banner .banner-item{
+  float: left;
 }
-.banner ul li {
-  display: block;
-  background: #fff;
-  padding: 5px;
-}
-.banner ul li img {
+.banner .banner-img{
   width: 100%;
   height: auto;
 }
+.banner .slick-dots{
+  bottom: 40px;
+  z-index: 9999;
+}
+.banner .slick-dots li button{
+  padding: 0;
+}
+.banner .slick-dots li button:before{
+  font-size: 48px;
+  
+  color: #FFF;
+  opacity: 0.75;
+}
+.banner .slick-dots li.slick-active button:before{
+  color: #2a5649;
+}
+
 /*------Banner Starts here...--------*/
 
 /*------Announcement Starts here...--------*/
@@ -1031,6 +1046,9 @@ textarea:focus {
 /*------Slideshow Starts here...--------*/
 .slideshow {
   padding-top: 30px;
+}
+.slideshow .slick-list{
+  padding: 10px 0;
 }
 .slideshow__thumb {
   display: block;
@@ -1137,9 +1155,6 @@ textarea:focus {
   .layout {
     padding-top: 30px;
     padding-bottom: 30px;
-  }
-  .page-body aside {
-    padding: 30px;
   }
   .head-content__call {
     margin: 2px 0;

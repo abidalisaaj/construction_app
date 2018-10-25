@@ -8,6 +8,8 @@ import { Footer } from "./Footer";
 import "./../styles/normalize.css";
 import "./../styles/grid.css";
 import "./../styles/style.css";
+import "./../styles/slick-theme.min.css";
+import "./../styles/slick.min.css";
 
 export class Root extends React.Component {
   render() {

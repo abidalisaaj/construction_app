@@ -6,7 +6,7 @@ import { ContactForm } from "./ContactForm";
 import { SlideShow } from "./SlideShow";
 
 // Images & Videos
-// import Video from "../images/movie.mp4";
+import Video from "../images/movie.mp4";
 
 
 export class Home extends React.Component {
@@ -19,9 +19,9 @@ export class Home extends React.Component {
         <section className="page-body">
           <div className="page-cont">
             <div className="container">
-              <div className="row layout">
+              <div className="row ">
                 <div className="whole">
-                  <div className="row">
+                  <div className="row layout">
                     <div className="two_thirds-md">
                       <div className="layout-item layout-item--left">
                         <article>
@@ -43,12 +43,10 @@ export class Home extends React.Component {
                             velit esse cillum dolore.
                           </p>
                           <div className="video">
-                            {/* <video width="100%" height="auto" controls>
+                            <video width="100%" height="400" controls>
                               <source src={Video} type="video/mp4" />
                               <source src={Video} type="video/ogg" />
-                            </video> */}
-
-                            Video Will be here.....
+                            </video>
                           </div>
                         </article>
                       </div>

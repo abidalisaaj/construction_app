@@ -7,8 +7,8 @@ export class AboutUs extends React.Component {
         <section className="page-body">
           <div className="page-cont">
             <div className="container">
-              <div className="row layout">
-                <div className="whole">
+              <div className="row">
+                <div className="whole layout">
                   <div className="layout-item">
                     <article>
                       <h2>

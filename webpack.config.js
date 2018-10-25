@@ -29,7 +29,11 @@ var config = {
       {
         test: /\.(png|jpg|gif|mp4|ogg)$/,
         loader: "url-loader"
-      }
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'file-loader',
+    }
     ]
   }
 };
