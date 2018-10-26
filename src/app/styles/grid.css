@@ -1,2147 +1,2401 @@
-/*Container Starts here...*/
+/*	
+	Developed By: Abid Ali
+==============================================================
+	=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+==============================================================
+	Common Grid CSS Starts here...
+*/
+
 .container {
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 10px;
 	padding-right: 10px
 }
-.container:before, .container:after {
+
+.container:before, .container:after, .container-fluid:before, .container-fluid:after {
 	content: "";
 	display: table
 }
-.container:after {
+
+.container:after, .container-fluid:after {
 	clear: both
 }
+
 .row {
 	margin-left: -10px;
 	margin-right: -10px
 }
+
 .row:before, .row:after {
 	content: "";
 	display: table
 }
+
 .row:after {
 	clear: both
 }
+
 .row:before, .row:after {
 	content: "";
 	display: table
 }
+
 .row:after {
 	clear: both
 }
+
 .whole, .whole-sm, .whole-md, .whole-lg, .whole-xl, .one_half, .one_half-sm, .one_half-md, .one_half-lg, .one_half-xl, .one_third, .one_third-sm, .one_third-md, .one_third-lg, .one_third-xl, .two_thirds, .two_thirds-sm, .two_thirds-md, .two_thirds-lg, .two_thirds-xl, .one_fourth, .one_fourth-sm, .one_fourth-md, .one_fourth-lg, .one_fourth-xl, .three_fourths, .three_fourths-sm, .three_fourths-md, .three_fourths-lg, .three_fourths-xl, .one_fifth, .one_fifth-sm, .one_fifth-md, .one_fifth-lg, .one_fifth-xl, .two_fifths, .two_fifths-sm, .two_fifths-md, .two_fifths-lg, .two_fifths-xl, .three_fifths, .three_fifths-sm, .three_fifths-md, .three_fifths-lg, .three_fifths-xl, .four_fifths, .four_fifths-sm, .four_fifths-md, .four_fifths-lg, .four_fifths-xl, .one_sixth, .one_sixth-sm, .one_sixth-md, .one_sixth-lg, .one_sixth-xl, .two_sixths, .two_sixths-sm, .two_sixths-md, .two_sixths-lg, .two_sixths-xl, .three_sixths, .three_sixths-sm, .three_sixths-md, .three_sixths-lg, .three_sixths-xl, .four_sixths, .four_sixths-sm, .four_sixths-md, .four_sixths-lg, .four_sixths-xl, .five_sixths, .five_sixths-sm, .five_sixths-md, .five_sixths-lg, .five_sixths-xl, .one_eighth, .one_eighth-sm, .one_eighth-md, .one_eighth-lg, .one_eighth-xl, .two_eighths, .two_eighths-sm, .two_eighths-md, .two_eighths-lg, .two_eighths-xl, .three_eighths, .three_eighths-sm, .three_eighths-md, .three_eighths-lg, .three_eighths-xl, .four_eighths, .four_eighths-sm, .four_eighths-md, .four_eighths-lg, .four_eighths-xl, .five_eighths, .five_eighths-sm, .five_eighths-md, .five_eighths-lg, .five_eighths-xl, .six_eighths, .six_eighths-sm, .six_eighths-md, .six_eighths-lg, .six_eighths-xl, .seven_eighths, .seven_eighths-sm, .seven_eighths-md, .seven_eighths-lg, .seven_eighths-xl, .one_twelfth, .one_twelfth-sm, .one_twelfth-md, .one_twelfth-lg, .one_twelfth-xl, .two_twelfths, .two_twelfths-sm, .two_twelfths-md, .two_twelfths-lg, .two_twelfths-xl, .three_twelfths, .three_twelfths-sm, .three_twelfths-md, .three_twelfths-lg, .three_twelfths-xl, .four_twelfths, .four_twelfths-sm, .four_twelfths-md, .four_twelfths-lg, .four_twelfths-xl, .five_twelfths, .five_twelfths-sm, .five_twelfths-md, .five_twelfths-lg, .five_twelfths-xl, .six_twelfths, .six_twelfths-sm, .six_twelfths-md, .six_twelfths-lg, .six_twelfths-xl, .seven_twelfths, .seven_twelfths-sm, .seven_twelfths-md, .seven_twelfths-lg, .seven_twelfths-xl, .eight_twelfths, .eight_twelfths-sm, .eight_twelfths-md, .eight_twelfths-lg, .eight_twelfths-xl, .nine_twelfths, .nine_twelfths-sm, .nine_twelfths-md, .nine_twelfths-lg, .nine_twelfths-xl, .ten_twelfths, .ten_twelfths-sm, .ten_twelfths-md, .ten_twelfths-lg, .ten_twelfths-xl, .eleven_twelfths, .eleven_twelfths-sm, .eleven_twelfths-md, .eleven_twelfths-lg, .eleven_twelfths-xl {
 	min-height: 1px;
 	padding-left: 10px;
 	padding-right: 10px;
 	position: relative
 }
- @media (min-width:600px) {
-.container {
-	width: 600px;
-	padding-left: 10px;
-	padding-right: 10px
+
+@media (min-width:600px) {
+	.container {
+		width: 600px;
+		padding-left: 10px;
+		padding-right: 10px
+	}
+	.container-fluid {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px
+	}
+	.row {
+		margin-left: -10px;
+		margin-right: -10px
+	}
+	.whole, .whole-sm, .whole-md, .whole-lg, .whole-xl, .one_half, .one_half-sm, .one_half-md, .one_half-lg, .one_half-xl, .one_third, .one_third-sm, .one_third-md, .one_third-lg, .one_third-xl, .two_thirds, .two_thirds-sm, .two_thirds-md, .two_thirds-lg, .two_thirds-xl, .one_fourth, .one_fourth-sm, .one_fourth-md, .one_fourth-lg, .one_fourth-xl, .three_fourths, .three_fourths-sm, .three_fourths-md, .three_fourths-lg, .three_fourths-xl, .one_fifth, .one_fifth-sm, .one_fifth-md, .one_fifth-lg, .one_fifth-xl, .two_fifths, .two_fifths-sm, .two_fifths-md, .two_fifths-lg, .two_fifths-xl, .three_fifths, .three_fifths-sm, .three_fifths-md, .three_fifths-lg, .three_fifths-xl, .four_fifths, .four_fifths-sm, .four_fifths-md, .four_fifths-lg, .four_fifths-xl, .one_sixth, .one_sixth-sm, .one_sixth-md, .one_sixth-lg, .one_sixth-xl, .two_sixths, .two_sixths-sm, .two_sixths-md, .two_sixths-lg, .two_sixths-xl, .three_sixths, .three_sixths-sm, .three_sixths-md, .three_sixths-lg, .three_sixths-xl, .four_sixths, .four_sixths-sm, .four_sixths-md, .four_sixths-lg, .four_sixths-xl, .five_sixths, .five_sixths-sm, .five_sixths-md, .five_sixths-lg, .five_sixths-xl, .one_eighth, .one_eighth-sm, .one_eighth-md, .one_eighth-lg, .one_eighth-xl, .two_eighths, .two_eighths-sm, .two_eighths-md, .two_eighths-lg, .two_eighths-xl, .three_eighths, .three_eighths-sm, .three_eighths-md, .three_eighths-lg, .three_eighths-xl, .four_eighths, .four_eighths-sm, .four_eighths-md, .four_eighths-lg, .four_eighths-xl, .five_eighths, .five_eighths-sm, .five_eighths-md, .five_eighths-lg, .five_eighths-xl, .six_eighths, .six_eighths-sm, .six_eighths-md, .six_eighths-lg, .six_eighths-xl, .seven_eighths, .seven_eighths-sm, .seven_eighths-md, .seven_eighths-lg, .seven_eighths-xl, .one_twelfth, .one_twelfth-sm, .one_twelfth-md, .one_twelfth-lg, .one_twelfth-xl, .two_twelfths, .two_twelfths-sm, .two_twelfths-md, .two_twelfths-lg, .two_twelfths-xl, .three_twelfths, .three_twelfths-sm, .three_twelfths-md, .three_twelfths-lg, .three_twelfths-xl, .four_twelfths, .four_twelfths-sm, .four_twelfths-md, .four_twelfths-lg, .four_twelfths-xl, .five_twelfths, .five_twelfths-sm, .five_twelfths-md, .five_twelfths-lg, .five_twelfths-xl, .six_twelfths, .six_twelfths-sm, .six_twelfths-md, .six_twelfths-lg, .six_twelfths-xl, .seven_twelfths, .seven_twelfths-sm, .seven_twelfths-md, .seven_twelfths-lg, .seven_twelfths-xl, .eight_twelfths, .eight_twelfths-sm, .eight_twelfths-md, .eight_twelfths-lg, .eight_twelfths-xl, .nine_twelfths, .nine_twelfths-sm, .nine_twelfths-md, .nine_twelfths-lg, .nine_twelfths-xl, .ten_twelfths, .ten_twelfths-sm, .ten_twelfths-md, .ten_twelfths-lg, .ten_twelfths-xl, .eleven_twelfths, .eleven_twelfths-sm, .eleven_twelfths-md, .eleven_twelfths-lg, .eleven_twelfths-xl {
+		min-height: 1px;
+		padding-left: 10px;
+		padding-right: 10px;
+		position: relative
+	}
 }
-.row {
-	margin-left: -10px;
-	margin-right: -10px
+
+@media (min-width:900px) {
+	.container {
+		width: 900px;
+		padding-left: 15px;
+		padding-right: 15px
+	}
+	.container-fluid {
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px
+	}
+	.row {
+		margin-left: -15px;
+		margin-right: -15px
+	}
+	.whole, .whole-sm, .whole-md, .whole-lg, .whole-xl, .one_half, .one_half-sm, .one_half-md, .one_half-lg, .one_half-xl, .one_third, .one_third-sm, .one_third-md, .one_third-lg, .one_third-xl, .two_thirds, .two_thirds-sm, .two_thirds-md, .two_thirds-lg, .two_thirds-xl, .one_fourth, .one_fourth-sm, .one_fourth-md, .one_fourth-lg, .one_fourth-xl, .three_fourths, .three_fourths-sm, .three_fourths-md, .three_fourths-lg, .three_fourths-xl, .one_fifth, .one_fifth-sm, .one_fifth-md, .one_fifth-lg, .one_fifth-xl, .two_fifths, .two_fifths-sm, .two_fifths-md, .two_fifths-lg, .two_fifths-xl, .three_fifths, .three_fifths-sm, .three_fifths-md, .three_fifths-lg, .three_fifths-xl, .four_fifths, .four_fifths-sm, .four_fifths-md, .four_fifths-lg, .four_fifths-xl, .one_sixth, .one_sixth-sm, .one_sixth-md, .one_sixth-lg, .one_sixth-xl, .two_sixths, .two_sixths-sm, .two_sixths-md, .two_sixths-lg, .two_sixths-xl, .three_sixths, .three_sixths-sm, .three_sixths-md, .three_sixths-lg, .three_sixths-xl, .four_sixths, .four_sixths-sm, .four_sixths-md, .four_sixths-lg, .four_sixths-xl, .five_sixths, .five_sixths-sm, .five_sixths-md, .five_sixths-lg, .five_sixths-xl, .one_eighth, .one_eighth-sm, .one_eighth-md, .one_eighth-lg, .one_eighth-xl, .two_eighths, .two_eighths-sm, .two_eighths-md, .two_eighths-lg, .two_eighths-xl, .three_eighths, .three_eighths-sm, .three_eighths-md, .three_eighths-lg, .three_eighths-xl, .four_eighths, .four_eighths-sm, .four_eighths-md, .four_eighths-lg, .four_eighths-xl, .five_eighths, .five_eighths-sm, .five_eighths-md, .five_eighths-lg, .five_eighths-xl, .six_eighths, .six_eighths-sm, .six_eighths-md, .six_eighths-lg, .six_eighths-xl, .seven_eighths, .seven_eighths-sm, .seven_eighths-md, .seven_eighths-lg, .seven_eighths-xl, .one_twelfth, .one_twelfth-sm, .one_twelfth-md, .one_twelfth-lg, .one_twelfth-xl, .two_twelfths, .two_twelfths-sm, .two_twelfths-md, .two_twelfths-lg, .two_twelfths-xl, .three_twelfths, .three_twelfths-sm, .three_twelfths-md, .three_twelfths-lg, .three_twelfths-xl, .four_twelfths, .four_twelfths-sm, .four_twelfths-md, .four_twelfths-lg, .four_twelfths-xl, .five_twelfths, .five_twelfths-sm, .five_twelfths-md, .five_twelfths-lg, .five_twelfths-xl, .six_twelfths, .six_twelfths-sm, .six_twelfths-md, .six_twelfths-lg, .six_twelfths-xl, .seven_twelfths, .seven_twelfths-sm, .seven_twelfths-md, .seven_twelfths-lg, .seven_twelfths-xl, .eight_twelfths, .eight_twelfths-sm, .eight_twelfths-md, .eight_twelfths-lg, .eight_twelfths-xl, .nine_twelfths, .nine_twelfths-sm, .nine_twelfths-md, .nine_twelfths-lg, .nine_twelfths-xl, .ten_twelfths, .ten_twelfths-sm, .ten_twelfths-md, .ten_twelfths-lg, .ten_twelfths-xl, .eleven_twelfths, .eleven_twelfths-sm, .eleven_twelfths-md, .eleven_twelfths-lg, .eleven_twelfths-xl {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
-.whole, .whole-sm, .whole-md, .whole-lg, .whole-xl, .one_half, .one_half-sm, .one_half-md, .one_half-lg, .one_half-xl, .one_third, .one_third-sm, .one_third-md, .one_third-lg, .one_third-xl, .two_thirds, .two_thirds-sm, .two_thirds-md, .two_thirds-lg, .two_thirds-xl, .one_fourth, .one_fourth-sm, .one_fourth-md, .one_fourth-lg, .one_fourth-xl, .three_fourths, .three_fourths-sm, .three_fourths-md, .three_fourths-lg, .three_fourths-xl, .one_fifth, .one_fifth-sm, .one_fifth-md, .one_fifth-lg, .one_fifth-xl, .two_fifths, .two_fifths-sm, .two_fifths-md, .two_fifths-lg, .two_fifths-xl, .three_fifths, .three_fifths-sm, .three_fifths-md, .three_fifths-lg, .three_fifths-xl, .four_fifths, .four_fifths-sm, .four_fifths-md, .four_fifths-lg, .four_fifths-xl, .one_sixth, .one_sixth-sm, .one_sixth-md, .one_sixth-lg, .one_sixth-xl, .two_sixths, .two_sixths-sm, .two_sixths-md, .two_sixths-lg, .two_sixths-xl, .three_sixths, .three_sixths-sm, .three_sixths-md, .three_sixths-lg, .three_sixths-xl, .four_sixths, .four_sixths-sm, .four_sixths-md, .four_sixths-lg, .four_sixths-xl, .five_sixths, .five_sixths-sm, .five_sixths-md, .five_sixths-lg, .five_sixths-xl, .one_eighth, .one_eighth-sm, .one_eighth-md, .one_eighth-lg, .one_eighth-xl, .two_eighths, .two_eighths-sm, .two_eighths-md, .two_eighths-lg, .two_eighths-xl, .three_eighths, .three_eighths-sm, .three_eighths-md, .three_eighths-lg, .three_eighths-xl, .four_eighths, .four_eighths-sm, .four_eighths-md, .four_eighths-lg, .four_eighths-xl, .five_eighths, .five_eighths-sm, .five_eighths-md, .five_eighths-lg, .five_eighths-xl, .six_eighths, .six_eighths-sm, .six_eighths-md, .six_eighths-lg, .six_eighths-xl, .seven_eighths, .seven_eighths-sm, .seven_eighths-md, .seven_eighths-lg, .seven_eighths-xl, .one_twelfth, .one_twelfth-sm, .one_twelfth-md, .one_twelfth-lg, .one_twelfth-xl, .two_twelfths, .two_twelfths-sm, .two_twelfths-md, .two_twelfths-lg, .two_twelfths-xl, .three_twelfths, .three_twelfths-sm, .three_twelfths-md, .three_twelfths-lg, .three_twelfths-xl, .four_twelfths, .four_twelfths-sm, .four_twelfths-md, .four_twelfths-lg, .four_twelfths-xl, .five_twelfths, .five_twelfths-sm, .five_twelfths-md, .five_twelfths-lg, .five_twelfths-xl, .six_twelfths, .six_twelfths-sm, .six_twelfths-md, .six_twelfths-lg, .six_twelfths-xl, .seven_twelfths, .seven_twelfths-sm, .seven_twelfths-md, .seven_twelfths-lg, .seven_twelfths-xl, .eight_twelfths, .eight_twelfths-sm, .eight_twelfths-md, .eight_twelfths-lg, .eight_twelfths-xl, .nine_twelfths, .nine_twelfths-sm, .nine_twelfths-md, .nine_twelfths-lg, .nine_twelfths-xl, .ten_twelfths, .ten_twelfths-sm, .ten_twelfths-md, .ten_twelfths-lg, .ten_twelfths-xl, .eleven_twelfths, .eleven_twelfths-sm, .eleven_twelfths-md, .eleven_twelfths-lg, .eleven_twelfths-xl {
-	min-height: 1px;
-	padding-left: 10px;
-	padding-right: 10px;
-	position: relative
+
+@media (min-width:1200px) {
+	.container {
+		width: 1200px;
+		padding-left: 20px;
+		padding-right: 20px
+	}
+	.container-fluid {
+		width: 100%;
+		padding-left: 20px;
+		padding-right: 20px
+	}
+	.row {
+		margin-left: -20px;
+		margin-right: -20px
+	}
+	.whole, .whole-sm, .whole-md, .whole-lg, .whole-xl, .one_half, .one_half-sm, .one_half-md, .one_half-lg, .one_half-xl, .one_third, .one_third-sm, .one_third-md, .one_third-lg, .one_third-xl, .two_thirds, .two_thirds-sm, .two_thirds-md, .two_thirds-lg, .two_thirds-xl, .one_fourth, .one_fourth-sm, .one_fourth-md, .one_fourth-lg, .one_fourth-xl, .three_fourths, .three_fourths-sm, .three_fourths-md, .three_fourths-lg, .three_fourths-xl, .one_fifth, .one_fifth-sm, .one_fifth-md, .one_fifth-lg, .one_fifth-xl, .two_fifths, .two_fifths-sm, .two_fifths-md, .two_fifths-lg, .two_fifths-xl, .three_fifths, .three_fifths-sm, .three_fifths-md, .three_fifths-lg, .three_fifths-xl, .four_fifths, .four_fifths-sm, .four_fifths-md, .four_fifths-lg, .four_fifths-xl, .one_sixth, .one_sixth-sm, .one_sixth-md, .one_sixth-lg, .one_sixth-xl, .two_sixths, .two_sixths-sm, .two_sixths-md, .two_sixths-lg, .two_sixths-xl, .three_sixths, .three_sixths-sm, .three_sixths-md, .three_sixths-lg, .three_sixths-xl, .four_sixths, .four_sixths-sm, .four_sixths-md, .four_sixths-lg, .four_sixths-xl, .five_sixths, .five_sixths-sm, .five_sixths-md, .five_sixths-lg, .five_sixths-xl, .one_eighth, .one_eighth-sm, .one_eighth-md, .one_eighth-lg, .one_eighth-xl, .two_eighths, .two_eighths-sm, .two_eighths-md, .two_eighths-lg, .two_eighths-xl, .three_eighths, .three_eighths-sm, .three_eighths-md, .three_eighths-lg, .three_eighths-xl, .four_eighths, .four_eighths-sm, .four_eighths-md, .four_eighths-lg, .four_eighths-xl, .five_eighths, .five_eighths-sm, .five_eighths-md, .five_eighths-lg, .five_eighths-xl, .six_eighths, .six_eighths-sm, .six_eighths-md, .six_eighths-lg, .six_eighths-xl, .seven_eighths, .seven_eighths-sm, .seven_eighths-md, .seven_eighths-lg, .seven_eighths-xl, .one_twelfth, .one_twelfth-sm, .one_twelfth-md, .one_twelfth-lg, .one_twelfth-xl, .two_twelfths, .two_twelfths-sm, .two_twelfths-md, .two_twelfths-lg, .two_twelfths-xl, .three_twelfths, .three_twelfths-sm, .three_twelfths-md, .three_twelfths-lg, .three_twelfths-xl, .four_twelfths, .four_twelfths-sm, .four_twelfths-md, .four_twelfths-lg, .four_twelfths-xl, .five_twelfths, .five_twelfths-sm, .five_twelfths-md, .five_twelfths-lg, .five_twelfths-xl, .six_twelfths, .six_twelfths-sm, .six_twelfths-md, .six_twelfths-lg, .six_twelfths-xl, .seven_twelfths, .seven_twelfths-sm, .seven_twelfths-md, .seven_twelfths-lg, .seven_twelfths-xl, .eight_twelfths, .eight_twelfths-sm, .eight_twelfths-md, .eight_twelfths-lg, .eight_twelfths-xl, .nine_twelfths, .nine_twelfths-sm, .nine_twelfths-md, .nine_twelfths-lg, .nine_twelfths-xl, .ten_twelfths, .ten_twelfths-sm, .ten_twelfths-md, .ten_twelfths-lg, .ten_twelfths-xl, .eleven_twelfths, .eleven_twelfths-sm, .eleven_twelfths-md, .eleven_twelfths-lg, .eleven_twelfths-xl {
+		padding-left: 20px;
+		padding-right: 20px
+	}
 }
+
+@media (min-width:1800px) {
+	.container {
+		width: 1200px;
+		padding-left: 30px;
+		padding-right: 30px
+	}
+	.container-fluid {
+		width: 100%;
+		padding-left: 30px;
+		padding-right: 30px
+	}
+	.row {
+		margin-left: -30px;
+		margin-right: -30px
+	}
+	.whole, .whole-sm, .whole-md, .whole-lg, .whole-xl, .one_half, .one_half-sm, .one_half-md, .one_half-lg, .one_half-xl, .one_third, .one_third-sm, .one_third-md, .one_third-lg, .one_third-xl, .two_thirds, .two_thirds-sm, .two_thirds-md, .two_thirds-lg, .two_thirds-xl, .one_fourth, .one_fourth-sm, .one_fourth-md, .one_fourth-lg, .one_fourth-xl, .three_fourths, .three_fourths-sm, .three_fourths-md, .three_fourths-lg, .three_fourths-xl, .one_fifth, .one_fifth-sm, .one_fifth-md, .one_fifth-lg, .one_fifth-xl, .two_fifths, .two_fifths-sm, .two_fifths-md, .two_fifths-lg, .two_fifths-xl, .three_fifths, .three_fifths-sm, .three_fifths-md, .three_fifths-lg, .three_fifths-xl, .four_fifths, .four_fifths-sm, .four_fifths-md, .four_fifths-lg, .four_fifths-xl, .one_sixth, .one_sixth-sm, .one_sixth-md, .one_sixth-lg, .one_sixth-xl, .two_sixths, .two_sixths-sm, .two_sixths-md, .two_sixths-lg, .two_sixths-xl, .three_sixths, .three_sixths-sm, .three_sixths-md, .three_sixths-lg, .three_sixths-xl, .four_sixths, .four_sixths-sm, .four_sixths-md, .four_sixths-lg, .four_sixths-xl, .five_sixths, .five_sixths-sm, .five_sixths-md, .five_sixths-lg, .five_sixths-xl, .one_eighth, .one_eighth-sm, .one_eighth-md, .one_eighth-lg, .one_eighth-xl, .two_eighths, .two_eighths-sm, .two_eighths-md, .two_eighths-lg, .two_eighths-xl, .three_eighths, .three_eighths-sm, .three_eighths-md, .three_eighths-lg, .three_eighths-xl, .four_eighths, .four_eighths-sm, .four_eighths-md, .four_eighths-lg, .four_eighths-xl, .five_eighths, .five_eighths-sm, .five_eighths-md, .five_eighths-lg, .five_eighths-xl, .six_eighths, .six_eighths-sm, .six_eighths-md, .six_eighths-lg, .six_eighths-xl, .seven_eighths, .seven_eighths-sm, .seven_eighths-md, .seven_eighths-lg, .seven_eighths-xl, .one_twelfth, .one_twelfth-sm, .one_twelfth-md, .one_twelfth-lg, .one_twelfth-xl, .two_twelfths, .two_twelfths-sm, .two_twelfths-md, .two_twelfths-lg, .two_twelfths-xl, .three_twelfths, .three_twelfths-sm, .three_twelfths-md, .three_twelfths-lg, .three_twelfths-xl, .four_twelfths, .four_twelfths-sm, .four_twelfths-md, .four_twelfths-lg, .four_twelfths-xl, .five_twelfths, .five_twelfths-sm, .five_twelfths-md, .five_twelfths-lg, .five_twelfths-xl, .six_twelfths, .six_twelfths-sm, .six_twelfths-md, .six_twelfths-lg, .six_twelfths-xl, .seven_twelfths, .seven_twelfths-sm, .seven_twelfths-md, .seven_twelfths-lg, .seven_twelfths-xl, .eight_twelfths, .eight_twelfths-sm, .eight_twelfths-md, .eight_twelfths-lg, .eight_twelfths-xl, .nine_twelfths, .nine_twelfths-sm, .nine_twelfths-md, .nine_twelfths-lg, .nine_twelfths-xl, .ten_twelfths, .ten_twelfths-sm, .ten_twelfths-md, .ten_twelfths-lg, .ten_twelfths-xl, .eleven_twelfths, .eleven_twelfths-sm, .eleven_twelfths-md, .eleven_twelfths-lg, .eleven_twelfths-xl {
+		padding-left: 30px;
+		padding-right: 30px
+	}
 }
- @media (min-width:900px) {
-.container {
-	width: 900px;
-	padding-left: 15px;
-	padding-right: 15px
-}
-.row {
-	margin-left: -15px;
-	margin-right: -15px
-}
-.whole, .whole-sm, .whole-md, .whole-lg, .whole-xl, .one_half, .one_half-sm, .one_half-md, .one_half-lg, .one_half-xl, .one_third, .one_third-sm, .one_third-md, .one_third-lg, .one_third-xl, .two_thirds, .two_thirds-sm, .two_thirds-md, .two_thirds-lg, .two_thirds-xl, .one_fourth, .one_fourth-sm, .one_fourth-md, .one_fourth-lg, .one_fourth-xl, .three_fourths, .three_fourths-sm, .three_fourths-md, .three_fourths-lg, .three_fourths-xl, .one_fifth, .one_fifth-sm, .one_fifth-md, .one_fifth-lg, .one_fifth-xl, .two_fifths, .two_fifths-sm, .two_fifths-md, .two_fifths-lg, .two_fifths-xl, .three_fifths, .three_fifths-sm, .three_fifths-md, .three_fifths-lg, .three_fifths-xl, .four_fifths, .four_fifths-sm, .four_fifths-md, .four_fifths-lg, .four_fifths-xl, .one_sixth, .one_sixth-sm, .one_sixth-md, .one_sixth-lg, .one_sixth-xl, .two_sixths, .two_sixths-sm, .two_sixths-md, .two_sixths-lg, .two_sixths-xl, .three_sixths, .three_sixths-sm, .three_sixths-md, .three_sixths-lg, .three_sixths-xl, .four_sixths, .four_sixths-sm, .four_sixths-md, .four_sixths-lg, .four_sixths-xl, .five_sixths, .five_sixths-sm, .five_sixths-md, .five_sixths-lg, .five_sixths-xl, .one_eighth, .one_eighth-sm, .one_eighth-md, .one_eighth-lg, .one_eighth-xl, .two_eighths, .two_eighths-sm, .two_eighths-md, .two_eighths-lg, .two_eighths-xl, .three_eighths, .three_eighths-sm, .three_eighths-md, .three_eighths-lg, .three_eighths-xl, .four_eighths, .four_eighths-sm, .four_eighths-md, .four_eighths-lg, .four_eighths-xl, .five_eighths, .five_eighths-sm, .five_eighths-md, .five_eighths-lg, .five_eighths-xl, .six_eighths, .six_eighths-sm, .six_eighths-md, .six_eighths-lg, .six_eighths-xl, .seven_eighths, .seven_eighths-sm, .seven_eighths-md, .seven_eighths-lg, .seven_eighths-xl, .one_twelfth, .one_twelfth-sm, .one_twelfth-md, .one_twelfth-lg, .one_twelfth-xl, .two_twelfths, .two_twelfths-sm, .two_twelfths-md, .two_twelfths-lg, .two_twelfths-xl, .three_twelfths, .three_twelfths-sm, .three_twelfths-md, .three_twelfths-lg, .three_twelfths-xl, .four_twelfths, .four_twelfths-sm, .four_twelfths-md, .four_twelfths-lg, .four_twelfths-xl, .five_twelfths, .five_twelfths-sm, .five_twelfths-md, .five_twelfths-lg, .five_twelfths-xl, .six_twelfths, .six_twelfths-sm, .six_twelfths-md, .six_twelfths-lg, .six_twelfths-xl, .seven_twelfths, .seven_twelfths-sm, .seven_twelfths-md, .seven_twelfths-lg, .seven_twelfths-xl, .eight_twelfths, .eight_twelfths-sm, .eight_twelfths-md, .eight_twelfths-lg, .eight_twelfths-xl, .nine_twelfths, .nine_twelfths-sm, .nine_twelfths-md, .nine_twelfths-lg, .nine_twelfths-xl, .ten_twelfths, .ten_twelfths-sm, .ten_twelfths-md, .ten_twelfths-lg, .ten_twelfths-xl, .eleven_twelfths, .eleven_twelfths-sm, .eleven_twelfths-md, .eleven_twelfths-lg, .eleven_twelfths-xl {
-	padding-left: 15px;
-	padding-right: 15px;
-}
-}
- @media (min-width:1200px) {
-.container {
-	width: 1200px;
-	padding-left: 20px;
-	padding-right: 20px
-}
-.row {
-	margin-left: -20px;
-	margin-right: -20px
-}
-.whole, .whole-sm, .whole-md, .whole-lg, .whole-xl, .one_half, .one_half-sm, .one_half-md, .one_half-lg, .one_half-xl, .one_third, .one_third-sm, .one_third-md, .one_third-lg, .one_third-xl, .two_thirds, .two_thirds-sm, .two_thirds-md, .two_thirds-lg, .two_thirds-xl, .one_fourth, .one_fourth-sm, .one_fourth-md, .one_fourth-lg, .one_fourth-xl, .three_fourths, .three_fourths-sm, .three_fourths-md, .three_fourths-lg, .three_fourths-xl, .one_fifth, .one_fifth-sm, .one_fifth-md, .one_fifth-lg, .one_fifth-xl, .two_fifths, .two_fifths-sm, .two_fifths-md, .two_fifths-lg, .two_fifths-xl, .three_fifths, .three_fifths-sm, .three_fifths-md, .three_fifths-lg, .three_fifths-xl, .four_fifths, .four_fifths-sm, .four_fifths-md, .four_fifths-lg, .four_fifths-xl, .one_sixth, .one_sixth-sm, .one_sixth-md, .one_sixth-lg, .one_sixth-xl, .two_sixths, .two_sixths-sm, .two_sixths-md, .two_sixths-lg, .two_sixths-xl, .three_sixths, .three_sixths-sm, .three_sixths-md, .three_sixths-lg, .three_sixths-xl, .four_sixths, .four_sixths-sm, .four_sixths-md, .four_sixths-lg, .four_sixths-xl, .five_sixths, .five_sixths-sm, .five_sixths-md, .five_sixths-lg, .five_sixths-xl, .one_eighth, .one_eighth-sm, .one_eighth-md, .one_eighth-lg, .one_eighth-xl, .two_eighths, .two_eighths-sm, .two_eighths-md, .two_eighths-lg, .two_eighths-xl, .three_eighths, .three_eighths-sm, .three_eighths-md, .three_eighths-lg, .three_eighths-xl, .four_eighths, .four_eighths-sm, .four_eighths-md, .four_eighths-lg, .four_eighths-xl, .five_eighths, .five_eighths-sm, .five_eighths-md, .five_eighths-lg, .five_eighths-xl, .six_eighths, .six_eighths-sm, .six_eighths-md, .six_eighths-lg, .six_eighths-xl, .seven_eighths, .seven_eighths-sm, .seven_eighths-md, .seven_eighths-lg, .seven_eighths-xl, .one_twelfth, .one_twelfth-sm, .one_twelfth-md, .one_twelfth-lg, .one_twelfth-xl, .two_twelfths, .two_twelfths-sm, .two_twelfths-md, .two_twelfths-lg, .two_twelfths-xl, .three_twelfths, .three_twelfths-sm, .three_twelfths-md, .three_twelfths-lg, .three_twelfths-xl, .four_twelfths, .four_twelfths-sm, .four_twelfths-md, .four_twelfths-lg, .four_twelfths-xl, .five_twelfths, .five_twelfths-sm, .five_twelfths-md, .five_twelfths-lg, .five_twelfths-xl, .six_twelfths, .six_twelfths-sm, .six_twelfths-md, .six_twelfths-lg, .six_twelfths-xl, .seven_twelfths, .seven_twelfths-sm, .seven_twelfths-md, .seven_twelfths-lg, .seven_twelfths-xl, .eight_twelfths, .eight_twelfths-sm, .eight_twelfths-md, .eight_twelfths-lg, .eight_twelfths-xl, .nine_twelfths, .nine_twelfths-sm, .nine_twelfths-md, .nine_twelfths-lg, .nine_twelfths-xl, .ten_twelfths, .ten_twelfths-sm, .ten_twelfths-md, .ten_twelfths-lg, .ten_twelfths-xl, .eleven_twelfths, .eleven_twelfths-sm, .eleven_twelfths-md, .eleven_twelfths-lg, .eleven_twelfths-xl {
-	padding-left: 20px;
-	padding-right: 20px
-}
-}
- @media (min-width:1800px) {
-.container {
-	width: 1200px;
-	padding-left: 30px;
-	padding-right: 30px
-}
-.row {
-	margin-left: -30px;
-	margin-right: -30px
-}
-.whole, .whole-sm, .whole-md, .whole-lg, .whole-xl, .one_half, .one_half-sm, .one_half-md, .one_half-lg, .one_half-xl, .one_third, .one_third-sm, .one_third-md, .one_third-lg, .one_third-xl, .two_thirds, .two_thirds-sm, .two_thirds-md, .two_thirds-lg, .two_thirds-xl, .one_fourth, .one_fourth-sm, .one_fourth-md, .one_fourth-lg, .one_fourth-xl, .three_fourths, .three_fourths-sm, .three_fourths-md, .three_fourths-lg, .three_fourths-xl, .one_fifth, .one_fifth-sm, .one_fifth-md, .one_fifth-lg, .one_fifth-xl, .two_fifths, .two_fifths-sm, .two_fifths-md, .two_fifths-lg, .two_fifths-xl, .three_fifths, .three_fifths-sm, .three_fifths-md, .three_fifths-lg, .three_fifths-xl, .four_fifths, .four_fifths-sm, .four_fifths-md, .four_fifths-lg, .four_fifths-xl, .one_sixth, .one_sixth-sm, .one_sixth-md, .one_sixth-lg, .one_sixth-xl, .two_sixths, .two_sixths-sm, .two_sixths-md, .two_sixths-lg, .two_sixths-xl, .three_sixths, .three_sixths-sm, .three_sixths-md, .three_sixths-lg, .three_sixths-xl, .four_sixths, .four_sixths-sm, .four_sixths-md, .four_sixths-lg, .four_sixths-xl, .five_sixths, .five_sixths-sm, .five_sixths-md, .five_sixths-lg, .five_sixths-xl, .one_eighth, .one_eighth-sm, .one_eighth-md, .one_eighth-lg, .one_eighth-xl, .two_eighths, .two_eighths-sm, .two_eighths-md, .two_eighths-lg, .two_eighths-xl, .three_eighths, .three_eighths-sm, .three_eighths-md, .three_eighths-lg, .three_eighths-xl, .four_eighths, .four_eighths-sm, .four_eighths-md, .four_eighths-lg, .four_eighths-xl, .five_eighths, .five_eighths-sm, .five_eighths-md, .five_eighths-lg, .five_eighths-xl, .six_eighths, .six_eighths-sm, .six_eighths-md, .six_eighths-lg, .six_eighths-xl, .seven_eighths, .seven_eighths-sm, .seven_eighths-md, .seven_eighths-lg, .seven_eighths-xl, .one_twelfth, .one_twelfth-sm, .one_twelfth-md, .one_twelfth-lg, .one_twelfth-xl, .two_twelfths, .two_twelfths-sm, .two_twelfths-md, .two_twelfths-lg, .two_twelfths-xl, .three_twelfths, .three_twelfths-sm, .three_twelfths-md, .three_twelfths-lg, .three_twelfths-xl, .four_twelfths, .four_twelfths-sm, .four_twelfths-md, .four_twelfths-lg, .four_twelfths-xl, .five_twelfths, .five_twelfths-sm, .five_twelfths-md, .five_twelfths-lg, .five_twelfths-xl, .six_twelfths, .six_twelfths-sm, .six_twelfths-md, .six_twelfths-lg, .six_twelfths-xl, .seven_twelfths, .seven_twelfths-sm, .seven_twelfths-md, .seven_twelfths-lg, .seven_twelfths-xl, .eight_twelfths, .eight_twelfths-sm, .eight_twelfths-md, .eight_twelfths-lg, .eight_twelfths-xl, .nine_twelfths, .nine_twelfths-sm, .nine_twelfths-md, .nine_twelfths-lg, .nine_twelfths-xl, .ten_twelfths, .ten_twelfths-sm, .ten_twelfths-md, .ten_twelfths-lg, .ten_twelfths-xl, .eleven_twelfths, .eleven_twelfths-sm, .eleven_twelfths-md, .eleven_twelfths-lg, .eleven_twelfths-xl {
-	padding-left: 30px;
-	padding-right: 30px
-}
-}
-/*Responsiveness Starts here...*/
+
+/*	
+==============================================================
+	=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+==============================================================
+	Responsive Grid CSS Starts here...
+*/
 
 .whole, .one_half, .one_third, .two_thirds, .one_fourth, .three_fourths, .one_fifth, .two_fifths, .three_fifths, .four_fifths, .one_sixth, .two_sixths, .three_sixths, .four_sixths, .five_sixths, .one_eighth, .two_eighths, .three_eighths, .four_eighths, .five_eighths, .six_eighths, .seven_eighths, .one_twelfth, .two_twelfths, .three_twelfths, .four_twelfths, .five_twelfths, .six_twelfths, .seven_twelfths, .eight_twelfths, .nine_twelfths, .ten_twelfths, .eleven_twelfths {
 	float: left
 }
+
 .whole {
 	width: 100%
 }
+
 .one_half {
 	width: 50%
 }
+
 .one_third {
 	width: 33.3333%
 }
+
 .two_thirds {
 	width: 66.6667%
 }
+
 .one_fourth {
 	width: 25%
 }
+
 .three_fourths {
 	width: 75%
 }
+
 .one_fifth {
 	width: 20%
 }
+
 .two_fifths {
 	width: 40%
 }
+
 .three_fifths {
 	width: 60%
 }
+
 .four_fifths {
 	width: 80%
 }
+
 .one_sixth {
 	width: 16.6667%
 }
+
 .two_sixths {
 	width: 33.3333%
 }
+
 .three_sixths {
 	width: 50%
 }
+
 .four_sixths {
 	width: 66.6667%
 }
+
 .five_sixths {
 	width: 83.3333%
 }
+
 .one_eighth {
 	width: 12.5%
 }
+
 .two_eighths {
 	width: 25%
 }
+
 .three_eighths {
 	width: 37.5%
 }
+
 .four_eighths {
 	width: 50%
 }
+
 .five_eighths {
 	width: 62.5%
 }
+
 .six_eighths {
 	width: 75%
 }
+
 .seven_eighths {
 	width: 87.5%
 }
+
 .one_twelfth {
 	width: 8.333%
 }
+
 .two_twelfths {
 	width: 16.666%
 }
+
 .three_twelfths {
 	width: 25%
 }
+
 .four_twelfths {
 	width: 33.333%
 }
+
 .five_twelfths {
 	width: 41.6667%
 }
+
 .six_twelfths {
 	width: 50%
 }
+
 .seven_twelfths {
 	width: 58.3334%
 }
+
 .eight_twelfths {
 	width: 66.666%
 }
+
 .nine_twelfths {
 	width: 75%
 }
+
 .ten_twelfths {
 	width: 83.3334%
 }
+
 .eleven_twelfths {
 	width: 91.666%
 }
-/*Pull Starts here...*/
+
+/*	
+==============================================================
+Grid Pull CSS Starts here...
+*/
 
 .whole_pull {
 	right: 100%
 }
+
 .one_half_pull {
 	right: 50%
 }
+
 .one_third_pull {
 	right: 33.3333%
 }
+
 .two_thirds_pull {
 	right: 66.6667%
 }
+
 .one_fourth_pull {
 	right: 25%
 }
+
 .three_fourths_pull {
 	right: 75%
 }
+
 .one_fifth_pull {
 	right: 20%
 }
+
 .two_fifths_pull {
 	right: 40%
 }
+
 .three_fifths_pull {
 	right: 60%
 }
+
 .four_fifths_pull {
 	right: 80%
 }
+
 .one_sixth_pull {
 	right: 16.6667%
 }
+
 .two_sixths_pull {
 	right: 33.3333%
 }
+
 .three_sixths_pull {
 	right: 50%
 }
+
 .four_sixths_pull {
 	right: 66.6667%
 }
+
 .five_sixths_pull {
 	right: 83.3333%
 }
+
 .one_eighth_pull {
 	right: 12.5%
 }
+
 .two_eighths_pull {
 	right: 25%
 }
+
 .three_eighths_pull {
 	right: 37.5%
 }
+
 .four_eighths_pull {
 	right: 50%
 }
+
 .five_eighths_pull {
 	right: 62.5%
 }
+
 .six_eighths_pull {
 	right: 75%
 }
+
 .seven_eighths_pull {
 	right: 87.5%
 }
+
 .one_twelfth_pull {
 	right: 8.333%
 }
+
 .two_twelfths_pull {
 	right: 16.666%
 }
+
 .three_twelfths_pull {
 	right: 25%
 }
+
 .four_twelfths_pull {
 	right: 33.333%
 }
+
 .five_twelfths_pull {
 	right: 41.6667%
 }
+
 .six_twelfths_pull {
 	right: 50%
 }
+
 .seven_twelfths_pull {
 	right: 58.3334%
 }
+
 .eight_twelfths_pull {
 	right: 66.666%
 }
+
 .nine_twelfths_pull {
 	right: 75%
 }
+
 .ten_twelfths_pull {
 	right: 83.3334%
 }
+
 .eleven_twelfths_pull {
 	right: 91.666%
 }
-/*Push Starts here...*/
+
+/*	
+==============================================================
+Grid Push CSS Starts here...
+*/
 
 .whole_push {
 	left: 100%
 }
+
 .one_half_push {
 	left: 50%
 }
+
 .one_third_push {
 	left: 33.3333%
 }
+
 .two_thirds_push {
 	left: 66.6667%
 }
+
 .one_fourth_push {
 	left: 25%
 }
+
 .three_fourths_push {
 	left: 75%
 }
+
 .one_fifth_push {
 	left: 20%
 }
+
 .two_fifths_push {
 	left: 40%
 }
+
 .three_fifths_push {
 	left: 60%
 }
+
 .four_fifths_push {
 	left: 80%
 }
+
 .one_sixth_push {
 	left: 16.6667%
 }
+
 .two_sixths_push {
 	left: 33.3333%
 }
+
 .three_sixths_push {
 	left: 50%
 }
+
 .four_sixths_push {
 	left: 66.6667%
 }
+
 .five_sixths_push {
 	left: 83.3333%
 }
+
 .one_eighth_push {
 	left: 12.5%
 }
+
 .two_eighths_push {
 	left: 25%
 }
+
 .three_eighths_push {
 	left: 37.5%
 }
+
 .four_eighths_push {
 	left: 50%
 }
+
 .five_eighths_push {
 	left: 62.5%
 }
+
 .six_eighths_push {
 	left: 75%
 }
+
 .seven_eighths_push {
 	left: 87.5%
 }
+
 .one_twelfth_push {
 	left: 8.333%
 }
+
 .two_twelfths_push {
 	left: 16.666%
 }
+
 .three_twelfths_push {
 	left: 25%
 }
+
 .four_twelfths_push {
 	left: 33.333%
 }
+
 .five_twelfths_push {
 	left: 41.6667%
 }
+
 .six_twelfths_push {
 	left: 50%
 }
+
 .seven_twelfths_push {
 	left: 58.3334%
 }
+
 .eight_twelfths_push {
 	left: 66.666%
 }
+
 .nine_twelfths_push {
 	left: 75%
 }
+
 .ten_twelfths_push {
 	left: 83.3334%
 }
+
 .eleven_twelfths_push {
 	left: 91.666%
 }
-/*Offset Starts here...*/
+
+/*	
+==============================================================
+Grid Offset CSS Starts here...
+*/
 
 .whole_offset {
 	margin-left: 100%
 }
+
 .one_half_offset {
 	margin-left: 50%
 }
+
 .one_third_offset {
 	margin-left: 33.3333%
 }
+
 .two_thirds_offset {
 	margin-left: 66.6667%
 }
+
 .one_fourth_offset {
 	margin-left: 25%
 }
+
 .three_fourths_offset {
 	margin-left: 75%
 }
+
 .one_fifth_offset {
 	margin-left: 20%
 }
+
 .two_fifths_offset {
 	margin-left: 40%
 }
+
 .three_fifths_offset {
 	margin-left: 60%
 }
+
 .four_fifths_offset {
 	margin-left: 80%
 }
+
 .one_sixth_offset {
 	margin-left: 16.6667%
 }
+
 .two_sixths_offset {
 	margin-left: 33.3333%
 }
+
 .three_sixths_offset {
 	margin-left: 50%
 }
+
 .four_sixths_offset {
 	margin-left: 66.6667%
 }
+
 .five_sixths_offset {
 	margin-left: 83.3333%
 }
+
 .one_eighth_offset {
 	margin-left: 12.5%
 }
+
 .two_eighths_offset {
 	margin-left: 25%
 }
+
 .three_eighths_offset {
 	margin-left: 37.5%
 }
+
 .four_eighths_offset {
 	margin-left: 50%
 }
+
 .five_eighths_offset {
 	margin-left: 62.5%
 }
+
 .six_eighths_offset {
 	margin-left: 75%
 }
+
 .seven_eighths_offset {
 	margin-left: 87.5%
 }
+
 .one_twelfth_offset {
 	margin-left: 8.333%
 }
+
 .two_twelfths_offset {
 	margin-left: 16.666%
 }
+
 .three_twelfths_offset {
 	margin-left: 25%
 }
+
 .four_twelfths_offset {
 	margin-left: 33.333%
 }
+
 .five_twelfths_offset {
 	margin-left: 41.6667%
 }
+
 .six_twelfths_offset {
 	margin-left: 50%
 }
+
 .seven_twelfths_offset {
 	margin-left: 58.3334%
 }
+
 .eight_twelfths_offset {
 	margin-left: 66.666%
 }
+
 .nine_twelfths_offset {
 	margin-left: 75%
 }
+
 .ten_twelfths_offset {
 	margin-left: 83.3334%
 }
+
 .eleven_twelfths_offset {
 	margin-left: 91.666%
 }
 
-/*Responsiveness small screen starts here...*/
+/*	
+==============================================================
+	=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+==============================================================
+	Small Screen CSS Starts here...
+*/
+
 @media (min-width: 600px) {
-/*Columns Starts here...*/
-.whole-sm, .one_half-sm, .one_third-sm, .two_thirds-sm, .one_fourth-sm, .three_fourths-sm, .one_fifth-sm, .two_fifths-sm, .three_fifths-sm, .four_fifths-sm, .one_sixth-sm, .two_sixths-sm, .three_sixths-sm, .four_sixths-sm, .five_sixths-sm, .one_eighth-sm, .two_eighths-sm, .three_eighths-sm, .four_eighths-sm, .five_eighths-sm, .six_eighths-sm, .seven_eighths-sm, .one_twelfth-sm, .two_twelfths-sm, .three_twelfths-sm, .four_twelfths-sm, .five_twelfths-sm, .six_twelfths-sm, .seven_twelfths-sm, .eight_twelfths-sm, .nine_twelfths-sm, .ten_twelfths-sm, .eleven_twelfths-sm {
-	float: left
-}
-.whole-sm {
-	width: 100%
-}
-.one_half-sm {
-	width: 50%
-}
-.one_third-sm {
-	width: 33.3333%
-}
-.two_thirds-sm {
-	width: 66.6667%
-}
-.one_fourth-sm {
-	width: 25%
-}
-.three_fourths-sm {
-	width: 75%
-}
-.one_fifth-sm {
-	width: 20%
-}
-.two_fifths-sm {
-	width: 40%
-}
-.three_fifths-sm {
-	width: 60%
-}
-.four_fifths-sm {
-	width: 80%
-}
-.one_sixth-sm {
-	width: 16.6667%
-}
-.two_sixths-sm {
-	width: 33.3333%
-}
-.three_sixths-sm {
-	width: 50%
-}
-.four_sixths-sm {
-	width: 66.6667%
-}
-.five_sixths-sm {
-	width: 83.3333%
-}
-.one_eighth-sm {
-	width: 12.5%
-}
-.two_eighths-sm {
-	width: 25%
-}
-.three_eighths-sm {
-	width: 37.5%
-}
-.four_eighths-sm {
-	width: 50%
-}
-.five_eighths-sm {
-	width: 62.5%
-}
-.six_eighths-sm {
-	width: 75%
-}
-.seven_eighths-sm {
-	width: 87.5%
-}
-.one_twelfth-sm {
-	width: 8.333%
-}
-.two_twelfths-sm {
-	width: 16.666%
-}
-.three_twelfths-sm {
-	width: 25%
-}
-.four_twelfths-sm {
-	width: 33.333%
-}
-.five_twelfths-sm {
-	width: 41.6667%
-}
-.six_twelfths-sm {
-	width: 50%
-}
-.seven_twelfths-sm {
-	width: 58.3334%
-}
-.eight_twelfths-sm {
-	width: 66.666%
-}
-.nine_twelfths-sm {
-	width: 75%
-}
-.ten_twelfths-sm {
-	width: 83.3334%
-}
-.eleven_twelfths-sm {
-	width: 91.666%
-}
-/*Pull Starts here...*/
+	.whole-sm, .one_half-sm, .one_third-sm, .two_thirds-sm, .one_fourth-sm, .three_fourths-sm, .one_fifth-sm, .two_fifths-sm, .three_fifths-sm, .four_fifths-sm, .one_sixth-sm, .two_sixths-sm, .three_sixths-sm, .four_sixths-sm, .five_sixths-sm, .one_eighth-sm, .two_eighths-sm, .three_eighths-sm, .four_eighths-sm, .five_eighths-sm, .six_eighths-sm, .seven_eighths-sm, .one_twelfth-sm, .two_twelfths-sm, .three_twelfths-sm, .four_twelfths-sm, .five_twelfths-sm, .six_twelfths-sm, .seven_twelfths-sm, .eight_twelfths-sm, .nine_twelfths-sm, .ten_twelfths-sm, .eleven_twelfths-sm {
+		float: left
+	}
+	.whole-sm {
+		width: 100%
+	}
+	.one_half-sm {
+		width: 50%
+	}
+	.one_third-sm {
+		width: 33.3333%
+	}
+	.two_thirds-sm {
+		width: 66.6667%
+	}
+	.one_fourth-sm {
+		width: 25%
+	}
+	.three_fourths-sm {
+		width: 75%
+	}
+	.one_fifth-sm {
+		width: 20%
+	}
+	.two_fifths-sm {
+		width: 40%
+	}
+	.three_fifths-sm {
+		width: 60%
+	}
+	.four_fifths-sm {
+		width: 80%
+	}
+	.one_sixth-sm {
+		width: 16.6667%
+	}
+	.two_sixths-sm {
+		width: 33.3333%
+	}
+	.three_sixths-sm {
+		width: 50%
+	}
+	.four_sixths-sm {
+		width: 66.6667%
+	}
+	.five_sixths-sm {
+		width: 83.3333%
+	}
+	.one_eighth-sm {
+		width: 12.5%
+	}
+	.two_eighths-sm {
+		width: 25%
+	}
+	.three_eighths-sm {
+		width: 37.5%
+	}
+	.four_eighths-sm {
+		width: 50%
+	}
+	.five_eighths-sm {
+		width: 62.5%
+	}
+	.six_eighths-sm {
+		width: 75%
+	}
+	.seven_eighths-sm {
+		width: 87.5%
+	}
+	.one_twelfth-sm {
+		width: 8.333%
+	}
+	.two_twelfths-sm {
+		width: 16.666%
+	}
+	.three_twelfths-sm {
+		width: 25%
+	}
+	.four_twelfths-sm {
+		width: 33.333%
+	}
+	.five_twelfths-sm {
+		width: 41.6667%
+	}
+	.six_twelfths-sm {
+		width: 50%
+	}
+	.seven_twelfths-sm {
+		width: 58.3334%
+	}
+	.eight_twelfths-sm {
+		width: 66.666%
+	}
+	.nine_twelfths-sm {
+		width: 75%
+	}
+	.ten_twelfths-sm {
+		width: 83.3334%
+	}
+	.eleven_twelfths-sm {
+		width: 91.666%
+	}
+	/*	
+	==============================================================
+	Grid Pull SM CSS Starts here...
+	*/
 	.whole_pull-sm {
-	right: 100%
-}
-.one_half_pull-sm {
-	right: 50%
-}
-.one_third_pull-sm {
-	right: 33.3333%
-}
-.two_thirds_pull-sm {
-	right: 66.6667%
-}
-.one_fourth_pull-sm {
-	right: 25%
-}
-.three_fourths_pull-sm {
-	right: 75%
-}
-.one_fifth_pull-sm {
-	right: 20%
-}
-.two_fifths_pull-sm {
-	right: 40%
-}
-.three_fifths_pull-sm {
-	right: 60%
-}
-.four_fifths_pull-sm {
-	right: 80%
-}
-.one_sixth_pull-sm {
-	right: 16.6667%
-}
-.two_sixths_pull-sm {
-	right: 33.3333%
-}
-.three_sixths_pull-sm {
-	right: 50%
-}
-.four_sixths_pull-sm {
-	right: 66.6667%
-}
-.five_sixths_pull-sm {
-	right: 83.3333%
-}
-.one_eighth_pull-sm {
-	right: 12.5%
-}
-.two_eighths_pull-sm {
-	right: 25%
-}
-.three_eighths_pull-sm {
-	right: 37.5%
-}
-.four_eighths_pull-sm {
-	right: 50%
-}
-.five_eighths_pull-sm {
-	right: 62.5%
-}
-.six_eighths_pull-sm {
-	right: 75%
-}
-.seven_eighths_pull-sm {
-	right: 87.5%
-}
-.one_twelfth_pull-sm {
-	right: 8.333%
-}
-.two_twelfths_pull-sm {
-	right: 16.666%
-}
-.three_twelfths_pull-sm {
-	right: 25%
-}
-.four_twelftsh_pull-sm {
-	right: 33.333%
-}
-.five_twelfths_pull-sm {
-	right: 41.6667%
-}
-.six_twelfths_pull-sm {
-	right: 50%
-}
-.seven_twelfths_pull-sm {
-	right: 58.3334%
-}
-.eight_twelfths_pull-sm {
-	right: 66.666%
-}
-.nine_twelfths_pull-sm {
-	right: 75%
-}
-.ten_twelfths_pull-sm {
-	right: 83.3334%
-}
-.eleven_twelfths_pull-sm {
-	right: 91.666%
-}
-/*Push Starts here...*/
-.whole_push-sm {
-	left: 100%
-}
-.one_half_push-sm {
-	left: 50%
-}
-.one_third_push-sm {
-	left: 33.3333%
-}
-.two_thirds_push-sm {
-	left: 66.6667%
-}
-.one_fourth_push-sm {
-	left: 25%
-}
-.three_fourths_push-sm {
-	left: 75%
-}
-.one_fifth_push-sm {
-	left: 20%
-}
-.two_fifths_push-sm {
-	left: 40%
-}
-.three_fifths_push-sm {
-	left: 60%
-}
-.four_fifths_push-sm {
-	left: 80%
-}
-.one_sixth_push-sm {
-	left: 16.6667%
-}
-.two_sixths_push-sm {
-	left: 33.3333%
-}
-.three_sixths_push-sm {
-	left: 50%
-}
-.four_sixths_push-sm {
-	left: 66.6667%
-}
-.five_sixths_push-sm {
-	left: 83.3333%
-}
-.one_eighth_push-sm {
-	left: 12.5%
-}
-.two_eighths_push-sm {
-	left: 25%
-}
-.three_eighths_push-sm {
-	left: 37.5%
-}
-.four_eighths_push-sm {
-	left: 50%
-}
-.five_eighths_push-sm {
-	left: 62.5%
-}
-.six_eighths_push-sm {
-	left: 75%
-}
-.seven_eighths_push-sm {
-	left: 87.5%
-}
-.one_twelfth_push-sm {
-	left: 8.333%
-}
-.two_twelfths_push-sm {
-	left: 16.666%
-}
-.three_twelfths_push-sm {
-	left: 25%
-}
-.four_twelfths_push-sm {
-	left: 33.333%
-}
-.five_twelfths_push-sm {
-	left: 41.6667%
-}
-.six_twelfths_push-sm {
-	left: 50%
-}
-.seven_twelfths_push-sm {
-	left: 58.3334%
-}
-.eight_twelfths_push-sm {
-	left: 66.666%
-}
-.nine_twelfths_push-sm {
-	left: 75%
-}
-.ten_twelfths_push-sm {
-	left: 83.3334%
-}
-.eleven_twelfths_push-sm {
-	left: 91.666%
-}
-/*Offset Starts here...*/
+		right: 100%
+	}
+	.one_half_pull-sm {
+		right: 50%
+	}
+	.one_third_pull-sm {
+		right: 33.3333%
+	}
+	.two_thirds_pull-sm {
+		right: 66.6667%
+	}
+	.one_fourth_pull-sm {
+		right: 25%
+	}
+	.three_fourths_pull-sm {
+		right: 75%
+	}
+	.one_fifth_pull-sm {
+		right: 20%
+	}
+	.two_fifths_pull-sm {
+		right: 40%
+	}
+	.three_fifths_pull-sm {
+		right: 60%
+	}
+	.four_fifths_pull-sm {
+		right: 80%
+	}
+	.one_sixth_pull-sm {
+		right: 16.6667%
+	}
+	.two_sixths_pull-sm {
+		right: 33.3333%
+	}
+	.three_sixths_pull-sm {
+		right: 50%
+	}
+	.four_sixths_pull-sm {
+		right: 66.6667%
+	}
+	.five_sixths_pull-sm {
+		right: 83.3333%
+	}
+	.one_eighth_pull-sm {
+		right: 12.5%
+	}
+	.two_eighths_pull-sm {
+		right: 25%
+	}
+	.three_eighths_pull-sm {
+		right: 37.5%
+	}
+	.four_eighths_pull-sm {
+		right: 50%
+	}
+	.five_eighths_pull-sm {
+		right: 62.5%
+	}
+	.six_eighths_pull-sm {
+		right: 75%
+	}
+	.seven_eighths_pull-sm {
+		right: 87.5%
+	}
+	.one_twelfth_pull-sm {
+		right: 8.333%
+	}
+	.two_twelfths_pull-sm {
+		right: 16.666%
+	}
+	.three_twelfths_pull-sm {
+		right: 25%
+	}
+	.four_twelftsh_pull-sm {
+		right: 33.333%
+	}
+	.five_twelfths_pull-sm {
+		right: 41.6667%
+	}
+	.six_twelfths_pull-sm {
+		right: 50%
+	}
+	.seven_twelfths_pull-sm {
+		right: 58.3334%
+	}
+	.eight_twelfths_pull-sm {
+		right: 66.666%
+	}
+	.nine_twelfths_pull-sm {
+		right: 75%
+	}
+	.ten_twelfths_pull-sm {
+		right: 83.3334%
+	}
+	.eleven_twelfths_pull-sm {
+		right: 91.666%
+	}
+	/*	
+	==============================================================
+	Grid Push SM CSS Starts here...
+	*/
+	.whole_push-sm {
+		left: 100%
+	}
+	.one_half_push-sm {
+		left: 50%
+	}
+	.one_third_push-sm {
+		left: 33.3333%
+	}
+	.two_thirds_push-sm {
+		left: 66.6667%
+	}
+	.one_fourth_push-sm {
+		left: 25%
+	}
+	.three_fourths_push-sm {
+		left: 75%
+	}
+	.one_fifth_push-sm {
+		left: 20%
+	}
+	.two_fifths_push-sm {
+		left: 40%
+	}
+	.three_fifths_push-sm {
+		left: 60%
+	}
+	.four_fifths_push-sm {
+		left: 80%
+	}
+	.one_sixth_push-sm {
+		left: 16.6667%
+	}
+	.two_sixths_push-sm {
+		left: 33.3333%
+	}
+	.three_sixths_push-sm {
+		left: 50%
+	}
+	.four_sixths_push-sm {
+		left: 66.6667%
+	}
+	.five_sixths_push-sm {
+		left: 83.3333%
+	}
+	.one_eighth_push-sm {
+		left: 12.5%
+	}
+	.two_eighths_push-sm {
+		left: 25%
+	}
+	.three_eighths_push-sm {
+		left: 37.5%
+	}
+	.four_eighths_push-sm {
+		left: 50%
+	}
+	.five_eighths_push-sm {
+		left: 62.5%
+	}
+	.six_eighths_push-sm {
+		left: 75%
+	}
+	.seven_eighths_push-sm {
+		left: 87.5%
+	}
+	.one_twelfth_push-sm {
+		left: 8.333%
+	}
+	.two_twelfths_push-sm {
+		left: 16.666%
+	}
+	.three_twelfths_push-sm {
+		left: 25%
+	}
+	.four_twelfths_push-sm {
+		left: 33.333%
+	}
+	.five_twelfths_push-sm {
+		left: 41.6667%
+	}
+	.six_twelfths_push-sm {
+		left: 50%
+	}
+	.seven_twelfths_push-sm {
+		left: 58.3334%
+	}
+	.eight_twelfths_push-sm {
+		left: 66.666%
+	}
+	.nine_twelfths_push-sm {
+		left: 75%
+	}
+	.ten_twelfths_push-sm {
+		left: 83.3334%
+	}
+	.eleven_twelfths_push-sm {
+		left: 91.666%
+	}
+	/*	
+	==============================================================
+	Grid Offset SM CSS Starts here...
+	*/
 	.whole_offset-sm {
-	margin-left: 100%
-}
-.one_half_offset-sm {
-	margin-left: 50%
-}
-.one_third_offset-sm {
-	margin-left: 33.3333%
-}
-.two_thirds_offset-sm {
-	margin-left: 66.6667%
-}
-.one_fourth_offset-sm {
-	margin-left: 25%
-}
-.three_fourths_offset-sm {
-	margin-left: 75%
-}
-.one_fifth_offset-sm {
-	margin-left: 20%
-}
-.two_fifths_offset-sm {
-	margin-left: 40%
-}
-.three_fifths_offset-sm {
-	margin-left: 60%
-}
-.four_fifths_offset-sm {
-	margin-left: 80%
-}
-.one_sixth_offset-sm {
-	margin-left: 16.6667%
-}
-.two_sixths_offset-sm {
-	margin-left: 33.3333%
-}
-.three_sixths_offset-sm {
-	margin-left: 50%
-}
-.four_sixths_offset-sm {
-	margin-left: 66.6667%
-}
-.five_sixths_offset-sm {
-	margin-left: 83.3333%
-}
-.one_eighth_offset-sm {
-	margin-left: 12.5%
-}
-.two_eighths_offset-sm {
-	margin-left: 25%
-}
-.three_eighths_offset-sm {
-	margin-left: 37.5%
-}
-.four_eighths_offset-sm {
-	margin-left: 50%
-}
-.five_eighths_offset-sm {
-	margin-left: 62.5%
-}
-.six_eighths_offset-sm {
-	margin-left: 75%
-}
-.seven_eighths_offset-sm {
-	margin-left: 87.5%
-}
-.one_twelfth_offset-sm {
-	margin-left: 8.333%
-}
-.two_twelfths_offset-sm {
-	margin-left: 16.666%
-}
-.three_twelfths_offset-sm {
-	margin-left: 25%
-}
-.four_twelfths_offset-sm {
-	margin-left: 33.333%
-}
-.five_twelfths_offset-sm {
-	margin-left: 41.6667%
-}
-.six_twelfths_offset-sm {
-	margin-left: 50%
-}
-.seven_twelfths_offset-sm {
-	margin-left: 58.3334%
-}
-.eight_twelfths_offset-sm {
-	margin-left: 66.666%
-}
-.nine_twelfths_offset-sm {
-	margin-left: 75%
-}
-.ten_twelftsh_offset-sm {
-	margin-left: 83.3334%
-}
-.eleven_twelfths_offset-sm {
-	margin-left: 91.666%
-}
+		margin-left: 100%
+	}
+	.one_half_offset-sm {
+		margin-left: 50%
+	}
+	.one_third_offset-sm {
+		margin-left: 33.3333%
+	}
+	.two_thirds_offset-sm {
+		margin-left: 66.6667%
+	}
+	.one_fourth_offset-sm {
+		margin-left: 25%
+	}
+	.three_fourths_offset-sm {
+		margin-left: 75%
+	}
+	.one_fifth_offset-sm {
+		margin-left: 20%
+	}
+	.two_fifths_offset-sm {
+		margin-left: 40%
+	}
+	.three_fifths_offset-sm {
+		margin-left: 60%
+	}
+	.four_fifths_offset-sm {
+		margin-left: 80%
+	}
+	.one_sixth_offset-sm {
+		margin-left: 16.6667%
+	}
+	.two_sixths_offset-sm {
+		margin-left: 33.3333%
+	}
+	.three_sixths_offset-sm {
+		margin-left: 50%
+	}
+	.four_sixths_offset-sm {
+		margin-left: 66.6667%
+	}
+	.five_sixths_offset-sm {
+		margin-left: 83.3333%
+	}
+	.one_eighth_offset-sm {
+		margin-left: 12.5%
+	}
+	.two_eighths_offset-sm {
+		margin-left: 25%
+	}
+	.three_eighths_offset-sm {
+		margin-left: 37.5%
+	}
+	.four_eighths_offset-sm {
+		margin-left: 50%
+	}
+	.five_eighths_offset-sm {
+		margin-left: 62.5%
+	}
+	.six_eighths_offset-sm {
+		margin-left: 75%
+	}
+	.seven_eighths_offset-sm {
+		margin-left: 87.5%
+	}
+	.one_twelfth_offset-sm {
+		margin-left: 8.333%
+	}
+	.two_twelfths_offset-sm {
+		margin-left: 16.666%
+	}
+	.three_twelfths_offset-sm {
+		margin-left: 25%
+	}
+	.four_twelfths_offset-sm {
+		margin-left: 33.333%
+	}
+	.five_twelfths_offset-sm {
+		margin-left: 41.6667%
+	}
+	.six_twelfths_offset-sm {
+		margin-left: 50%
+	}
+	.seven_twelfths_offset-sm {
+		margin-left: 58.3334%
+	}
+	.eight_twelfths_offset-sm {
+		margin-left: 66.666%
+	}
+	.nine_twelfths_offset-sm {
+		margin-left: 75%
+	}
+	.ten_twelftsh_offset-sm {
+		margin-left: 83.3334%
+	}
+	.eleven_twelfths_offset-sm {
+		margin-left: 91.666%
+	}
 }
 
-
-/*Responsiveness medium screen starts here...*/
+/*	
+==============================================================
+	=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+==============================================================
+	Medium Screen CSS Starts here...
+*/
 
 @media (min-width: 900px) {
-/*Columns Starts here...*/
-.whole-md, .one_half-md, .one_third-md, .two_thirds-md, .one_fourth-md, .three_fourths-md, .one_fifth-md, .two_fifths-md, .three_fifths-md, .four_fifths-md, .one_sixth-md, .two_sixths-md, .three_sixths-md, .four_sixths-md, .five_sixths-md, .one_eighth-md, .two_eighths-md, .three_eighths-md, .four_eighths-md, .five_eighths-md, .six_eighths-md, .seven_eighths-md, .one_twelfth-md, .two_twelfths-md, .three_twelfths-md, .four_twelfths-md, .five_twelfths-md, .six_twelfths-md, .seven_twelfths-md, .eight_twelfths-md, .nine_twelfths-md, .ten_twelfths-md, .eleven_twelfths-md {
-	float: left
-}
-.whole-md {
-	width: 100%
-}
-.one_half-md {
-	width: 50%
-}
-.one_third-md {
-	width: 33.3333%
-}
-.two_thirds-md {
-	width: 66.6667%
-}
-.one_fourth-md {
-	width: 25%
-}
-.three_fourths-md {
-	width: 75%
-}
-.one_fifth-md {
-	width: 20%
-}
-.two_fifths-md {
-	width: 40%
-}
-.three_fifths-md {
-	width: 60%
-}
-.four_fifths-md {
-	width: 80%
-}
-.one_sixth-md {
-	width: 16.6667%
-}
-.two_sixths-md {
-	width: 33.3333%
-}
-.three_sixths-md {
-	width: 50%
-}
-.four_sixths-md {
-	width: 66.6667%
-}
-.five_sixths-md {
-	width: 83.3333%
-}
-.one_eighth-md {
-	width: 12.5%
-}
-.two_eighths-md {
-	width: 25%
-}
-.three_eighths-md {
-	width: 37.5%
-}
-.four_eighths-md {
-	width: 50%
-}
-.five_eighths-md {
-	width: 62.5%
-}
-.six_eighths-md {
-	width: 75%
-}
-.seven_eighths-md {
-	width: 87.5%
-}
-.one_twelfth-md {
-	width: 8.333%
-}
-.two_twelfths-md {
-	width: 16.666%
-}
-.three_twelfths-md {
-	width: 25%
-}
-.four_twelfths-md {
-	width: 33.333%
-}
-.five_twelfths-md {
-	width: 41.6667%
-}
-.six_twelfths-md {
-	width: 50%
-}
-.seven_twelfths-md {
-	width: 58.3334%
-}
-.eight_twelfths-md {
-	width: 66.666%
-}
-.nine_twelfths-md {
-	width: 75%
-}
-.ten_twelfths-md {
-	width: 83.3334%
-}
-.eleven_twelfths-md {
-	width: 91.666%
-}
-/*Pull Starts here...*/
+	.whole-md, .one_half-md, .one_third-md, .two_thirds-md, .one_fourth-md, .three_fourths-md, .one_fifth-md, .two_fifths-md, .three_fifths-md, .four_fifths-md, .one_sixth-md, .two_sixths-md, .three_sixths-md, .four_sixths-md, .five_sixths-md, .one_eighth-md, .two_eighths-md, .three_eighths-md, .four_eighths-md, .five_eighths-md, .six_eighths-md, .seven_eighths-md, .one_twelfth-md, .two_twelfths-md, .three_twelfths-md, .four_twelfths-md, .five_twelfths-md, .six_twelfths-md, .seven_twelfths-md, .eight_twelfths-md, .nine_twelfths-md, .ten_twelfths-md, .eleven_twelfths-md {
+		float: left
+	}
+	.whole-md {
+		width: 100%
+	}
+	.one_half-md {
+		width: 50%
+	}
+	.one_third-md {
+		width: 33.3333%
+	}
+	.two_thirds-md {
+		width: 66.6667%
+	}
+	.one_fourth-md {
+		width: 25%
+	}
+	.three_fourths-md {
+		width: 75%
+	}
+	.one_fifth-md {
+		width: 20%
+	}
+	.two_fifths-md {
+		width: 40%
+	}
+	.three_fifths-md {
+		width: 60%
+	}
+	.four_fifths-md {
+		width: 80%
+	}
+	.one_sixth-md {
+		width: 16.6667%
+	}
+	.two_sixths-md {
+		width: 33.3333%
+	}
+	.three_sixths-md {
+		width: 50%
+	}
+	.four_sixths-md {
+		width: 66.6667%
+	}
+	.five_sixths-md {
+		width: 83.3333%
+	}
+	.one_eighth-md {
+		width: 12.5%
+	}
+	.two_eighths-md {
+		width: 25%
+	}
+	.three_eighths-md {
+		width: 37.5%
+	}
+	.four_eighths-md {
+		width: 50%
+	}
+	.five_eighths-md {
+		width: 62.5%
+	}
+	.six_eighths-md {
+		width: 75%
+	}
+	.seven_eighths-md {
+		width: 87.5%
+	}
+	.one_twelfth-md {
+		width: 8.333%
+	}
+	.two_twelfths-md {
+		width: 16.666%
+	}
+	.three_twelfths-md {
+		width: 25%
+	}
+	.four_twelfths-md {
+		width: 33.333%
+	}
+	.five_twelfths-md {
+		width: 41.6667%
+	}
+	.six_twelfths-md {
+		width: 50%
+	}
+	.seven_twelfths-md {
+		width: 58.3334%
+	}
+	.eight_twelfths-md {
+		width: 66.666%
+	}
+	.nine_twelfths-md {
+		width: 75%
+	}
+	.ten_twelfths-md {
+		width: 83.3334%
+	}
+	.eleven_twelfths-md {
+		width: 91.666%
+	}
+	/*	
+	==============================================================
+	Grid Pull MD CSS Starts here...
+	*/
 	.whole_pull-md {
-	right: 100%
-}
-.one_half_pull-md {
-	right: 50%
-}
-.one_third_pull-md {
-	right: 33.3333%
-}
-.two_thirds_pull-md {
-	right: 66.6667%
-}
-.one_fourth_pull-md {
-	right: 25%
-}
-.three_fourths_pull-md {
-	right: 75%
-}
-.one_fifth_pull-md {
-	right: 20%
-}
-.two_fifths_pull-md {
-	right: 40%
-}
-.three_fifths_pull-md {
-	right: 60%
-}
-.four_fifths_pull-md {
-	right: 80%
-}
-.one_sixth_pull-md {
-	right: 16.6667%
-}
-.two_sixths_pull-md {
-	right: 33.3333%
-}
-.three_sixths_pull-md {
-	right: 50%
-}
-.four_sixths_pull-md {
-	right: 66.6667%
-}
-.five_sixths_pull-md {
-	right: 83.3333%
-}
-.one_eighth_pull-md {
-	right: 12.5%
-}
-.two_eighths_pull-md {
-	right: 25%
-}
-.three_eighths_pull-md {
-	right: 37.5%
-}
-.four_eighths_pull-md {
-	right: 50%
-}
-.five_eighths_pull-md {
-	right: 62.5%
-}
-.six_eighths_pull-md {
-	right: 75%
-}
-.seven_eighths_pull-md {
-	right: 87.5%
-}
-.one_twelfth_pull-md {
-	right: 8.333%
-}
-.two_twelfths_pull-md {
-	right: 16.666%
-}
-.three_twelfths_pull-md {
-	right: 25%
-}
-.four_twelftsh_pull-md {
-	right: 33.333%
-}
-.five_twelfths_pull-md {
-	right: 41.6667%
-}
-.six_twelfths_pull-md {
-	right: 50%
-}
-.seven_twelfths_pull-md {
-	right: 58.3334%
-}
-.eight_twelfths_pull-md {
-	right: 66.666%
-}
-.nine_twelfths_pull-md {
-	right: 75%
-}
-.ten_twelfths_pull-md {
-	right: 83.3334%
-}
-.eleven_twelfths_pull-md {
-	right: 91.666%
-}
-/*Push Starts here...*/
+		right: 100%
+	}
+	.one_half_pull-md {
+		right: 50%
+	}
+	.one_third_pull-md {
+		right: 33.3333%
+	}
+	.two_thirds_pull-md {
+		right: 66.6667%
+	}
+	.one_fourth_pull-md {
+		right: 25%
+	}
+	.three_fourths_pull-md {
+		right: 75%
+	}
+	.one_fifth_pull-md {
+		right: 20%
+	}
+	.two_fifths_pull-md {
+		right: 40%
+	}
+	.three_fifths_pull-md {
+		right: 60%
+	}
+	.four_fifths_pull-md {
+		right: 80%
+	}
+	.one_sixth_pull-md {
+		right: 16.6667%
+	}
+	.two_sixths_pull-md {
+		right: 33.3333%
+	}
+	.three_sixths_pull-md {
+		right: 50%
+	}
+	.four_sixths_pull-md {
+		right: 66.6667%
+	}
+	.five_sixths_pull-md {
+		right: 83.3333%
+	}
+	.one_eighth_pull-md {
+		right: 12.5%
+	}
+	.two_eighths_pull-md {
+		right: 25%
+	}
+	.three_eighths_pull-md {
+		right: 37.5%
+	}
+	.four_eighths_pull-md {
+		right: 50%
+	}
+	.five_eighths_pull-md {
+		right: 62.5%
+	}
+	.six_eighths_pull-md {
+		right: 75%
+	}
+	.seven_eighths_pull-md {
+		right: 87.5%
+	}
+	.one_twelfth_pull-md {
+		right: 8.333%
+	}
+	.two_twelfths_pull-md {
+		right: 16.666%
+	}
+	.three_twelfths_pull-md {
+		right: 25%
+	}
+	.four_twelftsh_pull-md {
+		right: 33.333%
+	}
+	.five_twelfths_pull-md {
+		right: 41.6667%
+	}
+	.six_twelfths_pull-md {
+		right: 50%
+	}
+	.seven_twelfths_pull-md {
+		right: 58.3334%
+	}
+	.eight_twelfths_pull-md {
+		right: 66.666%
+	}
+	.nine_twelfths_pull-md {
+		right: 75%
+	}
+	.ten_twelfths_pull-md {
+		right: 83.3334%
+	}
+	.eleven_twelfths_pull-md {
+		right: 91.666%
+	}
+	/*
+	==============================================================	
+	Grid Push MD CSS Starts here...
+	*/
 	.whole_push-md {
-	left: 100%
-}
-.one_half_push-md {
-	left: 50%
-}
-.one_third_push-md {
-	left: 33.3333%
-}
-.two_thirds_push-md {
-	left: 66.6667%
-}
-.one_fourth_push-md {
-	left: 25%
-}
-.three_fourths_push-md {
-	left: 75%
-}
-.one_fifth_push-md {
-	left: 20%
-}
-.two_fifths_push-md {
-	left: 40%
-}
-.three_fifths_push-md {
-	left: 60%
-}
-.four_fifths_push-md {
-	left: 80%
-}
-.one_sixth_push-md {
-	left: 16.6667%
-}
-.two_sixths_push-md {
-	left: 33.3333%
-}
-.three_sixths_push-md {
-	left: 50%
-}
-.four_sixths_push-md {
-	left: 66.6667%
-}
-.five_sixths_push-md {
-	left: 83.3333%
-}
-.one_eighth_push-md {
-	left: 12.5%
-}
-.two_eighths_push-md {
-	left: 25%
-}
-.three_eighths_push-md {
-	left: 37.5%
-}
-.four_eighths_push-md {
-	left: 50%
-}
-.five_eighths_push-md {
-	left: 62.5%
-}
-.six_eighths_push-md {
-	left: 75%
-}
-.seven_eighths_push-md {
-	left: 87.5%
-}
-.one_twelfth_push-md {
-	left: 8.333%
-}
-.two_twelfths_push-md {
-	left: 16.666%
-}
-.three_twelfths_push-md {
-	left: 25%
-}
-.four_twelfths_push-md {
-	left: 33.333%
-}
-.five_twelfths_push-md {
-	left: 41.6667%
-}
-.six_twelfths_push-md {
-	left: 50%
-}
-.seven_twelfths_push-md {
-	left: 58.3334%
-}
-.eight_twelfths_push-md {
-	left: 66.666%
-}
-.nine_twelfths_push-md {
-	left: 75%
-}
-.ten_twelfths_push-md {
-	left: 83.3334%
-}
-.eleven_twelfths_push-md {
-	left: 91.666%
-}
-/*Offset Starts here...*/
+		left: 100%
+	}
+	.one_half_push-md {
+		left: 50%
+	}
+	.one_third_push-md {
+		left: 33.3333%
+	}
+	.two_thirds_push-md {
+		left: 66.6667%
+	}
+	.one_fourth_push-md {
+		left: 25%
+	}
+	.three_fourths_push-md {
+		left: 75%
+	}
+	.one_fifth_push-md {
+		left: 20%
+	}
+	.two_fifths_push-md {
+		left: 40%
+	}
+	.three_fifths_push-md {
+		left: 60%
+	}
+	.four_fifths_push-md {
+		left: 80%
+	}
+	.one_sixth_push-md {
+		left: 16.6667%
+	}
+	.two_sixths_push-md {
+		left: 33.3333%
+	}
+	.three_sixths_push-md {
+		left: 50%
+	}
+	.four_sixths_push-md {
+		left: 66.6667%
+	}
+	.five_sixths_push-md {
+		left: 83.3333%
+	}
+	.one_eighth_push-md {
+		left: 12.5%
+	}
+	.two_eighths_push-md {
+		left: 25%
+	}
+	.three_eighths_push-md {
+		left: 37.5%
+	}
+	.four_eighths_push-md {
+		left: 50%
+	}
+	.five_eighths_push-md {
+		left: 62.5%
+	}
+	.six_eighths_push-md {
+		left: 75%
+	}
+	.seven_eighths_push-md {
+		left: 87.5%
+	}
+	.one_twelfth_push-md {
+		left: 8.333%
+	}
+	.two_twelfths_push-md {
+		left: 16.666%
+	}
+	.three_twelfths_push-md {
+		left: 25%
+	}
+	.four_twelfths_push-md {
+		left: 33.333%
+	}
+	.five_twelfths_push-md {
+		left: 41.6667%
+	}
+	.six_twelfths_push-md {
+		left: 50%
+	}
+	.seven_twelfths_push-md {
+		left: 58.3334%
+	}
+	.eight_twelfths_push-md {
+		left: 66.666%
+	}
+	.nine_twelfths_push-md {
+		left: 75%
+	}
+	.ten_twelfths_push-md {
+		left: 83.3334%
+	}
+	.eleven_twelfths_push-md {
+		left: 91.666%
+	}
+	/*	
+	==============================================================
+	Grid Offset MD CSS Starts here...
+	*/
 	.whole_offset-md {
-	margin-left: 100%
-}
-.one_half_offset-md {
-	margin-left: 50%
-}
-.one_third_offset-md {
-	margin-left: 33.3333%
-}
-.two_thirds_offset-md {
-	margin-left: 66.6667%
-}
-.one_fourth_offset-md {
-	margin-left: 25%
-}
-.three_fourths_offset-md {
-	margin-left: 75%
-}
-.one_fifth_offset-md {
-	margin-left: 20%
-}
-.two_fifths_offset-md {
-	margin-left: 40%
-}
-.three_fifths_offset-md {
-	margin-left: 60%
-}
-.four_fifths_offset-md {
-	margin-left: 80%
-}
-.one_sixth_offset-md {
-	margin-left: 16.6667%
-}
-.two_sixths_offset-md {
-	margin-left: 33.3333%
-}
-.three_sixths_offset-md {
-	margin-left: 50%
-}
-.four_sixths_offset-md {
-	margin-left: 66.6667%
-}
-.five_sixths_offset-md {
-	margin-left: 83.3333%
-}
-.one_eighth_offset-md {
-	margin-left: 12.5%
-}
-.two_eighths_offset-md {
-	margin-left: 25%
-}
-.three_eighths_offset-md {
-	margin-left: 37.5%
-}
-.four_eighths_offset-md {
-	margin-left: 50%
-}
-.five_eighths_offset-md {
-	margin-left: 62.5%
-}
-.six_eighths_offset-md {
-	margin-left: 75%
-}
-.seven_eighths_offset-md {
-	margin-left: 87.5%
-}
-.one_twelfth_offset-md {
-	margin-left: 8.333%
-}
-.two_twelfths_offset-md {
-	margin-left: 16.666%
-}
-.three_twelfths_offset-md {
-	margin-left: 25%
-}
-.four_twelfths_offset-md {
-	margin-left: 33.333%
-}
-.five_twelfths_offset-md {
-	margin-left: 41.6667%
-}
-.six_twelfths_offset-md {
-	margin-left: 50%
-}
-.seven_twelfths_offset-md {
-	margin-left: 58.3334%
-}
-.eight_twelfths_offset-md {
-	margin-left: 66.666%
-}
-.nine_twelfths_offset-md {
-	margin-left: 75%
-}
-.ten_twelftsh_offset-md {
-	margin-left: 83.3334%
-}
-.eleven_twelfths_offset-md {
-	margin-left: 91.666%
-}
+		margin-left: 100%
+	}
+	.one_half_offset-md {
+		margin-left: 50%
+	}
+	.one_third_offset-md {
+		margin-left: 33.3333%
+	}
+	.two_thirds_offset-md {
+		margin-left: 66.6667%
+	}
+	.one_fourth_offset-md {
+		margin-left: 25%
+	}
+	.three_fourths_offset-md {
+		margin-left: 75%
+	}
+	.one_fifth_offset-md {
+		margin-left: 20%
+	}
+	.two_fifths_offset-md {
+		margin-left: 40%
+	}
+	.three_fifths_offset-md {
+		margin-left: 60%
+	}
+	.four_fifths_offset-md {
+		margin-left: 80%
+	}
+	.one_sixth_offset-md {
+		margin-left: 16.6667%
+	}
+	.two_sixths_offset-md {
+		margin-left: 33.3333%
+	}
+	.three_sixths_offset-md {
+		margin-left: 50%
+	}
+	.four_sixths_offset-md {
+		margin-left: 66.6667%
+	}
+	.five_sixths_offset-md {
+		margin-left: 83.3333%
+	}
+	.one_eighth_offset-md {
+		margin-left: 12.5%
+	}
+	.two_eighths_offset-md {
+		margin-left: 25%
+	}
+	.three_eighths_offset-md {
+		margin-left: 37.5%
+	}
+	.four_eighths_offset-md {
+		margin-left: 50%
+	}
+	.five_eighths_offset-md {
+		margin-left: 62.5%
+	}
+	.six_eighths_offset-md {
+		margin-left: 75%
+	}
+	.seven_eighths_offset-md {
+		margin-left: 87.5%
+	}
+	.one_twelfth_offset-md {
+		margin-left: 8.333%
+	}
+	.two_twelfths_offset-md {
+		margin-left: 16.666%
+	}
+	.three_twelfths_offset-md {
+		margin-left: 25%
+	}
+	.four_twelfths_offset-md {
+		margin-left: 33.333%
+	}
+	.five_twelfths_offset-md {
+		margin-left: 41.6667%
+	}
+	.six_twelfths_offset-md {
+		margin-left: 50%
+	}
+	.seven_twelfths_offset-md {
+		margin-left: 58.3334%
+	}
+	.eight_twelfths_offset-md {
+		margin-left: 66.666%
+	}
+	.nine_twelfths_offset-md {
+		margin-left: 75%
+	}
+	.ten_twelftsh_offset-md {
+		margin-left: 83.3334%
+	}
+	.eleven_twelfths_offset-md {
+		margin-left: 91.666%
+	}
 }
 
-/*Responsiveness large screen starts here...*/
+/*	
+==============================================================
+	=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+==============================================================
+	Large Screen CSS Starts here...
+*/
 
 @media (min-width: 1200px) {
-/*Columns Starts here...*/
 	.whole-lg, .one_half-lg, .one_third-lg, .two_thirds-lg, .one_fourth-lg, .three_fourths-lg, .one_fifth-lg, .two_fifths-lg, .three_fifths-lg, .four_fifths-lg, .one_sixth-lg, .two_sixths-lg, .three_sixths-lg, .four_sixths-lg, .five_sixths-lg, .one_eighth-lg, .two_eighths-lg, .three_eighths-lg, .four_eighths-lg, .five_eighths-lg, .six_eighths-lg, .seven_eighths-lg, .one_twelfth-lg, .two_twelfths-lg, .three_twelfths-lg, .four_twelfths-lg, .five_twelfths-lg, .six_twelfths-lg, .seven_twelfths-lg, .eight_twelfths-lg, .nine_twelfths-lg, .ten_twelfths-lg, .eleven_twelfths-lg {
-	float: left
-}
-.whole-lg {
-	width: 100%
-}
-.one_half-lg {
-	width: 50%
-}
-.one_third-lg {
-	width: 33.3333%
-}
-.two_thirds-lg {
-	width: 66.6667%
-}
-.one_fourth-lg {
-	width: 25%
-}
-.three_fourths-lg {
-	width: 75%
-}
-.one_fifth-lg {
-	width: 20%
-}
-.two_fifths-lg {
-	width: 40%
-}
-.three_fifths-lg {
-	width: 60%
-}
-.four_fifths-lg {
-	width: 80%
-}
-.one_sixth-lg {
-	width: 16.6667%
-}
-.two_sixths-lg {
-	width: 33.3333%
-}
-.three_sixths-lg {
-	width: 50%
-}
-.four_sixths-lg {
-	width: 66.6667%
-}
-.five_sixths-lg {
-	width: 83.3333%
-}
-.one_eighth-lg {
-	width: 12.5%
-}
-.two_eighths-lg {
-	width: 25%
-}
-.three_eighths-lg {
-	width: 37.5%
-}
-.four_eighths-lg {
-	width: 50%
-}
-.five_eighths-lg {
-	width: 62.5%
-}
-.six_eighths-lg {
-	width: 75%
-}
-.seven_eighths-lg {
-	width: 87.5%
-}
-.one_twelfth-lg {
-	width: 8.333%
-}
-.two_twelfths-lg {
-	width: 16.666%
-}
-.three_twelfths-lg {
-	width: 25%
-}
-.four_twelfths-lg {
-	width: 33.333%
-}
-.five_twelfths-lg {
-	width: 41.6667%
-}
-.six_twelfths-lg {
-	width: 50%
-}
-.seven_twelfths-lg {
-	width: 58.3334%
-}
-.eight_twelfths-lg {
-	width: 66.666%
-}
-.nine_twelfths-lg {
-	width: 75%
-}
-.ten_twelfths-lg {
-	width: 83.3334%
-}
-.eleven_twelfths-lg {
-	width: 91.666%
-}
-/*Pull Starts here...*/
+		float: left
+	}
+	.whole-lg {
+		width: 100%
+	}
+	.one_half-lg {
+		width: 50%
+	}
+	.one_third-lg {
+		width: 33.3333%
+	}
+	.two_thirds-lg {
+		width: 66.6667%
+	}
+	.one_fourth-lg {
+		width: 25%
+	}
+	.three_fourths-lg {
+		width: 75%
+	}
+	.one_fifth-lg {
+		width: 20%
+	}
+	.two_fifths-lg {
+		width: 40%
+	}
+	.three_fifths-lg {
+		width: 60%
+	}
+	.four_fifths-lg {
+		width: 80%
+	}
+	.one_sixth-lg {
+		width: 16.6667%
+	}
+	.two_sixths-lg {
+		width: 33.3333%
+	}
+	.three_sixths-lg {
+		width: 50%
+	}
+	.four_sixths-lg {
+		width: 66.6667%
+	}
+	.five_sixths-lg {
+		width: 83.3333%
+	}
+	.one_eighth-lg {
+		width: 12.5%
+	}
+	.two_eighths-lg {
+		width: 25%
+	}
+	.three_eighths-lg {
+		width: 37.5%
+	}
+	.four_eighths-lg {
+		width: 50%
+	}
+	.five_eighths-lg {
+		width: 62.5%
+	}
+	.six_eighths-lg {
+		width: 75%
+	}
+	.seven_eighths-lg {
+		width: 87.5%
+	}
+	.one_twelfth-lg {
+		width: 8.333%
+	}
+	.two_twelfths-lg {
+		width: 16.666%
+	}
+	.three_twelfths-lg {
+		width: 25%
+	}
+	.four_twelfths-lg {
+		width: 33.333%
+	}
+	.five_twelfths-lg {
+		width: 41.6667%
+	}
+	.six_twelfths-lg {
+		width: 50%
+	}
+	.seven_twelfths-lg {
+		width: 58.3334%
+	}
+	.eight_twelfths-lg {
+		width: 66.666%
+	}
+	.nine_twelfths-lg {
+		width: 75%
+	}
+	.ten_twelfths-lg {
+		width: 83.3334%
+	}
+	.eleven_twelfths-lg {
+		width: 91.666%
+	}
+	/*	
+	==============================================================
+	Grid Pull LG CSS Starts here...
+	*/
 	.whole_pull-lg {
-	right: 100%
-}
-.one_half_pull-lg {
-	right: 50%
-}
-.one_third_pull-lg {
-	right: 33.3333%
-}
-.two_thirds_pull-lg {
-	right: 66.6667%
-}
-.one_fourth_pull-lg {
-	right: 25%
-}
-.three_fourths_pull-lg {
-	right: 75%
-}
-.one_fifth_pull-lg {
-	right: 20%
-}
-.two_fifths_pull-lg {
-	right: 40%
-}
-.three_fifths_pull-lg {
-	right: 60%
-}
-.four_fifths_pull-lg {
-	right: 80%
-}
-.one_sixth_pull-lg {
-	right: 16.6667%
-}
-.two_sixths_pull-lg {
-	right: 33.3333%
-}
-.three_sixths_pull-lg {
-	right: 50%
-}
-.four_sixths_pull-lg {
-	right: 66.6667%
-}
-.five_sixths_pull-lg {
-	right: 83.3333%
-}
-.one_eighth_pull-lg {
-	right: 12.5%
-}
-.two_eighths_pull-lg {
-	right: 25%
-}
-.three_eighths_pull-lg {
-	right: 37.5%
-}
-.four_eighths_pull-lg {
-	right: 50%
-}
-.five_eighths_pull-lg {
-	right: 62.5%
-}
-.six_eighths_pull-lg {
-	right: 75%
-}
-.seven_eighths_pull-lg {
-	right: 87.5%
-}
-.one_twelfth_pull-lg {
-	right: 8.333%
-}
-.two_twelfths_pull-lg {
-	right: 16.666%
-}
-.three_twelfths_pull-lg {
-	right: 25%
-}
-.four_twelftsh_pull-lg {
-	right: 33.333%
-}
-.five_twelfths_pull-lg {
-	right: 41.6667%
-}
-.six_twelfths_pull-lg {
-	right: 50%
-}
-.seven_twelfths_pull-lg {
-	right: 58.3334%
-}
-.eight_twelfths_pull-lg {
-	right: 66.666%
-}
-.nine_twelfths_pull-lg {
-	right: 75%
-}
-.ten_twelfths_pull-lg {
-	right: 83.3334%
-}
-.eleven_twelfths_pull-lg {
-	right: 91.666%
-}
-/*Push Starts here...*/
+		right: 100%
+	}
+	.one_half_pull-lg {
+		right: 50%
+	}
+	.one_third_pull-lg {
+		right: 33.3333%
+	}
+	.two_thirds_pull-lg {
+		right: 66.6667%
+	}
+	.one_fourth_pull-lg {
+		right: 25%
+	}
+	.three_fourths_pull-lg {
+		right: 75%
+	}
+	.one_fifth_pull-lg {
+		right: 20%
+	}
+	.two_fifths_pull-lg {
+		right: 40%
+	}
+	.three_fifths_pull-lg {
+		right: 60%
+	}
+	.four_fifths_pull-lg {
+		right: 80%
+	}
+	.one_sixth_pull-lg {
+		right: 16.6667%
+	}
+	.two_sixths_pull-lg {
+		right: 33.3333%
+	}
+	.three_sixths_pull-lg {
+		right: 50%
+	}
+	.four_sixths_pull-lg {
+		right: 66.6667%
+	}
+	.five_sixths_pull-lg {
+		right: 83.3333%
+	}
+	.one_eighth_pull-lg {
+		right: 12.5%
+	}
+	.two_eighths_pull-lg {
+		right: 25%
+	}
+	.three_eighths_pull-lg {
+		right: 37.5%
+	}
+	.four_eighths_pull-lg {
+		right: 50%
+	}
+	.five_eighths_pull-lg {
+		right: 62.5%
+	}
+	.six_eighths_pull-lg {
+		right: 75%
+	}
+	.seven_eighths_pull-lg {
+		right: 87.5%
+	}
+	.one_twelfth_pull-lg {
+		right: 8.333%
+	}
+	.two_twelfths_pull-lg {
+		right: 16.666%
+	}
+	.three_twelfths_pull-lg {
+		right: 25%
+	}
+	.four_twelftsh_pull-lg {
+		right: 33.333%
+	}
+	.five_twelfths_pull-lg {
+		right: 41.6667%
+	}
+	.six_twelfths_pull-lg {
+		right: 50%
+	}
+	.seven_twelfths_pull-lg {
+		right: 58.3334%
+	}
+	.eight_twelfths_pull-lg {
+		right: 66.666%
+	}
+	.nine_twelfths_pull-lg {
+		right: 75%
+	}
+	.ten_twelfths_pull-lg {
+		right: 83.3334%
+	}
+	.eleven_twelfths_pull-lg {
+		right: 91.666%
+	}
+	/*	
+	==============================================================
+	Grid Push LG CSS Starts here...
+	*/
 	.whole_push-lg {
-	left: 100%
+		left: 100%
+	}
+	.one_half_push-lg {
+		left: 50%
+	}
+	.one_third_push-lg {
+		left: 33.3333%
+	}
+	.two_thirds_push-lg {
+		left: 66.6667%
+	}
+	.one_fourth_push-lg {
+		left: 25%
+	}
+	.three_fourths_push-lg {
+		left: 75%
+	}
+	.one_fifth_push-lg {
+		left: 20%
+	}
+	.two_fifths_push-lg {
+		left: 40%
+	}
+	.three_fifths_push-lg {
+		left: 60%
+	}
+	.four_fifths_push-lg {
+		left: 80%
+	}
+	.one_sixth_push-lg {
+		left: 16.6667%
+	}
+	.two_sixths_push-lg {
+		left: 33.3333%
+	}
+	.three_sixths_push-lg {
+		left: 50%
+	}
+	.four_sixths_push-lg {
+		left: 66.6667%
+	}
+	.five_sixths_push-lg {
+		left: 83.3333%
+	}
+	.one_eighth_push-lg {
+		left: 12.5%
+	}
+	.two_eighths_push-lg {
+		left: 25%
+	}
+	.three_eighths_push-lg {
+		left: 37.5%
+	}
+	.four_eighths_push-lg {
+		left: 50%
+	}
+	.five_eighths_push-lg {
+		left: 62.5%
+	}
+	.six_eighths_push-lg {
+		left: 75%
+	}
+	.seven_eighths_push-lg {
+		left: 87.5%
+	}
+	.one_twelfth_push-lg {
+		left: 8.333%
+	}
+	.two_twelfths_push-lg {
+		left: 16.666%
+	}
+	.three_twelfths_push-lg {
+		left: 25%
+	}
+	.four_twelfths_push-lg {
+		left: 33.333%
+	}
+	.five_twelfths_push-lg {
+		left: 41.6667%
+	}
+	.six_twelfths_push-lg {
+		left: 50%
+	}
+	.seven_twelfths_push-lg {
+		left: 58.3334%
+	}
+	.eight_twelfths_push-lg {
+		left: 66.666%
+	}
+	.nine_twelfths_push-lg {
+		left: 75%
+	}
+	.ten_twelfths_push-lg {
+		left: 83.3334%
+	}
+	.eleven_twelfths_push-lg {
+		left: 91.666%
+	}
+	/*	
+	==============================================================
+	Grid Offset LG CSS Starts here...
+	*/
+	.whole_offset-lg {
+		margin-left: 100%
+	}
+	.one_half_offset-lg {
+		margin-left: 50%
+	}
+	.one_third_offset-lg {
+		margin-left: 33.3333%
+	}
+	.two_thirds_offset-lg {
+		margin-left: 66.6667%
+	}
+	.one_fourth_offset-lg {
+		margin-left: 25%
+	}
+	.three_fourths_offset-lg {
+		margin-left: 75%
+	}
+	.one_fifth_offset-lg {
+		margin-left: 20%
+	}
+	.two_fifths_offset-lg {
+		margin-left: 40%
+	}
+	.three_fifths_offset-lg {
+		margin-left: 60%
+	}
+	.four_fifths_offset-lg {
+		margin-left: 80%
+	}
+	.one_sixth_offset-lg {
+		margin-left: 16.6667%
+	}
+	.two_sixths_offset-lg {
+		margin-left: 33.3333%
+	}
+	.three_sixths_offset-lg {
+		margin-left: 50%
+	}
+	.four_sixths_offset-lg {
+		margin-left: 66.6667%
+	}
+	.five_sixths_offset-lg {
+		margin-left: 83.3333%
+	}
+	.one_eighth_offset-lg {
+		margin-left: 12.5%
+	}
+	.two_eighths_offset-lg {
+		margin-left: 25%
+	}
+	.three_eighths_offset-lg {
+		margin-left: 37.5%
+	}
+	.four_eighths_offset-lg {
+		margin-left: 50%
+	}
+	.five_eighths_offset-lg {
+		margin-left: 62.5%
+	}
+	.six_eighths_offset-lg {
+		margin-left: 75%
+	}
+	.seven_eighths_offset-lg {
+		margin-left: 87.5%
+	}
+	.one_twelfth_offset-lg {
+		margin-left: 8.333%
+	}
+	.two_twelfths_offset-lg {
+		margin-left: 16.666%
+	}
+	.three_twelfths_offset-lg {
+		margin-left: 25%
+	}
+	.four_twelfths_offset-lg {
+		margin-left: 33.333%
+	}
+	.five_twelfths_offset-lg {
+		margin-left: 41.6667%
+	}
+	.six_twelfths_offset-lg {
+		margin-left: 50%
+	}
+	.seven_twelfths_offset-lg {
+		margin-left: 58.3334%
+	}
+	.eight_twelfths_offset-lg {
+		margin-left: 66.666%
+	}
+	.nine_twelfths_offset-lg {
+		margin-left: 75%
+	}
+	.ten_twelftsh_offset-lg {
+		margin-left: 83.3334%
+	}
+	.eleven_twelfths_offset-lg {
+		margin-left: 91.666%
+	}
 }
-.one_half_push-lg {
-	left: 50%
-}
-.one_third_push-lg {
-	left: 33.3333%
-}
-.two_thirds_push-lg {
-	left: 66.6667%
-}
-.one_fourth_push-lg {
-	left: 25%
-}
-.three_fourths_push-lg {
-	left: 75%
-}
-.one_fifth_push-lg {
-	left: 20%
-}
-.two_fifths_push-lg {
-	left: 40%
-}
-.three_fifths_push-lg {
-	left: 60%
-}
-.four_fifths_push-lg {
-	left: 80%
-}
-.one_sixth_push-lg {
-	left: 16.6667%
-}
-.two_sixths_push-lg {
-	left: 33.3333%
-}
-.three_sixths_push-lg {
-	left: 50%
-}
-.four_sixths_push-lg {
-	left: 66.6667%
-}
-.five_sixths_push-lg {
-	left: 83.3333%
-}
-.one_eighth_push-lg {
-	left: 12.5%
-}
-.two_eighths_push-lg {
-	left: 25%
-}
-.three_eighths_push-lg {
-	left: 37.5%
-}
-.four_eighths_push-lg {
-	left: 50%
-}
-.five_eighths_push-lg {
-	left: 62.5%
-}
-.six_eighths_push-lg {
-	left: 75%
-}
-.seven_eighths_push-lg {
-	left: 87.5%
-}
-.one_twelfth_push-lg {
-	left: 8.333%
-}
-.two_twelfths_push-lg {
-	left: 16.666%
-}
-.three_twelfths_push-lg {
-	left: 25%
-}
-.four_twelfths_push-lg {
-	left: 33.333%
-}
-.five_twelfths_push-lg {
-	left: 41.6667%
-}
-.six_twelfths_push-lg {
-	left: 50%
-}
-.seven_twelfths_push-lg {
-	left: 58.3334%
-}
-.eight_twelfths_push-lg {
-	left: 66.666%
-}
-.nine_twelfths_push-lg {
-	left: 75%
-}
-.ten_twelfths_push-lg {
-	left: 83.3334%
-}
-.eleven_twelfths_push-lg {
-	left: 91.666%
-}
-/*Offset Starts here...*/
-		.whole_offset-lg {
-	margin-left: 100%
-}
-.one_half_offset-lg {
-	margin-left: 50%
-}
-.one_third_offset-lg {
-	margin-left: 33.3333%
-}
-.two_thirds_offset-lg {
-	margin-left: 66.6667%
-}
-.one_fourth_offset-lg {
-	margin-left: 25%
-}
-.three_fourths_offset-lg {
-	margin-left: 75%
-}
-.one_fifth_offset-lg {
-	margin-left: 20%
-}
-.two_fifths_offset-lg {
-	margin-left: 40%
-}
-.three_fifths_offset-lg {
-	margin-left: 60%
-}
-.four_fifths_offset-lg {
-	margin-left: 80%
-}
-.one_sixth_offset-lg {
-	margin-left: 16.6667%
-}
-.two_sixths_offset-lg {
-	margin-left: 33.3333%
-}
-.three_sixths_offset-lg {
-	margin-left: 50%
-}
-.four_sixths_offset-lg {
-	margin-left: 66.6667%
-}
-.five_sixths_offset-lg {
-	margin-left: 83.3333%
-}
-.one_eighth_offset-lg {
-	margin-left: 12.5%
-}
-.two_eighths_offset-lg {
-	margin-left: 25%
-}
-.three_eighths_offset-lg {
-	margin-left: 37.5%
-}
-.four_eighths_offset-lg {
-	margin-left: 50%
-}
-.five_eighths_offset-lg {
-	margin-left: 62.5%
-}
-.six_eighths_offset-lg {
-	margin-left: 75%
-}
-.seven_eighths_offset-lg {
-	margin-left: 87.5%
-}
-.one_twelfth_offset-lg {
-	margin-left: 8.333%
-}
-.two_twelfths_offset-lg {
-	margin-left: 16.666%
-}
-.three_twelfths_offset-lg {
-	margin-left: 25%
-}
-.four_twelfths_offset-lg {
-	margin-left: 33.333%
-}
-.five_twelfths_offset-lg {
-	margin-left: 41.6667%
-}
-.six_twelfths_offset-lg {
-	margin-left: 50%
-}
-.seven_twelfths_offset-lg {
-	margin-left: 58.3334%
-}
-.eight_twelfths_offset-lg {
-	margin-left: 66.666%
-}
-.nine_twelfths_offset-lg {
-	margin-left: 75%
-}
-.ten_twelftsh_offset-lg {
-	margin-left: 83.3334%
-}
-.eleven_twelfths_offset-lg {
-	margin-left: 91.666%
-}
-}
-	
 
-/*Responsiveness extra large screen starts here...*/
+/*	
+==============================================================
+	=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+==============================================================
+	Extra Large Screen CSS Starts here...
+*/
+
 @media (min-width: 1800px) {
-/*Columns Starts here...*/
 	.whole-xl, .one_half-xl, .one_third-xl, .two_thirds-xl, .one_fourth-xl, .three_fourths-xl, .one_fifth-xl, .two_fifths-xl, .three_fifths-xl, .four_fifths-xl, .one_sixth-xl, .two_sixths-xl, .three_sixths-xl, .four_sixths-xl, .five_sixths-xl, .one_eighth-xl, .two_eighths-xl, .three_eighths-xl, .four_eighths-xl, .five_eighths-xl, .six_eighths-xl, .seven_eighths-xl, .one_twelfth-xl, .two_twelfths-xl, .three_twelfths-xl, .four_twelfths-xl, .five_twelfths-xl, .six_twelfths-xl, .seven_twelfths-xl, .eight_twelfths-xl, .nine_twelfths-xl, .ten_twelfths-xl, .eleven_twelfths-xl {
-	float: left
-}
-.whole-xl {
-	width: 100%
-}
-.one_half-xl {
-	width: 50%
-}
-.one_third-xl {
-	width: 33.3333%
-}
-.two_thirds-xl {
-	width: 66.6667%
-}
-.one_fourth-xl {
-	width: 25%
-}
-.three_fourths-xl {
-	width: 75%
-}
-.one_fifth-xl {
-	width: 20%
-}
-.two_fifths-xl {
-	width: 40%
-}
-.three_fifths-xl {
-	width: 60%
-}
-.four_fifths-xl {
-	width: 80%
-}
-.one_sixth-xl {
-	width: 16.6667%
-}
-.two_sixths-xl {
-	width: 33.3333%
-}
-.three_sixths-xl {
-	width: 50%
-}
-.four_sixths-xl {
-	width: 66.6667%
-}
-.five_sixths-xl {
-	width: 83.3333%
-}
-.one_eighth-xl {
-	width: 12.5%
-}
-.two_eighths-xl {
-	width: 25%
-}
-.three_eighths-xl {
-	width: 37.5%
-}
-.four_eighths-xl {
-	width: 50%
-}
-.five_eighths-xl {
-	width: 62.5%
-}
-.six_eighths-xl {
-	width: 75%
-}
-.seven_eighths-xl {
-	width: 87.5%
-}
-.one_twelfth-xl {
-	width: 8.333%
-}
-.two_twelfths-xl {
-	width: 16.666%
-}
-.three_twelfths-xl {
-	width: 25%
-}
-.four_twelfths-xl {
-	width: 33.333%
-}
-.five_twelfths-xl {
-	width: 41.6667%
-}
-.six_twelfths-xl {
-	width: 50%
-}
-.seven_twelfths-xl {
-	width: 58.3334%
-}
-.eight_twelfths-xl {
-	width: 66.666%
-}
-.nine_twelfths-xl {
-	width: 75%
-}
-.ten_twelfths-xl {
-	width: 83.3334%
-}
-.eleven_twelfths-xl {
-	width: 91.666%
-}
-/*Pull Starts here...*/
+		float: left
+	}
+	.whole-xl {
+		width: 100%
+	}
+	.one_half-xl {
+		width: 50%
+	}
+	.one_third-xl {
+		width: 33.3333%
+	}
+	.two_thirds-xl {
+		width: 66.6667%
+	}
+	.one_fourth-xl {
+		width: 25%
+	}
+	.three_fourths-xl {
+		width: 75%
+	}
+	.one_fifth-xl {
+		width: 20%
+	}
+	.two_fifths-xl {
+		width: 40%
+	}
+	.three_fifths-xl {
+		width: 60%
+	}
+	.four_fifths-xl {
+		width: 80%
+	}
+	.one_sixth-xl {
+		width: 16.6667%
+	}
+	.two_sixths-xl {
+		width: 33.3333%
+	}
+	.three_sixths-xl {
+		width: 50%
+	}
+	.four_sixths-xl {
+		width: 66.6667%
+	}
+	.five_sixths-xl {
+		width: 83.3333%
+	}
+	.one_eighth-xl {
+		width: 12.5%
+	}
+	.two_eighths-xl {
+		width: 25%
+	}
+	.three_eighths-xl {
+		width: 37.5%
+	}
+	.four_eighths-xl {
+		width: 50%
+	}
+	.five_eighths-xl {
+		width: 62.5%
+	}
+	.six_eighths-xl {
+		width: 75%
+	}
+	.seven_eighths-xl {
+		width: 87.5%
+	}
+	.one_twelfth-xl {
+		width: 8.333%
+	}
+	.two_twelfths-xl {
+		width: 16.666%
+	}
+	.three_twelfths-xl {
+		width: 25%
+	}
+	.four_twelfths-xl {
+		width: 33.333%
+	}
+	.five_twelfths-xl {
+		width: 41.6667%
+	}
+	.six_twelfths-xl {
+		width: 50%
+	}
+	.seven_twelfths-xl {
+		width: 58.3334%
+	}
+	.eight_twelfths-xl {
+		width: 66.666%
+	}
+	.nine_twelfths-xl {
+		width: 75%
+	}
+	.ten_twelfths-xl {
+		width: 83.3334%
+	}
+	.eleven_twelfths-xl {
+		width: 91.666%
+	}
+	/*	
+	==============================================================
+	Grid Offset XL CSS Starts here...
+	*/
 	.whole_pull-xl {
-	right: 100%
-}
-.one_half_pull-xl {
-	right: 50%
-}
-.one_third_pull-xl {
-	right: 33.3333%
-}
-.two_thirds_pull-xl {
-	right: 66.6667%
-}
-.one_fourth_pull-xl {
-	right: 25%
-}
-.three_fourths_pull-xl {
-	right: 75%
-}
-.one_fifth_pull-xl {
-	right: 20%
-}
-.two_fifths_pull-xl {
-	right: 40%
-}
-.three_fifths_pull-xl {
-	right: 60%
-}
-.four_fifths_pull-xl {
-	right: 80%
-}
-.one_sixth_pull-xl {
-	right: 16.6667%
-}
-.two_sixths_pull-xl {
-	right: 33.3333%
-}
-.three_sixths_pull-xl {
-	right: 50%
-}
-.four_sixths_pull-xl {
-	right: 66.6667%
-}
-.five_sixths_pull-xl {
-	right: 83.3333%
-}
-.one_eighth_pull-xl {
-	right: 12.5%
-}
-.two_eighths_pull-xl {
-	right: 25%
-}
-.three_eighths_pull-xl {
-	right: 37.5%
-}
-.four_eighths_pull-xl {
-	right: 50%
-}
-.five_eighths_pull-xl {
-	right: 62.5%
-}
-.six_eighths_pull-xl {
-	right: 75%
-}
-.seven_eighths_pull-xl {
-	right: 87.5%
-}
-.one_twelfth_pull-xl {
-	right: 8.333%
-}
-.two_twelfths_pull-xl {
-	right: 16.666%
-}
-.three_twelfths_pull-xl {
-	right: 25%
-}
-.four_twelftsh_pull-xl {
-	right: 33.333%
-}
-.five_twelfths_pull-xl {
-	right: 41.6667%
-}
-.six_twelfths_pull-xl {
-	right: 50%
-}
-.seven_twelfths_pull-xl {
-	right: 58.3334%
-}
-.eight_twelfths_pull-xl {
-	right: 66.666%
-}
-.nine_twelfths_pull-xl {
-	right: 75%
-}
-.ten_twelfths_pull-xl {
-	right: 83.3334%
-}
-.eleven_twelfths_pull-xl {
-	right: 91.666%
-}
-/*Push Starts here...*/
+		right: 100%
+	}
+	.one_half_pull-xl {
+		right: 50%
+	}
+	.one_third_pull-xl {
+		right: 33.3333%
+	}
+	.two_thirds_pull-xl {
+		right: 66.6667%
+	}
+	.one_fourth_pull-xl {
+		right: 25%
+	}
+	.three_fourths_pull-xl {
+		right: 75%
+	}
+	.one_fifth_pull-xl {
+		right: 20%
+	}
+	.two_fifths_pull-xl {
+		right: 40%
+	}
+	.three_fifths_pull-xl {
+		right: 60%
+	}
+	.four_fifths_pull-xl {
+		right: 80%
+	}
+	.one_sixth_pull-xl {
+		right: 16.6667%
+	}
+	.two_sixths_pull-xl {
+		right: 33.3333%
+	}
+	.three_sixths_pull-xl {
+		right: 50%
+	}
+	.four_sixths_pull-xl {
+		right: 66.6667%
+	}
+	.five_sixths_pull-xl {
+		right: 83.3333%
+	}
+	.one_eighth_pull-xl {
+		right: 12.5%
+	}
+	.two_eighths_pull-xl {
+		right: 25%
+	}
+	.three_eighths_pull-xl {
+		right: 37.5%
+	}
+	.four_eighths_pull-xl {
+		right: 50%
+	}
+	.five_eighths_pull-xl {
+		right: 62.5%
+	}
+	.six_eighths_pull-xl {
+		right: 75%
+	}
+	.seven_eighths_pull-xl {
+		right: 87.5%
+	}
+	.one_twelfth_pull-xl {
+		right: 8.333%
+	}
+	.two_twelfths_pull-xl {
+		right: 16.666%
+	}
+	.three_twelfths_pull-xl {
+		right: 25%
+	}
+	.four_twelftsh_pull-xl {
+		right: 33.333%
+	}
+	.five_twelfths_pull-xl {
+		right: 41.6667%
+	}
+	.six_twelfths_pull-xl {
+		right: 50%
+	}
+	.seven_twelfths_pull-xl {
+		right: 58.3334%
+	}
+	.eight_twelfths_pull-xl {
+		right: 66.666%
+	}
+	.nine_twelfths_pull-xl {
+		right: 75%
+	}
+	.ten_twelfths_pull-xl {
+		right: 83.3334%
+	}
+	.eleven_twelfths_pull-xl {
+		right: 91.666%
+	}
+	/*	
+	==============================================================
+	Grid Push XL CSS Starts here...
+	*/
 	.whole_push-xl {
-	left: 100%
-}
-.one_half_push-xl {
-	left: 50%
-}
-.one_third_push-xl {
-	left: 33.3333%
-}
-.two_thirds_push-xl {
-	left: 66.6667%
-}
-.one_fourth_push-xl {
-	left: 25%
-}
-.three_fourths_push-xl {
-	left: 75%
-}
-.one_fifth_push-xl {
-	left: 20%
-}
-.two_fifths_push-xl {
-	left: 40%
-}
-.three_fifths_push-xl {
-	left: 60%
-}
-.four_fifths_push-xl {
-	left: 80%
-}
-.one_sixth_push-xl {
-	left: 16.6667%
-}
-.two_sixths_push-xl {
-	left: 33.3333%
-}
-.three_sixths_push-xl {
-	left: 50%
-}
-.four_sixths_push-xl {
-	left: 66.6667%
-}
-.five_sixths_push-xl {
-	left: 83.3333%
-}
-.one_eighth_push-xl {
-	left: 12.5%
-}
-.two_eighths_push-xl {
-	left: 25%
-}
-.three_eighths_push-xl {
-	left: 37.5%
-}
-.four_eighths_push-xl {
-	left: 50%
-}
-.five_eighths_push-xl {
-	left: 62.5%
-}
-.six_eighths_push-xl {
-	left: 75%
-}
-.seven_eighths_push-xl {
-	left: 87.5%
-}
-.one_twelfth_push-xl {
-	left: 8.333%
-}
-.two_twelfths_push-xl {
-	left: 16.666%
-}
-.three_twelfths_push-xl {
-	left: 25%
-}
-.four_twelfths_push-xl {
-	left: 33.333%
-}
-.five_twelfths_push-xl {
-	left: 41.6667%
-}
-.six_twelfths_push-xl {
-	left: 50%
-}
-.seven_twelfths_push-xl {
-	left: 58.3334%
-}
-.eight_twelfths_push-xl {
-	left: 66.666%
-}
-.nine_twelfths_push-xl {
-	left: 75%
-}
-.ten_twelfths_push-xl {
-	left: 83.3334%
-}
-.eleven_twelfths_push-xl {
-	left: 91.666%
-}
-/*Offset Starts here...*/
-		.whole_offset-xl {
-	margin-left: 100%
-}
-.one_half_offset-xl {
-	margin-left: 50%
-}
-.one_third_offset-xl {
-	margin-left: 33.3333%
-}
-.two_thirds_offset-xl {
-	margin-left: 66.6667%
-}
-.one_fourth_offset-xl {
-	margin-left: 25%
-}
-.three_fourths_offset-xl {
-	margin-left: 75%
-}
-.one_fifth_offset-xl {
-	margin-left: 20%
-}
-.two_fifths_offset-xl {
-	margin-left: 40%
-}
-.three_fifths_offset-xl {
-	margin-left: 60%
-}
-.four_fifths_offset-xl {
-	margin-left: 80%
-}
-.one_sixth_offset-xl {
-	margin-left: 16.6667%
-}
-.two_sixths_offset-xl {
-	margin-left: 33.3333%
-}
-.three_sixths_offset-xl {
-	margin-left: 50%
-}
-.four_sixths_offset-xl {
-	margin-left: 66.6667%
-}
-.five_sixths_offset-xl {
-	margin-left: 83.3333%
-}
-.one_eighth_offset-xl {
-	margin-left: 12.5%
-}
-.two_eighths_offset-xl {
-	margin-left: 25%
-}
-.three_eighths_offset-xl {
-	margin-left: 37.5%
-}
-.four_eighths_offset-xl {
-	margin-left: 50%
-}
-.five_eighths_offset-xl {
-	margin-left: 62.5%
-}
-.six_eighths_offset-xl {
-	margin-left: 75%
-}
-.seven_eighths_offset-xl {
-	margin-left: 87.5%
-}
-.one_twelfth_offset-xl {
-	margin-left: 8.333%
-}
-.two_twelfths_offset-xl {
-	margin-left: 16.666%
-}
-.three_twelfths_offset-xl {
-	margin-left: 25%
-}
-.four_twelfths_offset-xl {
-	margin-left: 33.333%
-}
-.five_twelfths_offset-xl {
-	margin-left: 41.6667%
-}
-.six_twelfths_offset-xl {
-	margin-left: 50%
-}
-.seven_twelfths_offset-xl {
-	margin-left: 58.3334%
-}
-.eight_twelfths_offset-xl {
-	margin-left: 66.666%
-}
-.nine_twelfths_offset-xl {
-	margin-left: 75%
-}
-.ten_twelftsh_offset-xl {
-	margin-left: 83.3334%
-}
-.eleven_twelfths_offset-xl {
-	margin-left: 91.666%
-}
-}
+		left: 100%
+	}
+	.one_half_push-xl {
+		left: 50%
+	}
+	.one_third_push-xl {
+		left: 33.3333%
+	}
+	.two_thirds_push-xl {
+		left: 66.6667%
+	}
+	.one_fourth_push-xl {
+		left: 25%
+	}
+	.three_fourths_push-xl {
+		left: 75%
+	}
+	.one_fifth_push-xl {
+		left: 20%
+	}
+	.two_fifths_push-xl {
+		left: 40%
+	}
+	.three_fifths_push-xl {
+		left: 60%
+	}
+	.four_fifths_push-xl {
+		left: 80%
+	}
+	.one_sixth_push-xl {
+		left: 16.6667%
+	}
+	.two_sixths_push-xl {
+		left: 33.3333%
+	}
+	.three_sixths_push-xl {
+		left: 50%
+	}
+	.four_sixths_push-xl {
+		left: 66.6667%
+	}
+	.five_sixths_push-xl {
+		left: 83.3333%
+	}
+	.one_eighth_push-xl {
+		left: 12.5%
+	}
+	.two_eighths_push-xl {
+		left: 25%
+	}
+	.three_eighths_push-xl {
+		left: 37.5%
+	}
+	.four_eighths_push-xl {
+		left: 50%
+	}
+	.five_eighths_push-xl {
+		left: 62.5%
+	}
+	.six_eighths_push-xl {
+		left: 75%
+	}
+	.seven_eighths_push-xl {
+		left: 87.5%
+	}
+	.one_twelfth_push-xl {
+		left: 8.333%
+	}
+	.two_twelfths_push-xl {
+		left: 16.666%
+	}
+	.three_twelfths_push-xl {
+		left: 25%
+	}
+	.four_twelfths_push-xl {
+		left: 33.333%
+	}
+	.five_twelfths_push-xl {
+		left: 41.6667%
+	}
+	.six_twelfths_push-xl {
+		left: 50%
+	}
+	.seven_twelfths_push-xl {
+		left: 58.3334%
+	}
+	.eight_twelfths_push-xl {
+		left: 66.666%
+	}
+	.nine_twelfths_push-xl {
+		left: 75%
+	}
+	.ten_twelfths_push-xl {
+		left: 83.3334%
+	}
+	.eleven_twelfths_push-xl {
+		left: 91.666%
+	}
+	/*	
+	==============================================================
+	Grid Offset XL CSS Starts here...
+	*/
+	.whole_offset-xl {
+		margin-left: 100%
+	}
+	.one_half_offset-xl {
+		margin-left: 50%
+	}
+	.one_third_offset-xl {
+		margin-left: 33.3333%
+	}
+	.two_thirds_offset-xl {
+		margin-left: 66.6667%
+	}
+	.one_fourth_offset-xl {
+		margin-left: 25%
+	}
+	.three_fourths_offset-xl {
+		margin-left: 75%
+	}
+	.one_fifth_offset-xl {
+		margin-left: 20%
+	}
+	.two_fifths_offset-xl {
+		margin-left: 40%
+	}
+	.three_fifths_offset-xl {
+		margin-left: 60%
+	}
+	.four_fifths_offset-xl {
+		margin-left: 80%
+	}
+	.one_sixth_offset-xl {
+		margin-left: 16.6667%
+	}
+	.two_sixths_offset-xl {
+		margin-left: 33.3333%
+	}
+	.three_sixths_offset-xl {
+		margin-left: 50%
+	}
+	.four_sixths_offset-xl {
+		margin-left: 66.6667%
+	}
+	.five_sixths_offset-xl {
+		margin-left: 83.3333%
+	}
+	.one_eighth_offset-xl {
+		margin-left: 12.5%
+	}
+	.two_eighths_offset-xl {
+		margin-left: 25%
+	}
+	.three_eighths_offset-xl {
+		margin-left: 37.5%
+	}
+	.four_eighths_offset-xl {
+		margin-left: 50%
+	}
+	.five_eighths_offset-xl {
+		margin-left: 62.5%
+	}
+	.six_eighths_offset-xl {
+		margin-left: 75%
+	}
+	.seven_eighths_offset-xl {
+		margin-left: 87.5%
+	}
+	.one_twelfth_offset-xl {
+		margin-left: 8.333%
+	}
+	.two_twelfths_offset-xl {
+		margin-left: 16.666%
+	}
+	.three_twelfths_offset-xl {
+		margin-left: 25%
+	}
+	.four_twelfths_offset-xl {
+		margin-left: 33.333%
+	}
+	.five_twelfths_offset-xl {
+		margin-left: 41.6667%
+	}
+	.six_twelfths_offset-xl {
+		margin-left: 50%
+	}
+	.seven_twelfths_offset-xl {
+		margin-left: 58.3334%
+	}
+	.eight_twelfths_offset-xl {
+		margin-left: 66.666%
+	}
+	.nine_twelfths_offset-xl {
+		margin-left: 75%
+	}
+	.ten_twelftsh_offset-xl {
+		margin-left: 83.3334%
+	}
+	.eleven_twelfths_offset-xl {
+		margin-left: 91.666%
+	}
+}
+
+/*	
+==============================================================
+	=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+==============================================================
+	Responsive Grid No-Gutters Starts here...
+*/
+
 .no-gutters {
-	margin-left: 0;
-	margin-right: 0
+	padding-left: 0;
+	padding-right: 0
 }
-.no-gutters > .whole, .no-gutters > [class*="whole-"], .no-gutters > .one_half, .no-gutters > [class*="one_half-"], .no-gutters > .one_third, .no-gutters > [class*="one_third-"], .no-gutters > .two_thirds, .no-gutters > [class*="two_thirds-"], .no-gutters > .one_fourth, .no-gutters > [class*="one_fourth-"], .no-gutters > .three_fourths, .no-gutters > [class*="three_fourths-"], .no-gutters > .one_fifth, .no-gutters > [class*="one_fifth-"], .no-gutters > .two_fifths, .no-gutters > [class*="two_fifths-"], .no-gutters > .three_fifths, .no-gutters > [class*="three_fifths-"], .no-gutters > .four_fifths, .no-gutters > [class*="four_fifths-"], .no-gutters > .one_sixth, .no-gutters > [class*="one_sixth-"], .no-gutters > .two_sixths, .no-gutters > [class*="two_sixths-"], .no-gutters > .three_sixths, .no-gutters > [class*="three_sixths-"], .no-gutters > .four_sixths, .no-gutters > [class*="four_sixths-"], .no-gutters > .five_sixths, .no-gutters > [class*="five_sixths-"], .no-gutters > .one_eighth, .no-gutters > [class*="one_eighth-"], .no-gutters > .two_eighths, .no-gutters > [class*="two_eighths-"], .no-gutters > .three_eighths, .no-gutters > [class*="three_eighths-"], .no-gutters > .four_eighths, .no-gutters > [class*="four_eighths-"], .no-gutters > .five_eighths, .no-gutters > [class*="five_eighths-"], .no-gutters > .six_eighths, .no-gutters > [class*="six_eighths-"], .no-gutters > .seven_eighths, .no-gutters > [class*="seven_eighths-"], .no-gutters > .one_tenth, .no-gutters > [class*="one_tenth-"], .no-gutters > .two_tenths, .no-gutters > [class*="two_tenths-"], .no-gutters > .three_tenths, .no-gutters > [class*="three_tenths-"], .no-gutters > .four_tenths, .no-gutters > [class*="four_tenths-"], .no-gutters > .five_tenths, .no-gutters > [class*="five_tenths-"], .no-gutters > .six_tenths, .no-gutters > [class*="six_tenths-"], .no-gutters > .seven_tenths, .no-gutters > [class*="seven_tenths-"], .no-gutters > .eight_tenths, .no-gutters > [class*="eight_tenths-"], .no-gutters > .nine_tenths, .no-gutters > [class*="nine_tenths-"], .no-gutters > .one_twelfth, .no-gutters > [class*="one_twelfth-"], .no-gutters > .two_twelfths, .no-gutters > [class*="two_twelfths-"], .no-gutters > .three_twelfths, .no-gutters > [class*="three_twelfths-"], .no-gutters > .four_twelfths, .no-gutters > [class*="four_twelfths-"], .no-gutters > .five_twelfths, .no-gutters > [class*="five_twelfths-"], .no-gutters > .six_twelfths, .no-gutters > [class*="six_twelfths-"], .no-gutters > .seven_twelfths, .no-gutters > [class*="seven_twelfths-"], .no-gutters > .eight_twelfths, .no-gutters > [class*="eight_twelfths-"], .no-gutters > .nine_twelfths, .no-gutters > [class*="nine_twelfths-"], .no-gutters > .ten_twelfths, .no-gutters > [class*="ten_twelfths-"], .no-gutters > .eleven_twelfths, .no-gutters > [class*="eleven_twelfths-"] {
- padding-left: 0;
- padding-right: 0
+
+.no-gutters>.row {
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0
+}
+
+.no-gutters>.whole, .no-gutters .row>.whole, .no-gutters>[class*="whole-"], .no-gutters .row>[class*="whole-"], .no-gutters>.one_half, .no-gutters .row>.one_half, .no-gutters>[class*="one_half-"], .no-gutters .row>[class*="one_half-"], .no-gutters>.one_third, .no-gutters .row>.one_third, .no-gutters>[class*="one_third-"], .no-gutters .row>[class*="one_third-"], .no-gutters>.two_thirds, .no-gutters .row>.two_thirds, .no-gutters>[class*="two_thirds-"], .no-gutters .row>[class*="two_thirds-"], .no-gutters>.one_fourth, .no-gutters .row>.one_fourth, .no-gutters>[class*="one_fourth-"], .no-gutters .row>[class*="one_fourth-"], .no-gutters>.three_fourths, .no-gutters .row>.three_fourths, .no-gutters>[class*="three_fourths-"], .no-gutters .row>[class*="three_fourths-"], .no-gutters>.one_fifth, .no-gutters .row>.one_fifth, .no-gutters>[class*="one_fifth-"], .no-gutters .row>[class*="one_fifth-"], .no-gutters>.two_fifths, .no-gutters .row>.two_fifths, .no-gutters>[class*="two_fifths-"], .no-gutters .row>[class*="two_fifths-"], .no-gutters>.three_fifths, .no-gutters .row>.three_fifths, .no-gutters>[class*="three_fifths-"], .no-gutters .row>[class*="three_fifths-"], .no-gutters>.four_fifths, .no-gutters .row>.four_fifths, .no-gutters>[class*="four_fifths-"], .no-gutters .row>[class*="four_fifths-"], .no-gutters>.one_sixth, .no-gutters .row>.one_sixth, .no-gutters>[class*="one_sixth-"], .no-gutters .row>[class*="one_sixth-"], .no-gutters>.two_sixths, .no-gutters .row>.two_sixths, .no-gutters>[class*="two_sixths-"], .no-gutters .row>[class*="two_sixths-"], .no-gutters>.three_sixths, .no-gutters .row>.three_sixths, .no-gutters>[class*="three_sixths-"], .no-gutters .row>[class*="three_sixths-"], .no-gutters>.four_sixths, .no-gutters .row>.four_sixths, .no-gutters>[class*="four_sixths-"], .no-gutters .row>[class*="four_sixths-"], .no-gutters>.five_sixths, .no-gutters .row>.five_sixths, .no-gutters>[class*="five_sixths-"], .no-gutters .row>[class*="five_sixths-"], .no-gutters>.one_eighth, .no-gutters .row>.one_eighth, .no-gutters>[class*="one_eighth-"], .no-gutters .row>[class*="one_eighth-"], .no-gutters>.two_eighths, .no-gutters .row>.two_eighths, .no-gutters>[class*="two_eighths-"], .no-gutters .row>[class*="two_eighths-"], .no-gutters>.three_eighths, .no-gutters .row>.three_eighths, .no-gutters>[class*="three_eighths-"], .no-gutters .row>[class*="three_eighths-"], .no-gutters>.four_eighths, .no-gutters .row>.four_eighths, .no-gutters>[class*="four_eighths-"], .no-gutters .row>[class*="four_eighths-"], .no-gutters>.five_eighths, .no-gutters .row>.five_eighths, .no-gutters>[class*="five_eighths-"], .no-gutters .row>[class*="five_eighths-"], .no-gutters>.six_eighths, .no-gutters .row>.six_eighths, .no-gutters>[class*="six_eighths-"], .no-gutters .row>[class*="six_eighths-"], .no-gutters>.seven_eighths, .no-gutters .row>.seven_eighths, .no-gutters>[class*="seven_eighths-"], .no-gutters .row>[class*="seven_eighths-"], .no-gutters>.one_tenth, .no-gutters .row>.one_tenth, .no-gutters>[class*="one_tenth-"], .no-gutters .row>[class*="one_tenth-"], .no-gutters>.two_tenths, .no-gutters .row>.two_tenths, .no-gutters>[class*="two_tenths-"], .no-gutters .row>[class*="two_tenths-"], .no-gutters>.three_tenths, .no-gutters .row>.three_tenths, .no-gutters>[class*="three_tenths-"], .no-gutters .row>[class*="three_tenths-"], .no-gutters>.four_tenths, .no-gutters .row>.four_tenths, .no-gutters>[class*="four_tenths-"], .no-gutters .row>[class*="four_tenths-"], .no-gutters>.five_tenths, .no-gutters .row>.five_tenths, .no-gutters>[class*="five_tenths-"], .no-gutters .row>[class*="five_tenths-"], .no-gutters>.six_tenths, .no-gutters .row>.six_tenths, .no-gutters>[class*="six_tenths-"], .no-gutters .row>[class*="six_tenths-"], .no-gutters>.seven_tenths, .no-gutters .row>.seven_tenths, .no-gutters>[class*="seven_tenths-"], .no-gutters .row>[class*="seven_tenths-"], .no-gutters>.eight_tenths, .no-gutters .row>.eight_tenths, .no-gutters>[class*="eight_tenths-"], .no-gutters .row>[class*="eight_tenths-"], .no-gutters>.nine_tenths, .no-gutters .row>.nine_tenths, .no-gutters>[class*="nine_tenths-"], .no-gutters .row>[class*="nine_tenths-"], .no-gutters>.one_twelfth, .no-gutters .row>.one_twelfth, .no-gutters>[class*="one_twelfth-"], .no-gutters .row>[class*="one_twelfth-"], .no-gutters>.two_twelfths, .no-gutters .row>.two_twelfths, .no-gutters>[class*="two_twelfths-"], .no-gutters .row>[class*="two_twelfths-"], .no-gutters>.three_twelfths, .no-gutters .row>.three_twelfths, .no-gutters>[class*="three_twelfths-"], .no-gutters .row>[class*="three_twelfths-"], .no-gutters>.four_twelfths, .no-gutters .row>.four_twelfths, .no-gutters>[class*="four_twelfths-"], .no-gutters .row>[class*="four_twelfths-"], .no-gutters>.five_twelfths, .no-gutters .row>.five_twelfths, .no-gutters>[class*="five_twelfths-"], .no-gutters .row>[class*="five_twelfths-"], .no-gutters>.six_twelfths, .no-gutters .row>.six_twelfths, .no-gutters>[class*="six_twelfths-"], .no-gutters .row>[class*="six_twelfths-"], .no-gutters>.seven_twelfths, .no-gutters .row>.seven_twelfths, .no-gutters>[class*="seven_twelfths-"], .no-gutters .row>[class*="seven_twelfths-"], .no-gutters>.eight_twelfths, .no-gutters .row>.eight_twelfths, .no-gutters>[class*="eight_twelfths-"], .no-gutters .row>[class*="eight_twelfths-"], .no-gutters>.nine_twelfths, .no-gutters .row>.nine_twelfths, .no-gutters>[class*="nine_twelfths-"], .no-gutters .row>[class*="nine_twelfths-"], .no-gutters>.ten_twelfths, .no-gutters .row>.ten_twelfths, .no-gutters>[class*="ten_twelfths-"], .no-gutters .row>[class*="ten_twelfths-"], .no-gutters>.eleven_twelfths, .no-gutters .row>.eleven_twelfths, .no-gutters>[class*="eleven_twelfths-"], .no-gutters .row>[class*="eleven_twelfths-"] {
+	padding-left: 0;
+	padding-right: 0
 }
