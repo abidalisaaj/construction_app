@@ -58,11 +58,11 @@ export class SmallGeneralRepairs extends React.Component {
     }
   }
 
- handleChange (key, event) {
-   var obj = this.state[key];
-   obj["value"] = event.target.value;
-   obj["errMsg"] = "";
-   this.setState({ obj });
+  handleChange(key, event) {
+    var obj = this.state[key];
+    obj["value"] = event.target.value;
+    obj["errMsg"] = "";
+    this.setState({ obj });
   }
 
   render() {
@@ -95,56 +95,64 @@ export class SmallGeneralRepairs extends React.Component {
 
                     <form className="fancyform">
                       <div className="one_fifth-md">
-                        {this.state.name.errMsg ? (
-                          <p style={{ color: "#FF0000" }}>
-                            {this.state.name.errMsg}
-                          </p>
-                        ) : null}
-                        <input
-                          type="text"
-                          placeholder="Your Name"
-                          value={this.state.name.value}
-                          onChange={this.handleChange.bind(this, "name")}
-                        />
+                        <div className="emailform-field">
+                          {this.state.name.errMsg ? (
+                            <p className="emailform-field--error">
+                              {this.state.name.errMsg}
+                            </p>
+                          ) : null}
+                          <input
+                            type="text"
+                            placeholder="Your Name"
+                            value={this.state.name.value}
+                            onChange={this.handleChange.bind(this, "name")}
+                          />
+                        </div>
                       </div>
                       <div className="one_fifth-md">
-                        {this.state.email.errMsg ? (
-                          <p style={{ color: "#FF0000" }}>
-                            {this.state.email.errMsg}
-                          </p>
-                        ) : null}
-                        <input
-                          type="text"
-                          placeholder="Your Email"
-                          value={this.state.email.value}
-                          onChange={this.handleChange.bind(this, "email")}
-                        />
+                        <div className="emailform-field">
+                          {this.state.email.errMsg ? (
+                            <p className="emailform-field--error">
+                              {this.state.email.errMsg}
+                            </p>
+                          ) : null}
+                          <input
+                            type="text"
+                            placeholder="Your Email"
+                            value={this.state.email.value}
+                            onChange={this.handleChange.bind(this, "email")}
+                          />
+                        </div>
                       </div>
                       <div className="one_fifth-md">
-                        {this.state.phone.errMsg ? (
-                          <p style={{ color: "#FF0000" }}>
-                            {this.state.phone.errMsg}
-                          </p>
-                        ) : null}
-                        <input
-                          type="text"
-                          placeholder="Your Phone"
-                          value={this.state.phone.value}
-                          onChange={this.handleChange.bind(this, "phone")}
-                        />
+                        <div className="emailform-field">
+                          {this.state.phone.errMsg ? (
+                            <p className="emailform-field--error">
+                              {this.state.phone.errMsg}
+                            </p>
+                          ) : null}
+                          <input
+                            type="text"
+                            placeholder="Your Phone"
+                            value={this.state.phone.value}
+                            onChange={this.handleChange.bind(this, "phone")}
+                          />
+                        </div>
                       </div>
                       <div className="one_fifth-md">
-                        {this.state.message.errMsg ? (
-                          <p style={{ color: "#FF0000" }}>
-                            {this.state.message.errMsg}
-                          </p>
-                        ) : null}
-                        <input
-                          type="text"
-                          placeholder="Your Message"
-                          value={this.state.message.value}
-                          onChange={this.handleChange.bind(this, "message")}
-                        />
+                        <div className="emailform-field">
+                          {this.state.message.errMsg ? (
+                            <p className="emailform-field--error">
+                              {this.state.message.errMsg}
+                            </p>
+                          ) : null}
+                          <input
+                            type="text"
+                            placeholder="Your Message"
+                            value={this.state.message.value}
+                            onChange={this.handleChange.bind(this, "message")}
+                          />
+                        </div>
                       </div>
                       <div className="one_fifth-md">
                         <button style={style} onClick={this.handleSubmit}>
