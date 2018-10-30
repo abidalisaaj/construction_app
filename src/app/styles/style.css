@@ -1104,6 +1104,10 @@ textarea:focus {
   font-family: "Oswald", sans-serif;
 }
 
+.foot-nav ul li ul{
+  display: none;
+}
+
 .foot-nav ul li a {
   color: #fff;
   display: block;
