@@ -24,13 +24,11 @@ export class OurRemodelingProcess extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     var flag = 0;
-    var errorMessage = "";
 
     if (!this.state.name.value) {
       var name = this.state.name;
       name["errMsg"] = "Please enter your Name";
       this.setState({ name });
-      // errorMessage += "Please Enter Your Name";
       flag = 1;
     }
 
@@ -38,7 +36,6 @@ export class OurRemodelingProcess extends React.Component {
       var email = this.state.email;
       email["errMsg"] = "Please enter your Email";
       this.setState({ email });
-      // errorMessage += "Please Enter Your Email";
       flag = 1;
     }
 
@@ -46,7 +43,6 @@ export class OurRemodelingProcess extends React.Component {
       var phone = this.state.phone;
       phone["errMsg"] = "Please enter your Phone";
       this.setState({ phone });
-      // errorMessage += "Please Enter Your Phone";
       flag = 1;
     }
 
@@ -54,7 +50,6 @@ export class OurRemodelingProcess extends React.Component {
       var message = this.state.message;
       message["errMsg"] = "Please enter your Message";
       this.setState({ message });
-      // errorMessage += "Please Enter Your Message";
       flag = 1;
     }
 

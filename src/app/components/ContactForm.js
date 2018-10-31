@@ -10,55 +10,111 @@ export class ContactForm extends React.Component {
     this.handleEmailChange = this.handleEmailChange.bind(this);
     this.handlePhoneChange = this.handlePhoneChange.bind(this);
     this.handleMessageChange = this.handleMessageChange.bind(this);
+
     this.handleNameBlur = this.handleNameBlur.bind(this);
+    this.handleEmailBlur = this.handleEmailBlur.bind(this);
+    this.handlePhoneBlur = this.handlePhoneBlur.bind(this);
+    this.handleMessageBlur = this.handleMessageBlur.bind(this);
 
     this.state = {
-      name: "",
-      email: "",
-      phone: "",
-      message: ""
+      name: { value: "", errMsg: "" },
+      email: { value: "", errMsg: "" },
+      phone: { value: "", errMsg: "" },
+      message: { value: "", errMsg: "" }
     };
   }
   handleClick(e) {
     e.preventDefault();
-    var flag = 0, msg = "";
-    console.log(
-      this.state.name,
-      this.state.email,
-      this.state.phone,
-      this.state.message
-    );
-    if(!this.state.name){
-      msg += "please enter your name";
+    var flag = 0;
+
+    if (!this.state.name.value) {
+      var name = this.state.name;
+      name["errMsg"] = "Please enter your Name";
+      this.setState({ name });
       flag = 1;
     }
-    if(!this.state.email){
-      msg += "please enter your email";
+    if (!this.state.email.value) {
+      var email = this.state.email;
+      email["errMsg"] = "please enter your Email";
+      this.setState({ email });
       flag = 1;
     }
-    if(flag){
-      alert(msg);
-    } else{
-      // submit form
+    if (!this.state.phone.value) {
+      var phone = this.state.phone;
+      phone["errMsg"] = "please enter your Phone";
+      this.setState({ phone });
+      flag = 1;
+    }
+    if (!this.state.message.value) {
+      var message = this.state.message;
+      message["errMsg"] = "plese enter your Message";
+      this.setState({ message });
+      flag = 1;
+    }
+
+    if (!flag) {
+      //submit form
+      alert("Your Form have been Submitted");
     }
   }
   handleNameChange(event) {
-    this.setState({ name: event.target.value });
+    var name = this.setState.name;
+    name["value"] = event.target.value;
+    name["errMsg"] = "";
+    this.setState({ name });
   }
   handleEmailChange(event) {
-    this.setState({ email: event.target.value });
+    var email = this.setState.email;
+    email["value"] = event.target.value;
+    email["errMsg"] = "";
+    this.setState({ email });
   }
   handlePhoneChange(event) {
-    this.setState({ phone: event.target.value });
+    var phone = this.setState.phone;
+    phone["value"] = event.target.value;
+    phone["errMsg"] = "";
+    this.setState({ phone });
   }
   handleMessageChange(event) {
-    this.setState({ message: event.target.value });
+    var message = this.setState.message;
+    message["value"] = event.target.value;
+    message["errMsg"] = "";
+    this.setState({ message });
   }
-  handleNameBlur () {
-    if(!this.state.name){
-      alert("please enter your name.....");
+
+  handleNameBlur() {
+    if (!this.state.name.value) {
+      var name = this.state.name;
+      name["errMsg"] = "Please enter your Name";
+      this.setState({ name });
+      flag = 1;
     }
   }
+  handleEmailBlur() {
+    if (!this.state.email.value) {
+      var email = this.state.email;
+      email["errMsg"] = "please enter your Email";
+      this.setState({ email });
+      flag = 1;
+    }
+  }
+  handlePhoneBlur() {
+    if (!this.state.phone.value) {
+      var phone = this.state.phone;
+      phone["errMsg"] = "please enter your Phone";
+      this.setState({ phone });
+      flag = 1;
+    }
+  }
+  handleMessageBlur() {
+    if (!this.state.message.value) {
+      var message = this.state.message;
+      message["errMsg"] = "plese enter your Message";
+      this.setState({ message });
+      flag = 1;
+    }
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -79,15 +135,15 @@ export class ContactForm extends React.Component {
                   <label htmlFor="id_name">Name</label>
                 </div>
                 <div className="emailform-field-input">
+                  {this.state.name.errMsg ? (
+                    <p style={{ color: "#FF0000" }}>{this.state.name.errMsg}</p>
+                  ) : null}
                   <input
                     type="text"
-                    value={this.state.name}
-                    onChange={this.handleNameChange}
-                    onBlur = {this.handleNameBlur}
                     placeholder="Your Name"
-                    maxLength="50"
-                    name="name"
-                    id="id_name"
+                    value={this.state.name.value}
+                    onChange={this.handleNameChange}
+                    onBlur={this.handleNameBlur}
                   />
                 </div>
               </div>
@@ -99,13 +155,17 @@ export class ContactForm extends React.Component {
                   <label htmlFor="id_email">Email</label>
                 </div>
                 <div className="emailform-field-input">
+                  {this.state.email.errMsg ? (
+                    <p style={{ color: "#FF0000" }}>
+                      {this.state.email.errMsg}
+                    </p>
+                  ) : null}
                   <input
                     type="text"
-                    value={this.state.email}
-                    onChange={this.handleEmailChange}
                     placeholder="Your Email"
-                    id="id_email"
-                    name="email"
+                    value={this.state.email.value}
+                    onChange={this.handleEmailChange}
+                    onBlur={this.handleEmailBlur}
                   />
                 </div>
               </div>
@@ -117,14 +177,18 @@ export class ContactForm extends React.Component {
                   <label htmlFor="id_phone">Phone</label>
                 </div>
                 <div className="emailform-field-input">
+                  {this.state.phone.errMsg ? (
+                    <p style={{ color: "#FF0000" }}>
+                      {this.state.phone.errMsg}
+                    </p>
+                  ) : null}
+
                   <input
                     type="text"
-                    value={this.state.phone}
-                    onChange={this.handlePhoneChange}
                     placeholder="Your Phone"
-                    maxLength="50"
-                    name="phone"
-                    id="id_phone"
+                    value={this.state.phone.value}
+                    onChange={this.handlePhoneChange}
+                    onBlur={this.handlePhoneBlur}
                   />
                 </div>
               </div>
@@ -136,14 +200,17 @@ export class ContactForm extends React.Component {
                   <label htmlFor="id_message">Message</label>
                 </div>
                 <div className="emailform-field-input">
+                  {this.state.message.errMsg ? (
+                    <p style={{ color: "#FF0000" }}>
+                      {this.state.message.errMsg}
+                    </p>
+                  ) : null}
                   <textarea
                     name="message"
-                    value={this.state.message}
-                    onChange={this.handleMessageChange}
                     placeholder="Your Message"
-                    cols="20"
-                    rows="5"
-                    id="id_message"
+                    value={this.state.message.value}
+                    onChange={this.handleMessageChange}
+                    onBlur={this.handleMessageBlur}
                   />
                 </div>
               </div>

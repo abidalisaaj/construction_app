@@ -22,7 +22,6 @@ export class SmallGeneralRepairs extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     var flag = 0;
-    var errorMessage = "";
 
     if (!this.state.name.value) {
       var name = this.state.name;
