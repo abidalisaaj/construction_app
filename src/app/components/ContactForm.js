@@ -15,7 +15,7 @@ export class ContactForm extends React.Component {
     this.handleEmailBlur = this.handleEmailBlur.bind(this);
     this.handlePhoneBlur = this.handlePhoneBlur.bind(this);
     this.handleMessageBlur = this.handleMessageBlur.bind(this);
-    
+
     this.state = {
       name: { value: "", errMsg: "" },
       email: { value: "", errMsg: "" },
@@ -56,35 +56,30 @@ export class ContactForm extends React.Component {
       //submit form
       alert("Your Form have been Submitted");
     }
-    
   }
-
 
   handleNameChange(event) {
     var reg = /^\d+$/;
     var name = this.state.name;
-    if(!reg.test(event.target.value)){
+    if (!reg.test(event.target.value)) {
       name["value"] = event.target.value;
       name["errMsg"] = "";
       this.setState({ name });
     }
   }
 
-  handleEmailChange(event) {    
-    var email = this.state.email;    
+  handleEmailChange(event) {
+    var email = this.state.email;
     email["value"] = event.target.value;
     email["errMsg"] = "";
-    this.setState({ email });    
+    this.setState({ email });
   }
 
   handlePhoneChange(event) {
-    var reg =  /^\D+$/;
     var phone = this.state.phone;
-    if(!reg.test(event.target.value)){
-      phone["value"] = event.target.value;
-      phone["errMsg"] = "";
-      this.setState({ phone });
-    }
+    phone["value"] = event.target.value;
+    phone["errMsg"] = "";
+    this.setState({ phone });
   }
 
   handleMessageChange(event) {
@@ -94,14 +89,11 @@ export class ContactForm extends React.Component {
     this.setState({ message });
   }
 
-
-
   handleNameBlur() {
     if (!this.state.name.value) {
       var name = this.state.name;
       name["errMsg"] = "Please enter your Name";
       this.setState({ name });
-      //flag = 1;
     }
   }
   handleEmailBlur() {
@@ -110,23 +102,24 @@ export class ContactForm extends React.Component {
       var email = this.state.email;
       email["errMsg"] = "please enter your Email";
       this.setState({ email });
-      //flag = 1;
     }
   }
   handlePhoneBlur() {
-    if (!this.state.phone.value) {
-      var phone = this.state.phone;
+    var phone = this.state.phone;
+    if (!phone.value) {
       phone["errMsg"] = "please enter your Phone";
-      this.setState({ phone });
-      //flag = 1;
+    } else if (/[a-z]/i.test(phone.value)) {
+      phone["errMsg"] = "Please enter valid phone number";
+    } else if (phone.value.length !== 10) {
+      phone["errMsg"] = "Phone number must be of 10 digits";
     }
+    this.setState({ phone });
   }
   handleMessageBlur() {
     if (!this.state.message.value) {
       var message = this.state.message;
       message["errMsg"] = "plese enter your Message";
       this.setState({ message });
-      //flag = 1;
     }
   }
 
